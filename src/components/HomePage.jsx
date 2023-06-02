@@ -1,10 +1,13 @@
 import React from "react";
 import ActivityCard from "./ActivityCard";
+import { Activities } from "./Trips";
 
 const HomePage = () => {
   return (
     <div>
-      <ActivityCard />
+      {Activities.map(a => {
+        return <ActivityCard activity={a} />
+      })}
     </div>
   );
 };
