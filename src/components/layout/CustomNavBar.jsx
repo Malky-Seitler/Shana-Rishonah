@@ -1,16 +1,64 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useParams } from "react-router-dom";
 import { Navbar, NavItem, NavLink } from "reactstrap";
+import { ContactButton, NavbarWrap, NavLinkStyle } from "./StyledComponents";
+import Logo from "./../pictures/Logo.png";
 
 const CustomNavBar = () => {
-    return <header>
-        {/* <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3" container light> */}
-        <div style={{ padding: '72px 95px', border: '1px solid red' }}>
-            <div>
-                Day Trips
-            </div>
-        </div>
-        {/* </Navbar> */}
+  const [active, setActive] = useState("");
+  return (
+    <header>
+      <NavbarWrap>
+        <Link to="/trips/day-trips">
+          <NavLinkStyle
+            onClick={() => setActive("day")}
+            selected={active === "day"}
+          >
+            Day Trips
+          </NavLinkStyle>
+        </Link>
+        <Link to="/trips/date-night">
+          <NavLinkStyle
+            onClick={() => setActive("date")}
+            selected={active === "date"}
+          >
+            Date Night
+          </NavLinkStyle>
+        </Link>
+        <Link to="/trips/quick-trips">
+          <NavLinkStyle
+            onClick={() => setActive("quick")}
+            selected={active === "quick"}
+          >
+            Quick Trips
+          </NavLinkStyle>
+        </Link>
+        <Link to='/'>
+          <div onClick={() => setActive('')}>
+            <img src={Logo} width={"280px"} height={"95px"} />
+          </div>
+        </Link>
+        <Link to="/trips/at-home">
+          <NavLinkStyle
+            onClick={() => setActive("home")}
+            selected={active === "home"}
+          >
+            At Home
+          </NavLinkStyle>
+        </Link>
+        <Link to="/trips/restaurants">
+          <NavLinkStyle
+            onClick={() => setActive("food")}
+            selected={active === "food"}
+          >
+            Restaurants
+          </NavLinkStyle>
+        </Link>
+        <Link to="/contact">
+          <ContactButton>Contact</ContactButton>
+        </Link>
+      </NavbarWrap>
     </header>
-}
+  );
+};
 export default CustomNavBar;

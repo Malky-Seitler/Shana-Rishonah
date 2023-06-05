@@ -18,20 +18,61 @@ export const TitleStyle = styled.div`
   font-family: arial;
 `;
 export const Flex = styled.div`
-    display: flex;
-`
+  display: flex;
+`;
 export const PictureWrap = styled.img`
-position: absolute;
-left: 49.47%;
-right: 3.63%;
-top: 35.01%;
-bottom: 6.2%;
-border-radius: 17px;
+  position: absolute;
+  left: 49.47%;
+  right: 3.63%;
+  top: 35.01%;
+  bottom: 6.2%;
+  border-radius: 17px;
 `;
 export const TextWrap = styled.div`
-flex-wrap: wrap;
-    display: flex;
-    width: 50%;
-    margin-top: 16px;
-    padding-right: 16px;
-    padding-left: 16px;`;
+  flex-wrap: wrap;
+  display: flex;
+  width: 50%;
+  margin-top: 16px;
+  padding-right: 16px;
+  padding-left: 16px;
+`;
+export const ContentWrap = styled.div`
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 124px;
+  padding-bottom: 124px;
+`;
+export const ActionButton = styled.div`
+  background: #bdf700;
+  border-radius: 30px;
+  padding: 13px 18px;
+`;
+export const PageNumber = styled.div`
+  cursor: pointer;
+`;
+export const PagesWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  width: 25%;
+  align-items: center;
+  padding-bottom: 36px;
+`;
+
+export const ContactPageWrap = styled.div`
+  // border: 3px solid #15aaaa;
+  border-radius: 15px;
+  margin-top: 72px;
+  height: 600px;
+  position: center;
+`;
+export const MessageWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+export const TextAreaWrap = styled.div`
+  padding: 10px 270px;
+`;
