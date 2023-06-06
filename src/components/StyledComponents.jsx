@@ -6,6 +6,11 @@ export const ActivityCardContainer = styled.div`
   padding: 24px;
   width: 550px;
   height: 305px;
+  position: relative;
+  @media (max-width: 320px) {
+    width: 298px;
+    height: 400px;
+  }
 `;
 export const TopPart = styled.div`
   display: flex;
@@ -21,12 +26,16 @@ export const Flex = styled.div`
   display: flex;
 `;
 export const PictureWrap = styled.img`
-  position: absolute;
-  left: 49.47%;
-  right: 3.63%;
-  top: 35.01%;
-  bottom: 6.2%;
   border-radius: 17px;
+  margin-top: 24px;
+  @media (min-width: 325px) {
+    position: absolute;
+    left: 49.47%;
+    right: 3.63%;
+    top: 35.01%;
+    bottom: 6.2%;
+    margin-top: 0px;
+  }
 `;
 export const TextWrap = styled.div`
   flex-wrap: wrap;
@@ -35,6 +44,9 @@ export const TextWrap = styled.div`
   margin-top: 16px;
   padding-right: 16px;
   padding-left: 16px;
+  @media (max-width: 320px) {
+    width: 100%;
+  }
 `;
 export const ContentWrap = styled.div`
   margin-top: 36px;

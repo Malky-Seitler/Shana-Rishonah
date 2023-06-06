@@ -8,29 +8,69 @@ import {
   TopPart,
 } from "./StyledComponents";
 import { Icon } from "semantic-ui-react";
-import Header from './Header.png';
+import Header from "./Header.png";
+import { DesktopWrapper, MobileWrapper } from "./layout/StyledComponents";
 const ActivityCard = ({ activity }) => {
   return (
     <>
-      <ActivityCardContainer style={{ position: 'relative' }}>
-        <TopPart>
-          <TitleStyle>{activity.name}</TitleStyle>
-          <Flex style={{ justifyContent: "flex-end" }}>
-            <Flex style={{ marginRight: 24 }}>
-              <Icon name="globe" size="large" />
-              <a style={{ color: 'black', textDecoration: 'underline' }} target='_blank' href={activity.website}>{activity.website}</a>
+      <DesktopWrapper>
+        <ActivityCardContainer>
+          <TopPart>
+            <TitleStyle>{activity.name}</TitleStyle>
+            <Flex style={{ justifyContent: "flex-end" }}>
+              <Flex style={{ marginRight: 24 }}>
+                <Icon name="globe" size="large" />
+                <a
+                  style={{ color: "black", textDecoration: "underline" }}
+                  target="_blank"
+                  href={activity.website}
+                >
+                  {activity.website}
+                </a>
+              </Flex>
+              <Flex>
+                <Icon name="map marker alternate" size="large" />
+                <a
+                  style={{ color: "black", textDecoration: "underline" }}
+                  target="_blank"
+                  href={`http://maps.google.com/?q=${activity.address}`}
+                >
+                  Directions
+                </a>
+              </Flex>
+            </Flex>
+          </TopPart>
+          <TextWrap>{activity.description}</TextWrap>
+          <PictureWrap src={Header} width={"45%"} height={"45%"}></PictureWrap>
+        </ActivityCardContainer>
+      </DesktopWrapper>
+      <MobileWrapper>
+        <ActivityCardContainer>
+          <TopPart>
+            <TitleStyle>{activity.name}</TitleStyle>
+            <Flex style={{ justifyContent: "flex-end" }}>
+              <a
+                style={{ color: "black", textDecoration: "" }}
+                target="_blank"
+                href={activity.website}
+              >
+                <Icon name="globe" size="large" />
+              </a>
             </Flex>
             <Flex>
-              <Icon name="map marker alternate" size="large" />
-              <a style={{ color: 'black', textDecoration: 'underline' }} target='_blank' href={`http://maps.google.com/?q=${activity.address}`}>Directions</a>
+              <a
+                style={{ color: "black", textDecoration: "" }}
+                target="_blank"
+                href={`http://maps.google.com/?q=${activity.address}`}
+              >
+                <Icon name="map marker alternate" size="large" />
+              </a>
             </Flex>
-          </Flex>
-        </TopPart>
-        <TextWrap>{activity.description}</TextWrap>
-        <PictureWrap src={Header} width={'45%'} height={'45%'} >
-
-        </PictureWrap>
-      </ActivityCardContainer >
+          </TopPart>
+          <PictureWrap src={Header} width={"100%"} height={"45%"}></PictureWrap>
+          <TextWrap>{activity.description}</TextWrap>
+        </ActivityCardContainer>
+      </MobileWrapper>
     </>
   );
 };

@@ -9,6 +9,16 @@ export const NavbarWrap = styled.div`
   font-size: 24px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 `;
+export const DesktopWrapper = styled.div`
+  @media (max-width: 320px){
+    display: none;
+  }
+`;
+export const MobileWrapper = styled.div`
+  @media (min-width: 321px){
+    display: none;
+  }
+`
 export const NavLinkStyle = styled.div`
   cursor: pointer;
   color: black; 
