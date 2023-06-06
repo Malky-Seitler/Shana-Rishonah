@@ -17,10 +17,11 @@ export const NavLinkStyle = styled.div`
   }
   text-decoration: ${props => props.selected ? 'underline' : 'none'};
 `;
-export const ContactButton = styled.div`
+export const ContactButton = styled.button`
   background: #15AAAA;
   border-radius: 30px;
   padding: 13px; 27px;
-  cursor: pointer;
+  cursor: ${props => props.disabled ? 'not-allowed':  'pointer'};
   color: black;
+  border: none;
 `;

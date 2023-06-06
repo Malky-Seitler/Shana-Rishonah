@@ -43,10 +43,12 @@ export const ContentWrap = styled.div`
   gap: 124px;
   padding-bottom: 124px;
 `;
-export const ActionButton = styled.div`
-  background: #bdf700;
+export const ActionButton = styled.button`
+  background: ${(props) => (props.disabled ? "#97c500 " : "#bdf700")};
   border-radius: 30px;
   padding: 13px 18px;
+  outline: none;
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
 `;
 export const PageNumber = styled.div`
   cursor: pointer;
@@ -75,4 +77,7 @@ export const MessageWrap = styled.div`
 `;
 export const TextAreaWrap = styled.div`
   padding: 10px 270px;
+`;
+export const InputWrap = styled.div`
+  margin-bottom: 24px;
 `;
