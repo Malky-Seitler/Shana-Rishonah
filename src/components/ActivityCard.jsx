@@ -67,7 +67,7 @@ const ActivityCard = ({ activity }) => {
               </a>
             </Flex>
           </TopPart>
-          <PictureWrap src={Header} width={"100%"} height={"45%"}></PictureWrap>
+          <PictureWrap src={Header} width={"100%"} height={"25%"}></PictureWrap>
           <TextWrap>{activity.description}</TextWrap>
         </ActivityCardContainer>
       </MobileWrapper>

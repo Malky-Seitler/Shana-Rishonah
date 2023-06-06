@@ -9,7 +9,7 @@ export const ActivityCardContainer = styled.div`
   position: relative;
   @media (max-width: 320px) {
     width: 298px;
-    height: 400px;
+    height: 650px;
   }
 `;
 export const TopPart = styled.div`
