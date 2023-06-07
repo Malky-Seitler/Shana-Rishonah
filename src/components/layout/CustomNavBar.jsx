@@ -116,7 +116,9 @@ const CustomNavBar = () => {
                 </MenuItem>
               </Link>
               <Link to="/contact">
-                <MenuItem>Contact</MenuItem>
+                <MenuItem onClick={() => setShowSideNav(false)}>
+                  Contact
+                </MenuItem>
               </Link>
             </MobileMenu>
           </TopWrapperMobile>

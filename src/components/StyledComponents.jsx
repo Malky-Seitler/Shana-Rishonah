@@ -54,7 +54,7 @@ export const ContentWrap = styled.div`
   flex-wrap: wrap;
   gap: 124px;
   padding-bottom: 124px;
-   @media (max-width: 426px) {
+  @media (max-width: 426px) {
     gap: 50px;
     justify-content: center;
   }
@@ -93,7 +93,18 @@ export const MessageWrap = styled.div`
 `;
 export const TextAreaWrap = styled.div`
   padding: 10px 270px;
+  @media (max-width: 426px) {
+    padding: 0;
+    width: 75%;
+  }
 `;
 export const InputWrap = styled.div`
   margin-bottom: 24px;
+`;
+export const ContactButtonWrap = styled.div`
+  float: right;
+  padding: 10px 270px;
+  @media (max-width: 426px) {
+    padding: 10px 100px;
+  }
 `;

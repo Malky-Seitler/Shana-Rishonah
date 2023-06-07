@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import {
+  ContactButtonWrap,
   ContactPageWrap,
   InputWrap,
   MessageWrap,
   TextAreaWrap,
 } from "./StyledComponents";
 import { Form, Input, TextArea } from "semantic-ui-react";
-import { ContactButton } from "./layout/StyledComponents";
+import { ContactButton, DesktopWrapper } from "./layout/StyledComponents";
 import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
 
@@ -38,42 +39,40 @@ const ContactPage = () => {
             We value your feedback! <br /> You can expect to hear back from one
             of our representitives shortly!
           </h1>
-          <ContactButton onClick={() => navigate("/")}>
-            Go Home
-          </ContactButton>
+          <ContactButton onClick={() => navigate("/")}>Go Home</ContactButton>
         </>
       ) : (
         <>
-          <TextAreaWrap>
-            <InputWrap>
-              <Input
-                style={{ width: "100%" }}
-                placeholder="Your email"
-                value={userEmail}
-                onChange={(e) => setUserEmail(e.target.value)}
-              />
-            </InputWrap>
-            <Form>
-              <TextArea
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                placeholder="Your message goes here"
-                rows="8"
-              />
-            </Form>
-          </TextAreaWrap>
-          <div style={{ float: "right", padding: "10px 270px" }}>
-            <ContactButton
-              disabled={
-                !message ||
-                !userEmail?.includes("@") ||
-                !userEmail?.includes(".")
-              }
-              // onClick={() => onEmailSend()}
-            >
-              Submit Message
-            </ContactButton>
-          </div>
+            <TextAreaWrap>
+              <InputWrap>
+                <Input
+                  style={{ width: "100%" }}
+                  placeholder="Your email"
+                  value={userEmail}
+                  onChange={(e) => setUserEmail(e.target.value)}
+                />
+              </InputWrap>
+              <Form>
+                <TextArea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  placeholder="Your message goes here"
+                  rows="8"
+                />
+              </Form>
+            </TextAreaWrap>
+            <ContactButtonWrap>
+              <ContactButton
+                disabled={
+                  !message ||
+                  !userEmail?.includes("@") ||
+                  !userEmail?.includes(".")
+                }
+                // onClick={() => onEmailSend()}
+              >
+                Submit Message
+              </ContactButton>
+            </ContactButtonWrap>
         </>
       )}
     </ContactPageWrap>
