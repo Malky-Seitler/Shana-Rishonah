@@ -69,7 +69,7 @@ const ContactPage = () => {
                 !userEmail?.includes("@") ||
                 !userEmail?.includes(".")
               }
-              onClick={() => onEmailSend()}
+              // onClick={() => onEmailSend()}
             >
               Submit Message
             </ContactButton>

@@ -4,14 +4,21 @@ import { Navbar, NavItem, NavLink } from "reactstrap";
 import {
   ContactButton,
   DesktopWrapper,
+  MenuItem,
+  MobileMenu,
   MobileWrapper,
   NavbarWrap,
   NavLinkStyle,
+  TopWrapperMobile,
 } from "./StyledComponents";
 import Logo from "./../pictures/Logo.png";
+import { Flex } from "../StyledComponents";
+import { Icon } from "semantic-ui-react";
 
 const CustomNavBar = () => {
   const [active, setActive] = useState("");
+  const [showSideNav, setShowSideNav] = useState(false);
+
   return (
     <header>
       <DesktopWrapper>
@@ -67,11 +74,50 @@ const CustomNavBar = () => {
         </NavbarWrap>
       </DesktopWrapper>
       <MobileWrapper>
-        <Link to="/">
-          <div onClick={() => setActive("")}>
-            <img src={Logo} width={"280px"} height={"95px"} />
-          </div>
-        </Link>
+        <TopWrapperMobile>
+          <Link to="/">
+            <div onClick={() => setActive("")}>
+              <img src={Logo} width={"280px"} height={"95px"} />
+            </div>
+          </Link>
+          <Icon
+            onClick={() => setShowSideNav(!showSideNav)}
+            name="sidebar"
+            size="big"
+          />
+        </TopWrapperMobile>
+        {showSideNav && (
+          <TopWrapperMobile>
+            <MobileMenu>
+              <MenuItem></MenuItem>
+              <Link to="/trips/day-trips">
+                <MenuItem onClick={() => setShowSideNav(false)}>
+                  Day Trips
+                </MenuItem>
+              </Link>
+              <Link to="/trips/date-night">
+                <MenuItem onClick={() => setShowSideNav(false)}>
+                  Date Nights
+                </MenuItem>
+              </Link>
+              <Link to="/trips/quick-trips">
+                <MenuItem onClick={() => setShowSideNav(false)}>
+                  Quick Trips
+                </MenuItem>
+              </Link>
+              <Link to="/trips/at-home">
+                <MenuItem onClick={() => setShowSideNav(false)}>
+                  At Home
+                </MenuItem>
+              </Link>
+              <Link to="/search">
+                <MenuItem onClick={() => setShowSideNav(false)}>
+                  Search
+                </MenuItem>
+              </Link>
+            </MobileMenu>
+          </TopWrapperMobile>
+        )}
       </MobileWrapper>
     </header>
   );

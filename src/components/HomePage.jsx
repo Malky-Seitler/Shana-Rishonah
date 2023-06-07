@@ -9,9 +9,11 @@ import {
 } from "./StyledComponents";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
+import { DesktopWrapper } from "./layout/StyledComponents";
 
 const HomePage = () => {
   const { type } = useParams();
+  console.log(type)
   const [fullActivityList, setFullActivityList] = useState([]);
   const [pageNumber, setPageNumber] = useState(0);
 
@@ -29,10 +31,11 @@ const HomePage = () => {
       }
     }
     setFullActivityList(activitiesToUse);
+    console.log(activitiesToUse)
   };
   useEffect(() => {
     getListToUse();
-  }, []);
+  }, [type]);
 
   return (
     <div>
@@ -48,24 +51,26 @@ const HomePage = () => {
             return <ActivityCard key={a.address} activity={a} />;
           })}
       </ContentWrap>
-      <PagesWrap>
-        <ActionButton
-          disabled={pageNumber < 6}
-          onClick={() => setPageNumber(pageNumber - 6)}
-        >
-          PREV
-        </ActionButton>
-        {/* HANDLE THESE CLICKS AND PAGINATION */}
-        <PageNumber>{pageNumber + 1}</PageNumber>
-        <PageNumber>{pageNumber + 2}</PageNumber>
-        <PageNumber>{pageNumber + 3}</PageNumber>
-        <ActionButton
-          disabled={pageNumber >= fullActivityList.length - 6}
-          onClick={() => setPageNumber(pageNumber + 6)}
-        >
-          NEXT
-        </ActionButton>
-      </PagesWrap>
+      <DesktopWrapper>
+        <PagesWrap>
+          <ActionButton
+            disabled={pageNumber < 6}
+            onClick={() => setPageNumber(pageNumber - 6)}
+          >
+            PREV
+          </ActionButton>
+          {/* HANDLE THESE CLICKS AND PAGINATION */}
+          <PageNumber>{pageNumber + 1}</PageNumber>
+          <PageNumber>{pageNumber + 2}</PageNumber>
+          <PageNumber>{pageNumber + 3}</PageNumber>
+          <ActionButton
+            disabled={pageNumber >= fullActivityList.length - 6}
+            onClick={() => setPageNumber(pageNumber + 6)}
+          >
+            NEXT
+          </ActionButton>
+        </PagesWrap>
+      </DesktopWrapper>
     </div>
   );
 };
