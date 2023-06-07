@@ -115,6 +115,9 @@ const CustomNavBar = () => {
                   Search
                 </MenuItem>
               </Link>
+              <Link to="/contact">
+                <MenuItem>Contact</MenuItem>
+              </Link>
             </MobileMenu>
           </TopWrapperMobile>
         )}

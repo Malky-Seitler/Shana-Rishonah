@@ -39,7 +39,7 @@ export const TopWrapperMobile = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4px 8px;
+  padding: 4px 12px;
   @media (max-width: 320px) {
     padding: 0px;
   }
