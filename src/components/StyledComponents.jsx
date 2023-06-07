@@ -95,7 +95,7 @@ export const TextAreaWrap = styled.div`
   padding: 10px 270px;
   @media (max-width: 426px) {
     padding: 0;
-    width: 75%;
+    width: 100%;
   }
 `;
 export const InputWrap = styled.div`
