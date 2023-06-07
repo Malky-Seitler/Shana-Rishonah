@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import ActivityCard from "./ActivityCard";
-import { Activities, Categories } from "./Trips";
 import {
   ActionButton,
   ContentWrap,
@@ -10,31 +9,15 @@ import {
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { DesktopWrapper } from "./layout/StyledComponents";
+import { useActivityContext } from "../ActivityContext";
 
 const HomePage = () => {
-  const { type } = useParams();
-  console.log(type)
-  const [fullActivityList, setFullActivityList] = useState([]);
+  const { fullActivityList, getListToUse } = useActivityContext();
   const [pageNumber, setPageNumber] = useState(0);
+  const { type } = useParams();
 
-  const getListToUse = () => {
-    let activitiesToUse = Activities;
-    if (type) {
-      const category = Categories.find((c) => c.name === type);
-      if (category) {
-        activitiesToUse = activitiesToUse.filter(
-          (a) => a.categoryId === category.id
-        );
-        if (activitiesToUse?.length < 1) {
-          activitiesToUse = Activities;
-        }
-      }
-    }
-    setFullActivityList(activitiesToUse);
-    console.log(activitiesToUse)
-  };
   useEffect(() => {
-    getListToUse();
+    getListToUse(type);
   }, [type]);
 
   return (

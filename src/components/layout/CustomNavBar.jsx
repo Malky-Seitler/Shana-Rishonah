@@ -7,70 +7,92 @@ import {
   MenuItem,
   MobileMenu,
   MobileWrapper,
+  NavbarFlex,
   NavbarWrap,
   NavLinkStyle,
+  SearchWrapper,
   TopWrapperMobile,
 } from "./StyledComponents";
 import Logo from "./../pictures/Logo.png";
 import { Flex } from "../StyledComponents";
-import { Icon } from "semantic-ui-react";
+import { Icon, Input } from "semantic-ui-react";
+import { useActivityContext } from "../../ActivityContext";
 
 const CustomNavBar = () => {
   const [active, setActive] = useState("");
   const [showSideNav, setShowSideNav] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
+  const { getSearchedList } = useActivityContext();
+
+  const searchTrips = (searchValue) => {
+    getSearchedList(searchValue);
+  };
 
   return (
     <header>
       <DesktopWrapper>
         <NavbarWrap>
-          <Link to="/trips/day-trips">
+          <NavbarFlex>
+            <Link to="/trips/day-trips">
+              <NavLinkStyle
+                onClick={() => setActive("day")}
+                selected={active === "day"}
+              >
+                Day Trips
+              </NavLinkStyle>
+            </Link>
+            <Link to="/trips/date-night">
+              <NavLinkStyle
+                onClick={() => setActive("date")}
+                selected={active === "date"}
+              >
+                Date Night
+              </NavLinkStyle>
+            </Link>
+            <Link to="/trips/quick-trips">
+              <NavLinkStyle
+                onClick={() => setActive("quick")}
+                selected={active === "quick"}
+              >
+                Quick Trips
+              </NavLinkStyle>
+            </Link>
+            <Link to="/">
+              <div onClick={() => setActive("")}>
+                <img src={Logo} width={"280px"} height={"95px"} />
+              </div>
+            </Link>
+            <Link to="/trips/at-home">
+              <NavLinkStyle
+                onClick={() => setActive("home")}
+                selected={active === "home"}
+              >
+                At Home
+              </NavLinkStyle>
+            </Link>
             <NavLinkStyle
-              onClick={() => setActive("day")}
-              selected={active === "day"}
+              onClick={() => {
+                setActive("search");
+
+                if (showSearch) {
+                  searchTrips(null);
+                  setActive("");
+                }
+                setShowSearch(!showSearch);
+              }}
+              selected={active === "search"}
             >
-              Day Trips
+              Search
             </NavLinkStyle>
-          </Link>
-          <Link to="/trips/date-night">
-            <NavLinkStyle
-              onClick={() => setActive("date")}
-              selected={active === "date"}
-            >
-              Date Night
-            </NavLinkStyle>
-          </Link>
-          <Link to="/trips/quick-trips">
-            <NavLinkStyle
-              onClick={() => setActive("quick")}
-              selected={active === "quick"}
-            >
-              Quick Trips
-            </NavLinkStyle>
-          </Link>
-          <Link to="/">
-            <div onClick={() => setActive("")}>
-              <img src={Logo} width={"280px"} height={"95px"} />
-            </div>
-          </Link>
-          <Link to="/trips/at-home">
-            <NavLinkStyle
-              onClick={() => setActive("home")}
-              selected={active === "home"}
-            >
-              At Home
-            </NavLinkStyle>
-          </Link>
-          <Link to="/trips/restaurants">
-            <NavLinkStyle
-              onClick={() => setActive("food")}
-              selected={active === "food"}
-            >
-              Restaurants
-            </NavLinkStyle>
-          </Link>
-          <Link to="/contact">
-            <ContactButton>Contact</ContactButton>
-          </Link>
+            <Link to="/contact">
+              <ContactButton>Contact</ContactButton>
+            </Link>
+          </NavbarFlex>
+          {showSearch && (
+            <SearchWrapper onChange={(e) => searchTrips(e.target.value)}>
+              <Input icon="search" placeholder="Search..." />
+            </SearchWrapper>
+          )}
         </NavbarWrap>
       </DesktopWrapper>
       <MobileWrapper>
@@ -110,16 +132,28 @@ const CustomNavBar = () => {
                   At Home
                 </MenuItem>
               </Link>
-              <Link to="/search">
-                <MenuItem onClick={() => setShowSideNav(false)}>
+              {/* <Link to="/search">
+                <MenuItem
+                  onClick={() => {
+                    if (showSearch) {
+                      searchTrips(null);
+                    }
+                    setShowSearch(!showSearch);
+                  }}
+                >
                   Search
                 </MenuItem>
-              </Link>
+              </Link> */}
               <Link to="/contact">
                 <MenuItem onClick={() => setShowSideNav(false)}>
                   Contact
                 </MenuItem>
               </Link>
+              {/* {showSearch && (
+                <SearchWrapper onChange={(e) => searchTrips(e.target.value)}>
+                  <Input icon="search" placeholder="Search..." />
+                </SearchWrapper>
+              )} */}
             </MobileMenu>
           </TopWrapperMobile>
         )}

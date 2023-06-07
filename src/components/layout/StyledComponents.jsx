@@ -2,12 +2,15 @@ import styled from "@emotion/styled";
 
 export const NavbarWrap = styled.div`
   padding: 24px 95px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
   font-family: Arial;
   font-size: 24px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+`;
+export const NavbarFlex = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 export const DesktopWrapper = styled.div`
   @media (max-width: 425px) {
@@ -53,5 +56,8 @@ export const MenuItem = styled.div`
   padding: 12px;
   border-bottom: 1px solid gray;
   color: black;
- 
+`;
+export const SearchWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
 `;
