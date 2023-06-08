@@ -3,18 +3,22 @@ import ActivityCard from "./ActivityCard";
 import {
   ActionButton,
   ContentWrap,
+  FeedbackButton,
   PageNumber,
   PagesWrap,
 } from "./StyledComponents";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import { DesktopWrapper } from "./layout/StyledComponents";
+import { ContactButton, DesktopWrapper } from "./layout/StyledComponents";
 import { useActivityContext } from "../ActivityContext";
+import FeedbackModal from "./FeedbackModal";
 
 const HomePage = () => {
   const { fullActivityList, getListToUse } = useActivityContext();
   const [pageNumber, setPageNumber] = useState(0);
   const { type } = useParams();
+
+  const [showFeedbackModal, setShowFeedbackModal] = useState(false);
 
   useEffect(() => {
     getListToUse(type);
@@ -53,6 +57,10 @@ const HomePage = () => {
             NEXT
           </ActionButton>
         </PagesWrap>
+        {showFeedbackModal && <FeedbackModal setOpen={setShowFeedbackModal} />}
+        <FeedbackButton onClick={() => setShowFeedbackModal(true)}>
+          Give Feedback
+        </FeedbackButton>
       </DesktopWrapper>
     </div>
   );

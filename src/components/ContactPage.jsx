@@ -47,7 +47,7 @@ const ContactPage = () => {
               <InputWrap>
                 <Input
                   style={{ width: "100%" }}
-                  placeholder="Your email"
+                  placeholder="Email"
                   value={userEmail}
                   onChange={(e) => setUserEmail(e.target.value)}
                 />
@@ -56,7 +56,7 @@ const ContactPage = () => {
                 <TextArea
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  placeholder="Your message goes here"
+                  placeholder="Message"
                   rows="8"
                 />
               </Form>

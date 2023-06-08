@@ -2,10 +2,13 @@ import styled from "@emotion/styled";
 
 export const NavbarWrap = styled.div`
   padding: 24px 95px;
-
   font-family: Arial;
   font-size: 24px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  @media (max-width: 1024px){
+    padding: 24px;
+    font-size: 14px;
+  }
 `;
 export const NavbarFlex = styled.div`
   display: flex;

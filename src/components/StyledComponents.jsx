@@ -97,6 +97,10 @@ export const TextAreaWrap = styled.div`
     padding: 0;
     width: 100%;
   }
+  @media (max-width: 1024px){
+    padding: 0;
+    width: 100%;
+  }
 `;
 export const InputWrap = styled.div`
   margin-bottom: 24px;
@@ -107,4 +111,17 @@ export const ContactButtonWrap = styled.div`
   @media (max-width: 426px) {
     padding: 10px 100px;
   }
+    @media (max-width: 1024px) {
+    padding: 10px 0;
+  }
+`;
+
+export const FeedbackButton = styled.button`
+  background: #bdf700;
+  border-radius: 30px;
+  padding: 13px; 27px;
+  width: 12%;
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
+  color: black;
+  border: none;
 `;
