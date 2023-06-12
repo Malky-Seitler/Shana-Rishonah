@@ -25,7 +25,7 @@ const ActivityCard = ({ activity }) => {
                   target="_blank"
                   href={activity.website}
                 >
-                  {activity.website}
+                  Website
                 </a>
               </Flex>
               <Flex>

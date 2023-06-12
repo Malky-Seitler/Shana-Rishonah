@@ -16,12 +16,15 @@ import FeedbackModal from "./FeedbackModal";
 const HomePage = () => {
   const { fullActivityList, getListToUse } = useActivityContext();
   const [pageNumber, setPageNumber] = useState(0);
+  const [activityIndex, setActivityIndex] = useState(0);
   const { type } = useParams();
 
   const [showFeedbackModal, setShowFeedbackModal] = useState(false);
 
   useEffect(() => {
     getListToUse(type);
+    setPageNumber(0);
+    setActivityIndex(0);
   }, [type]);
 
   return (
@@ -29,10 +32,10 @@ const HomePage = () => {
       <ContentWrap>
         {fullActivityList
           .slice(
-            pageNumber,
-            pageNumber + 6 > fullActivityList.length
+            activityIndex,
+            activityIndex + 6 > fullActivityList.length
               ? fullActivityList.length
-              : pageNumber + 6
+              : activityIndex + 6
           )
           .map((a) => {
             return <ActivityCard key={a.address} activity={a} />;
@@ -41,18 +44,33 @@ const HomePage = () => {
       <DesktopWrapper>
         <PagesWrap>
           <ActionButton
-            disabled={pageNumber < 6}
-            onClick={() => setPageNumber(pageNumber - 6)}
+            disabled={pageNumber === 0}
+            onClick={() => {
+              setPageNumber(pageNumber - 1);
+              setActivityIndex(activityIndex - 6);
+            }}
           >
             PREV
           </ActionButton>
           {/* HANDLE THESE CLICKS AND PAGINATION */}
-          <PageNumber>{pageNumber + 1}</PageNumber>
-          <PageNumber>{pageNumber + 2}</PageNumber>
-          <PageNumber>{pageNumber + 3}</PageNumber>
+          {[1, 2, 3].map((a) => {
+            return (
+              <PageNumber
+                onClick={() => {
+                  setPageNumber(pageNumber + a - 1);
+                  setActivityIndex(pageNumber + ((a - 1) * 6))
+                }}
+              >
+                {pageNumber + a}
+              </PageNumber>
+            );
+          })}
           <ActionButton
-            disabled={pageNumber >= fullActivityList.length - 6}
-            onClick={() => setPageNumber(pageNumber + 6)}
+            disabled={activityIndex >= fullActivityList.length - 6}
+            onClick={() => {
+              setPageNumber(pageNumber + 1);
+              setActivityIndex(activityIndex + 6);
+            }}
           >
             NEXT
           </ActionButton>

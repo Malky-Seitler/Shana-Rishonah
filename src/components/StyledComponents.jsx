@@ -63,7 +63,7 @@ export const ActionButton = styled.button`
   background: ${(props) => (props.disabled ? "#97c500 " : "#bdf700")};
   border-radius: 30px;
   padding: 13px 18px;
-  outline: none;
+  border: none;
   cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
 `;
 export const PageNumber = styled.div`
@@ -97,7 +97,7 @@ export const TextAreaWrap = styled.div`
     padding: 0;
     width: 100%;
   }
-  @media (max-width: 1024px){
+  @media (max-width: 1024px) {
     padding: 0;
     width: 100%;
   }
@@ -111,7 +111,7 @@ export const ContactButtonWrap = styled.div`
   @media (max-width: 426px) {
     padding: 10px 100px;
   }
-    @media (max-width: 1024px) {
+  @media (max-width: 1024px) {
     padding: 10px 0;
   }
 `;
