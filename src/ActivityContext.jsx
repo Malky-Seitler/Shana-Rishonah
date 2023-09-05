@@ -1,11 +1,17 @@
 import React, { useState, createContext, useContext, useEffect } from "react";
 import { Activities, Categories } from "./components/Trips";
-import { useParams } from "react-router-dom";
 
 const ActivityContext = createContext();
 
 const ActivityContextComponent = ({ children }) => {
   const [fullActivityList, setFullActivityList] = useState([]);
+  const [fullActivityListForAlways, setFullActivityListForAlways] = useState(
+    []
+  );
+
+  useEffect(() => {
+    setFullActivityListForAlways(Activities);
+  }, []);
 
   const getListToUse = (type) => {
     let activitiesToUse = Activities;
@@ -19,6 +25,8 @@ const ActivityContextComponent = ({ children }) => {
           activitiesToUse = Activities;
         }
       }
+    } else {
+      setFullActivityList(Activities);
     }
     setFullActivityList(activitiesToUse);
   };
@@ -41,6 +49,7 @@ const ActivityContextComponent = ({ children }) => {
         fullActivityList,
         getListToUse,
         getSearchedList,
+        fullActivityListForAlways,
       }}
     >
       {children}

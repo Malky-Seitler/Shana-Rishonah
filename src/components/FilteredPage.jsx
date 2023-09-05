@@ -3,7 +3,6 @@ import ActivityCard from "./ActivityCard";
 import {
   ActionButton,
   ContentWrap,
-  CurrentPageNumber,
   FeedbackButton,
   PageNumber,
   PagesWrap,
@@ -13,10 +12,10 @@ import { useState } from "react";
 import { ContactButton, DesktopWrapper } from "./layout/StyledComponents";
 import { useActivityContext } from "../ActivityContext";
 import FeedbackModal from "./FeedbackModal";
-import Pagination from "./Pagination";
 
-const HomePage = () => {
+const FilteredPage = () => {
   const { fullActivityList, getListToUse } = useActivityContext();
+  const [pageNumber, setPageNumber] = useState(0);
   const [activityIndex, setActivityIndex] = useState(0);
   const { type } = useParams();
 
@@ -24,6 +23,7 @@ const HomePage = () => {
 
   useEffect(() => {
     getListToUse(type);
+    setPageNumber(0);
     setActivityIndex(0);
   }, [type]);
 
@@ -42,11 +42,39 @@ const HomePage = () => {
           })}
       </ContentWrap>
       <DesktopWrapper>
-        <Pagination
-          activityIndex={activityIndex}
-          setActivityIndex={setActivityIndex}
-          fullActivityList={fullActivityList}
-        />
+        <PagesWrap>
+          <ActionButton
+            disabled={pageNumber === 0}
+            onClick={() => {
+              setPageNumber(pageNumber - 1);
+              setActivityIndex(activityIndex - 6);
+            }}
+          >
+            PREV
+          </ActionButton>
+          {/* HANDLE THESE CLICKS AND PAGINATION */}
+          {[1, 2, 3].map((a) => {
+            return (
+              <PageNumber
+                onClick={() => {
+                  setPageNumber(pageNumber + a - 1);
+                  setActivityIndex(pageNumber + (a - 1) * 6);
+                }}
+              >
+                {pageNumber + a}
+              </PageNumber>
+            );
+          })}
+          <ActionButton
+            disabled={activityIndex >= fullActivityList.length - 6}
+            onClick={() => {
+              setPageNumber(pageNumber + 1);
+              setActivityIndex(activityIndex + 6);
+            }}
+          >
+            NEXT
+          </ActionButton>
+        </PagesWrap>
         {showFeedbackModal && <FeedbackModal setOpen={setShowFeedbackModal} />}
         <FeedbackButton onClick={() => setShowFeedbackModal(true)}>
           Give Feedback
@@ -55,4 +83,4 @@ const HomePage = () => {
     </div>
   );
 };
-export default HomePage;
+export default FilteredPage;

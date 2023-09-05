@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { Navbar, NavItem, NavLink } from "reactstrap";
 import {
   ContactButton,
@@ -27,6 +27,8 @@ const CustomNavBar = () => {
   const searchTrips = (searchValue) => {
     getSearchedList(searchValue);
   };
+
+  const navigate  = useNavigate();
 
   return (
     <header>
@@ -73,7 +75,7 @@ const CustomNavBar = () => {
             <NavLinkStyle
               onClick={() => {
                 setActive("search");
-
+                navigate('/')
                 if (showSearch) {
                   searchTrips(null);
                   setActive("");

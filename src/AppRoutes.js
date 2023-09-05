@@ -1,4 +1,5 @@
 import ContactPage from "./components/ContactPage";
+import FilteredPage from "./components/FilteredPage";
 import HomePage from "./components/HomePage";
 
 const AppRoutes = [
@@ -10,14 +11,15 @@ const AppRoutes = [
     path: "/",
     element: <HomePage />,
   },
+
   {
-    path: 'trips/:type',
-    element: <HomePage /> 
+    path: "trips/:type",
+    element: <FilteredPage />,
   },
   {
-    path: '/contact',
-    element: <ContactPage />
-  }
+    path: "/contact",
+    element: <ContactPage />,
+  },
   // {
   //   path: '/counter',
   //   element: <Counter />

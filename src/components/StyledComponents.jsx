@@ -69,6 +69,10 @@ export const ActionButton = styled.button`
 export const PageNumber = styled.div`
   cursor: pointer;
 `;
+export const CurrentPageNumber = styled.div`
+  color: gray;
+  text-decoration: underline;
+`;
 export const PagesWrap = styled.div`
   display: flex;
   justify-content: space-between;
@@ -124,4 +128,18 @@ export const FeedbackButton = styled.button`
   cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
   color: black;
   border: none;
+`;
+
+export const Circle = styled.div`
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
