@@ -64,6 +64,7 @@ export const ActionButton = styled.button`
   border-radius: 30px;
   padding: 13px 18px;
   border: none;
+  color: black;
   cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
   :hover {
     background: ${(props) => (props.disabled ? "#97c500 " : "#c2e063")};
@@ -141,6 +142,7 @@ export const FeedbackButton = styled.button`
   @media (max-width: 1024px) {
     width: 100%;
     margin-top: 48px;
+    margin-bottom: 12px;
   }
 `;
 
