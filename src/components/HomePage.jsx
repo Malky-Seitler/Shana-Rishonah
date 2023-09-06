@@ -17,6 +17,7 @@ import Pagination from "./Pagination";
 
 const HomePage = () => {
   const { fullActivityList, getListToUse } = useActivityContext();
+  
   const [activityIndex, setActivityIndex] = useState(0);
   const { type } = useParams();
 
@@ -41,17 +42,17 @@ const HomePage = () => {
             return <ActivityCard activity={a} />;
           })}
       </ContentWrap>
-      <DesktopWrapper>
-        <Pagination
-          activityIndex={activityIndex}
-          setActivityIndex={setActivityIndex}
-          fullActivityList={fullActivityList}
-        />
-        {showFeedbackModal && <FeedbackModal setOpen={setShowFeedbackModal} />}
-        <FeedbackButton onClick={() => setShowFeedbackModal(true)}>
-          Give Feedback
-        </FeedbackButton>
-      </DesktopWrapper>
+      {/* <DesktopWrapper> */}
+      <Pagination
+        activityIndex={activityIndex}
+        setActivityIndex={setActivityIndex}
+        fullActivityList={fullActivityList}
+      />
+      {showFeedbackModal && <FeedbackModal setOpen={setShowFeedbackModal} />}
+      <FeedbackButton onClick={() => setShowFeedbackModal(true)}>
+        Give Feedback
+      </FeedbackButton>
+      {/* </DesktopWrapper> */}
     </div>
   );
 };

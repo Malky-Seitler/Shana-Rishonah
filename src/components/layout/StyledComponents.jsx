@@ -5,7 +5,7 @@ export const NavbarWrap = styled.div`
   font-family: Arial;
   font-size: 24px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  @media (max-width: 1024px){
+  @media (max-width: 1024px) {
     padding: 24px;
     font-size: 14px;
   }
@@ -32,6 +32,7 @@ export const NavLinkStyle = styled.div`
     text-decoration: underline;
   }
   text-decoration: ${(props) => (props.selected ? "underline" : "none")};
+
 `;
 export const ContactButton = styled.button`
   background: #15AAAA;
@@ -40,6 +41,9 @@ export const ContactButton = styled.button`
   cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
   color: black;
   border: none;
+  :hover {
+    background: #6ACDCD;
+  };
 `;
 export const TopWrapperMobile = styled.div`
   display: flex;

@@ -65,6 +65,9 @@ export const ActionButton = styled.button`
   padding: 13px 18px;
   border: none;
   cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
+  :hover {
+    background: ${(props) => (props.disabled ? "#97c500 " : "#c2e063")};
+  }
 `;
 export const PageNumber = styled.div`
   cursor: pointer;
@@ -80,6 +83,10 @@ export const PagesWrap = styled.div`
   width: 25%;
   align-items: center;
   padding-bottom: 36px;
+  @media (max-width: 1024px) {
+    width: 100%;
+    padding: 0px 24px;
+  }
 `;
 
 export const ContactPageWrap = styled.div`
@@ -128,6 +135,13 @@ export const FeedbackButton = styled.button`
   cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
   color: black;
   border: none;
+  :hover {
+    background: #c2e063;
+  }
+  @media (max-width: 1024px) {
+    width: 100%;
+    margin-top: 48px;
+  }
 `;
 
 export const Circle = styled.div`

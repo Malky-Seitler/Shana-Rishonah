@@ -12,10 +12,10 @@ import { useState } from "react";
 import { ContactButton, DesktopWrapper } from "./layout/StyledComponents";
 import { useActivityContext } from "../ActivityContext";
 import FeedbackModal from "./FeedbackModal";
+import Pagination from "./Pagination";
 
 const FilteredPage = () => {
   const { fullActivityList, getListToUse } = useActivityContext();
-  const [pageNumber, setPageNumber] = useState(0);
   const [activityIndex, setActivityIndex] = useState(0);
   const { type } = useParams();
 
@@ -23,7 +23,6 @@ const FilteredPage = () => {
 
   useEffect(() => {
     getListToUse(type);
-    setPageNumber(0);
     setActivityIndex(0);
   }, [type]);
 
@@ -42,39 +41,11 @@ const FilteredPage = () => {
           })}
       </ContentWrap>
       <DesktopWrapper>
-        <PagesWrap>
-          <ActionButton
-            disabled={pageNumber === 0}
-            onClick={() => {
-              setPageNumber(pageNumber - 1);
-              setActivityIndex(activityIndex - 6);
-            }}
-          >
-            PREV
-          </ActionButton>
-          {/* HANDLE THESE CLICKS AND PAGINATION */}
-          {[1, 2, 3].map((a) => {
-            return (
-              <PageNumber
-                onClick={() => {
-                  setPageNumber(pageNumber + a - 1);
-                  setActivityIndex(pageNumber + (a - 1) * 6);
-                }}
-              >
-                {pageNumber + a}
-              </PageNumber>
-            );
-          })}
-          <ActionButton
-            disabled={activityIndex >= fullActivityList.length - 6}
-            onClick={() => {
-              setPageNumber(pageNumber + 1);
-              setActivityIndex(activityIndex + 6);
-            }}
-          >
-            NEXT
-          </ActionButton>
-        </PagesWrap>
+        <Pagination
+          activityIndex={activityIndex}
+          setActivityIndex={setActivityIndex}  
+          fullActivityList={fullActivityList}
+        />
         {showFeedbackModal && <FeedbackModal setOpen={setShowFeedbackModal} />}
         <FeedbackButton onClick={() => setShowFeedbackModal(true)}>
           Give Feedback
