@@ -324,6 +324,59 @@ export const Activities = [
     closes: null,
     categoryId: 1,
   },
+  {
+    name: "Decorate Cupcakes",
+    address: null,
+    website:
+      "https://www.tasteofhome.com/collection/easy-cupcake-decorating-ideas/",
+    description:
+      "Such a fun activity for an at-home date night! Prep the cupcakes and supplies before or bake them together. Then have a blast decorating - and best part is the after party!",
+    closes: null,
+    categoryId: 3,
+  },
+  {
+    name: "Have a cook-off or bake-off",
+    address: null,
+    website: "https://jacofallthings.com/date-night-cooking-challenge/",
+    description: "Some text for this activity",
+    closes: null,
+    categoryId: 3,
+  },
+  {
+    name: "Shore Rider's Bike Rentals",
+    address: "421 River Ave, Point Pleasant Beach, NJ 08742",
+    website:
+      "https://www.yelp.com/biz/shore-riders-bike-rentals-point-pleasant-beach",
+    description: "Some text for this activity",
+    closes: 5,
+    categoryId: 0,
+  },
+  {
+    name: "Bake Cookies Together",
+    address: null,
+    website:
+      "https://www.kosher.com/recipe/the-perfect-chocolate-chip-cookie-recipe-4133",
+    description: "Some text for this activity",
+    closes: null,
+    categoryId: 3,
+  },
+  {
+    name: "Barnes and Noble",
+    address: "44 Brick Plaza, Brick Township, NJ 08723",
+    website: "https://www.barnesandnoble.com/",
+    description: "Some text for this activity",
+    closes: 9,
+    categoryId: 2,
+  },
+  {
+    name: "Take a Photo Walk",
+    address: null,
+    website:
+      "https://www.kosher.com/recipe/the-perfect-chocolate-chip-cookie-recipe-4133",
+    description: "Some text for this activity",
+    closes: null,
+    categoryId: 3,
+  },
 ];
 
 export const Categories = [
