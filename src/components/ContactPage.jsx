@@ -43,36 +43,36 @@ const ContactPage = () => {
         </>
       ) : (
         <>
-            <TextAreaWrap>
-              <InputWrap>
-                <Input
-                  style={{ width: "100%" }}
-                  placeholder="Email"
-                  value={userEmail}
-                  onChange={(e) => setUserEmail(e.target.value)}
-                />
-              </InputWrap>
-              <Form>
-                <TextArea
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  placeholder="Message"
-                  rows="8"
-                />
-              </Form>
-            </TextAreaWrap>
-            <ContactButtonWrap>
-              <ContactButton
-                disabled={
-                  !message ||
-                  !userEmail?.includes("@") ||
-                  !userEmail?.includes(".")
-                }
-                // onClick={() => onEmailSend()}
-              >
-                Submit Message
-              </ContactButton>
-            </ContactButtonWrap>
+          <TextAreaWrap>
+            <InputWrap>
+              <Input
+                style={{ width: "100%" }}
+                placeholder="Email"
+                value={userEmail}
+                onChange={(e) => setUserEmail(e.target.value)}
+              />
+            </InputWrap>
+            <Form>
+              <TextArea
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Message"
+                rows="8"
+              />
+            </Form>
+          </TextAreaWrap>
+          <ContactButtonWrap>
+            <ContactButton
+              disabled={
+                !message ||
+                !userEmail?.includes("@") ||
+                !userEmail?.includes(".")
+              }
+              // onClick={() => onEmailSend()}
+            >
+              Submit Message
+            </ContactButton>
+          </ContactButtonWrap>
         </>
       )}
     </ContactPageWrap>

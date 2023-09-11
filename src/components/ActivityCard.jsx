@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   ActivityCardContainer,
   Flex,
@@ -10,7 +10,26 @@ import {
 import { Icon } from "semantic-ui-react";
 import Header from "./Header.png";
 import { DesktopWrapper, MobileWrapper } from "./layout/StyledComponents";
+
 const ActivityCard = ({ activity }) => {
+  const [image, setImage] = useState(null);
+  const getImage = async () => {
+    try {
+      const img = await import(
+        `./pictures/${activity.name.replace(/\s/g, "").toLowerCase()}.jpg`
+      );
+      if (img) {
+        setImage(img.default);
+      } else {
+        setImage(Header);
+      }
+    } catch (e) {
+      setImage(Header);
+    }
+  };
+  useEffect(() => {
+    getImage();
+  }, []);
   return (
     <>
       <DesktopWrapper>
@@ -41,7 +60,7 @@ const ActivityCard = ({ activity }) => {
             </Flex>
           </TopPart>
           <TextWrap>{activity.description}</TextWrap>
-          <PictureWrap src={Header} width={"45%"} height={"45%"}></PictureWrap>
+          <PictureWrap src={image} width={"45%"} height={"45%"}></PictureWrap>
         </ActivityCardContainer>
       </DesktopWrapper>
       <MobileWrapper>
@@ -67,7 +86,7 @@ const ActivityCard = ({ activity }) => {
               </a>
             </Flex>
           </TopPart>
-          <PictureWrap src={Header} width={"100%"} height={"25%"}></PictureWrap>
+          <PictureWrap src={image} width={"100%"} height={"25%"}></PictureWrap>
           <TextWrap>{activity.description}</TextWrap>
         </ActivityCardContainer>
       </MobileWrapper>
