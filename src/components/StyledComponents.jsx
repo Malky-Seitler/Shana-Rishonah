@@ -159,3 +159,11 @@ export const Circle = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+export const HomePageTitleType = styled.div`
+  font-size: 32px;
+  margin-bottom: 24px;
+  line-height: 1px;
+  text-decoration: underline;
+  font-style: italic;
+`;

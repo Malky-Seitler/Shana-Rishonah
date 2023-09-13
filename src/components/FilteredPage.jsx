@@ -40,15 +40,15 @@ const FilteredPage = () => {
             return <ActivityCard activity={a} />;
           })}
       </ContentWrap>
-      <Pagination
-        activityIndex={activityIndex}
-        setActivityIndex={setActivityIndex}
-        fullActivityList={fullActivityList}
-      />
-      {showFeedbackModal && <FeedbackModal setOpen={setShowFeedbackModal} />}
-      <FeedbackButton onClick={() => setShowFeedbackModal(true)}>
-        Give Feedback
-      </FeedbackButton>
+        <Pagination
+          activityIndex={activityIndex}
+          setActivityIndex={setActivityIndex}  
+          fullActivityList={fullActivityList}
+        />
+        {showFeedbackModal && <FeedbackModal setOpen={setShowFeedbackModal} />}
+        <FeedbackButton onClick={() => setShowFeedbackModal(true)}>
+          Give Feedback
+        </FeedbackButton>
     </div>
   );
 };

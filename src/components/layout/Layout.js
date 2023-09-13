@@ -11,7 +11,7 @@ export class Layout extends Component {
       <div>
         <CustomNavBar />
         {/* <NavMenu /> */}
-        <Container>
+        <Container style={{paddingRight: 24, paddingLeft: 24}}>
           {this.props.children}
         </Container>
       </div>
