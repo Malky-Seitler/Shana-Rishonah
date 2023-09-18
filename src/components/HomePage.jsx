@@ -14,7 +14,8 @@ import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
 import { useActivityContext } from "../ActivityContext";
 import FeedbackModal from "./FeedbackModal";
-import Logo from "./pictures/Logo.png";
+import Lottie from "lottie-react";
+import HomePageAnimation from "./lottie/HomePageAnimation.json";
 
 const HomePage = () => {
   const { fullActivityList, getListToUse } = useActivityContext();
@@ -45,13 +46,16 @@ const HomePage = () => {
             paddingTop: 24,
           }}
         >
+          <div style={{ width: "25%" }}>
+            <Lottie animationData={HomePageAnimation} loop={true} />
+          </div>
           <div style={{ fontSize: 48, marginBottom: 36 }}>
             Welcome to ShanaRishonah.com
           </div>
           <div style={{ fontSize: 32, marginBottom: 36, fontStyle: "italic" }}>
             Your ultimate destination for everything Shana Rishonah!
           </div>
-          <div>
+          {/* <div>
             <HomePageTitleType
               style={{
                 fontSize: 32,
@@ -129,25 +133,13 @@ const HomePage = () => {
               ideas, and so much more! Keep checking back to uncover the latest
               and greatest additions!
             </div>
-          </div>
-          {/* <span style={{ width: '60%', fontSize: 24, lineHeight: 1, fontStyle: 'italic'}}>
-            But wait, there's more! Our website is a dynamic hub,
-            continually evolving to offer not only exciting activities but also
-            invaluable insights for navigating this new chapter of your life.
-            Stay tuned for tips and tricks on managing this exciting phase,
-            thoughtful gift and party ideas, and so much more! Keep checking
-            back to uncover the latest and greatest additions—we're here to make
-            your Shana Rishonah journey as exciting and adorable as it can be!
-            💖
-          </span> */}
+          </div> */}
         </div>
-
-        {/* */}
       </div>
-      {showFeedbackModal && <FeedbackModal setOpen={setShowFeedbackModal} />}
+      {/* {showFeedbackModal && <FeedbackModal setOpen={setShowFeedbackModal} />}
       <FeedbackButton onClick={() => setShowFeedbackModal(true)}>
         Give Feedback
-      </FeedbackButton>
+      </FeedbackButton> */}
       {/* </DesktopWrapper> */}
     </div>
     // <div>
