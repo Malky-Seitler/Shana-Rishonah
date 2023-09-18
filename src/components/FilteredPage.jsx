@@ -13,6 +13,7 @@ import { ContactButton, DesktopWrapper } from "./layout/StyledComponents";
 import { useActivityContext } from "../ActivityContext";
 import FeedbackModal from "./FeedbackModal";
 import Pagination from "./Pagination";
+import { Container } from "reactstrap";
 
 const FilteredPage = () => {
   const { fullActivityList, getListToUse } = useActivityContext();
@@ -27,29 +28,31 @@ const FilteredPage = () => {
   }, [type]);
 
   return (
-    <div>
-      <ContentWrap>
-        {fullActivityList
-          .slice(
-            activityIndex,
-            activityIndex + 6 > fullActivityList.length
-              ? fullActivityList.length
-              : activityIndex + 6
-          )
-          .map((a) => {
-            return <ActivityCard activity={a} />;
-          })}
-      </ContentWrap>
+    <Container style={{ paddingRight: 24, paddingLeft: 24 }}>
+      <div>
+        <ContentWrap>
+          {fullActivityList
+            .slice(
+              activityIndex,
+              activityIndex + 6 > fullActivityList.length
+                ? fullActivityList.length
+                : activityIndex + 6
+            )
+            .map((a) => {
+              return <ActivityCard activity={a} />;
+            })}
+        </ContentWrap>
         <Pagination
           activityIndex={activityIndex}
-          setActivityIndex={setActivityIndex}  
+          setActivityIndex={setActivityIndex}
           fullActivityList={fullActivityList}
         />
         {showFeedbackModal && <FeedbackModal setOpen={setShowFeedbackModal} />}
         <FeedbackButton onClick={() => setShowFeedbackModal(true)}>
           Give Feedback
         </FeedbackButton>
-    </div>
+      </div>
+    </Container>
   );
 };
 export default FilteredPage;

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { Container } from 'reactstrap';
-import { NavMenu } from './NavMenu';
-import CustomNavBar from './CustomNavBar';
+import React, { Component } from "react";
+import { Container } from "reactstrap";
+import { NavMenu } from "./NavMenu";
+import CustomNavBar from "./CustomNavBar";
 
 export class Layout extends Component {
   static displayName = Layout.name;
@@ -11,9 +11,7 @@ export class Layout extends Component {
       <div>
         <CustomNavBar />
         {/* <NavMenu /> */}
-        <Container style={{paddingRight: 24, paddingLeft: 24}}>
-          {this.props.children}
-        </Container>
+        {this.props.children}
       </div>
     );
   }

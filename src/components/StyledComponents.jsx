@@ -167,3 +167,7 @@ export const HomePageTitleType = styled.div`
   text-decoration: underline;
   font-style: italic;
 `;
+
+export const HomePageSectionWrap = styled.div`
+  width: 45%;
+`;
