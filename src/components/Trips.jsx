@@ -40,7 +40,7 @@ export const Activities = [
     address: "1013 US-1, Edison, NJ 08817",
     website: "https://topgolf.com/us/edison/",
     description:
-      "Top golf is a great spot for when you want a night. It is set up to be a date night attraction with comfortable couches at each station and drinks for purchase. The atmostphere is adult like and relaxed. It is reccommended to book ahead as this location especially can get very crowded",
+      "Top Golf offers the perfect setting for a memorable date night experience. Designed with a cozy ambiance reminiscent of a lounge, it features comfortable couches at numerous bays and offers drinks for purchase as well. Given this location's immense popularity, we highly recommend booking your visit in advance to secure your spot, as availability tends to fill up quickly Bonus - on Tuesday nights play is half off!",
     closes: 1,
     categoryId: 1,
   },
@@ -49,7 +49,7 @@ export const Activities = [
     address: "104 Centerton Rd, Mt Laurel Township, NJ 08054",
     website: "https://topgolf.com/us/mount-laurel/",
     description:
-      "Top golf is a great spot for when you want a night. It is set up to be a date night attraction with comfortable couches at each station and drinks for purchase. The atmostphere is adult like and relaxed. It is reccommended to book ahead but this location is generally a bit quieter than Edison and usually has better time slots available",
+      "Top Golf offers the perfect setting for a memorable date night experience. Designed with a cozy ambiance reminiscent of a lounge, it features comfortable couches at numerous bays and offers drinks for purchase as well. This location tends to be less busy than it's Edison counterpart but still can get pretty full, especially during peak seasons. Bonus - on Tuesday nights play is half off!",
     closes: 1,
     categoryId: 1,
   },
@@ -59,7 +59,7 @@ export const Activities = [
     website:
       "https://www.daveandbusters.com/us/en/about/locations/woodbridge-middlesex",
     description:
-      "A great option for a quick date night and half off on wednesdays!",
+      "Dave & Buster's is an ideal spot for a relaxed evening of arcade gaming and entertainment. You can accumulate tickets on your game card while working towards exciting prizes as a team. Plus, don't miss the added bonus: every Wednesday, you can enjoy all the games at half the regular price, making it the perfect midweek outing",
     closes: 12,
     categoryId: 1,
   },
@@ -68,7 +68,7 @@ export const Activities = [
     address: "300 Ocean Ave N, Point Pleasant Beach, NJ 08742",
     website: "https://jenkinsons.com/",
     description:
-      "A smaller boardwalk with arcades and kosher ice cream. Fireworks every thursday night from memorial day to labor day",
+      "Jenkinsons offers a lively but not overwhelmingly crowded boardwalk experience, striking the perfect balance for a fun outing. You'll discover a variety of carnival-style booths and arcades to enjoy. They also have several amusement type rides and two mini-golf locations.  Multiple locations offer delicious Kosher ice cream, adding a sweet touch to your visit. And for an extra dose of excitement, make sure to catch their spectacular Thursday night fireworks show, held weekly from Labor Day to Memorial Day. The boardwalk tends to quiet down after 10pm",
     closes: 12,
     categoryId: 2,
   },
@@ -77,7 +77,7 @@ export const Activities = [
     address: "Point pleasant beach",
     website: "https://pointpleasantbeach.org/",
     description:
-      "A larget boardwalk with games and food. The beach is open at night. ",
+      "Seaside Heights Boardwalk is a sprawling entertainment destination, offering a vast array of games, rides, and exciting attractions that surpass the offerings at Jenkinson's. One of its standout features is the remarkable Wednesday night fireworks extravaganza, accompanied by captivating music and dazzling lights, creating a truly memorable experience for visitors",
     closes: 12,
     categoryId: 2,
   },
@@ -85,7 +85,8 @@ export const Activities = [
     name: "Sprinkles - South",
     address: "1091 River Ave, Lakewood, NJ 08701",
     website: "https://sprinkleskosher.com/lakewood-todd-plaza/",
-    description: "A classic ice cream store",
+    description:
+      "An iconic ice-cream store in Lakewood. Perfect for when you're in the mood of a quick local outing. They close at 10 and tend to be less busy than their northern counterpart.",
     closes: 10,
     categoryId: 2,
   },
@@ -93,7 +94,8 @@ export const Activities = [
     name: "Sprinkles - North",
     address: "1700 Madison Ave #12, Lakewood, NJ 08701",
     website: "https://sprinkleskosher.com/lakewood-gg-plaza/",
-    description: "a classic ice cream store",
+    description:
+      "An iconic ice-cream store in Lakewood. Perfect for when you're in the mood of a quick local outing. It's a popular choice for reunions and other gatherings so expect to see some familiar faces!",
     closes: 10,
     categoryId: 2,
   },
@@ -101,7 +103,8 @@ export const Activities = [
     name: "Cream Gelateria",
     address: "12 America Ave, Lakewood, NJ 08701",
     website: "https://creamgelateria.com/",
-    description: "An upscale ice cream store known for their acai bowls",
+    description:
+      "A more upscale ice-cream store offering a variety of flavors and speciality items. Renowned for their acai bowls, Cream is a popular choice for reunions and gatherings so it can get crowded. Please note that they may close for private events on occasion. As the evening progresses, they might run low on certain items, but you'll typically find a generous selection to satisfy your cravings.",
     closes: 1130,
     categoryId: 2,
   },
@@ -109,7 +112,8 @@ export const Activities = [
     name: "Avery & Jay's Handcrafted Ice Cream",
     address: "1135 E Veterans Hwy, Jackson Township, NJ 08527",
     website: "https://www.averyandjays.com/",
-    description: "An upscale ice cream store",
+    description:
+      "A newcomer on the scene, Avery and Jays is a popular upscale ice-cream shopp offering a variety of flavors and other specialty items.  The best part? They stay open until 11 PM, making it the perfect choice for those late-night sweet cravings.",
     closes: 11,
     categoryId: 2,
   },
@@ -118,7 +122,7 @@ export const Activities = [
     address: "681 River Ave, Lakewood, NJ 08701",
     website: "https://www.ritasice.com/location/ritas-of-lakewood-nj/",
     description:
-      "A classic ice cream and water ice destination. Seating area closes at 10",
+      "A landmark in Lakewood, this Ritas location offers in-store seating and a wide array of flavors of water ice and ice-cream. While the seating area is available until 10 PM, the store continues to serve its delicious treats until 11 PM, ensuring you can satisfy your cravings until late into the evening.",
     closes: 11,
     categoryId: 2,
   },
@@ -126,7 +130,8 @@ export const Activities = [
     name: "Rita's - Jackson",
     address: "2105 W County Line Rd, Jackson Township, NJ 08527",
     website: "https://www.ritasice.com/location/ritas-of-jackson-nj/",
-    description: "A class ice cream and water ice destination",
+    description:
+      "A classic water ice and ice-cream store. This location does not offer in-store seating and closes at 10pm",
     closes: 10,
     categoryId: 2,
   },
@@ -135,26 +140,25 @@ export const Activities = [
     address: "402 Lexington Ave, Lakewood, NJ 08701",
     website: "https://www.instagram.com/yismachyisroelicecream/?hl=en",
     description:
-      "A small and homey ice cream shop that offers ten percent off to BMG card carrying members",
+      "This charming, cozy ice cream shop not only serves up delicious treats but also offers a selection of gifts and goodies. Bonus- they offer 10% off to BMG card-carrying members!",
     closes: 1030,
     categoryId: 2,
   },
   {
     name: "Swingtime",
     address: "2390 US-9, Howell Township, NJ 07731",
-    website: "https://www.instagram.com/yismachyisroelicecream/?hl=en",
+    website: "https://www.swingtimefamilyfun.com/",
     description:
-      "Houses mini golf, arcades and batting cages, Only open Spring to fall",
-    closes: 10,
+      "Swingtime is a versatile entertainment hub that caters to a variety of interests, boasting an array of activities such as mini golf, arcades, and batting cages. It's a sought-after spot for couples seeking quality time together. With closing hours typically at 11 PM, it's a great choice for a late-night outing. However, please note that their hours may vary, so it's advisable to double-check before planning your visit to ensure you don't miss out on the fun.",
+    closes: 11,
     categoryId: 1,
   },
-  //CHECK FOR BETTER HOURS
   {
     name: "Castaway Cove",
     address: "300 Ocean Ave N, Point Pleasant Beach, NJ 08742",
     website: "https://jenkinsons.com/",
     description:
-      "A pirate themed mini golf adventure located by Jenkinsens Boardwalk. Hours vary by season",
+      "For those seeking a fun beach night with a side of adventure, this pirate-themed mini-golf is a fantastic choice! Set sail on a swashbuckling journey through exciting courses. Please note that the operating hours may fluctuate with the changing seasons, so it's a good idea to check ahead to ensure a smooth voyage into a day of fun and excitement!",
     closes: 10,
     categoryId: 1,
   },

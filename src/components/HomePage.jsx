@@ -19,6 +19,7 @@ import WelcomeBanner from "./HomePageComponents/WelcomeBanner";
 import Lottie from "lottie-react";
 import SwayingHearts from "./lottie/SwayingHearts.json";
 import Thought from "./lottie/Thought.json";
+import TwoHearts from "./pictures/TwoHearts.png";
 
 const HomePage = () => {
   const { fullActivityList, getListToUse } = useActivityContext();
@@ -86,7 +87,9 @@ const HomePage = () => {
               </div>
             </HomePageSectionWrap>
             <div style={{ width: "20%" }}>
-              <Lottie animationData={SwayingHearts} loop={true} />
+              <img src={TwoHearts} width={100} height={100}/>
+              <img src={TwoHearts} width={100} height={100}/>
+              <img src={TwoHearts} width={100} height={100}/>
             </div>
           </div>
           <div
@@ -96,10 +99,9 @@ const HomePage = () => {
               justifyContent: "space-between",
               height: 500,
               alignItems: "center",
-
             }}
           >
-            <div style={{ width: "20%" }}>
+            <div style={{ width: "2%" }}>
               <Lottie animationData={Thought} loop={true} />
             </div>
             <HomePageSectionWrap>
