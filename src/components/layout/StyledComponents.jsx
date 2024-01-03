@@ -37,9 +37,9 @@ export const NavLinkStyle = styled.div`
 export const ContactButton = styled.button`
   background: #15AAAA;
   border-radius: 30px;
-  padding: 13px; 27px;
+  padding: 13px; 48px;
   cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
-  color: black;
+  color: white;
   border: none;
   :hover {
     background: #6ACDCD;

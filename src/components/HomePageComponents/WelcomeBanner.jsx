@@ -13,7 +13,7 @@ const WelcomeBanner = () => {
       <div style={{ fontSize: 48, marginBottom: 36 }}>
         Welcome to ShanaRishonah.com
       </div>
-      <div style={{ fontSize: 32, marginBottom: 36, fontStyle: "italic" }}>
+      <div style={{ fontSize: 24, marginBottom: 36, fontStyle: "italic", color: 'darkgray' }}>
         Your ultimate destination for everything Shana Rishonah!
       </div>
     </div>

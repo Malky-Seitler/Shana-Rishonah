@@ -132,13 +132,13 @@ export const FeedbackButton = styled.button`
   background: #bdf700;
   border-radius: 30px;
   padding: 13px; 27px;
-  width: 12%;
   cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
   color: black;
   border: none;
   :hover {
     background: #c2e063;
   }
+  margin-top: 24px;
   @media (max-width: 1024px) {
     width: 100%;
     margin-top: 48px;
@@ -164,10 +164,28 @@ export const HomePageTitleType = styled.div`
   font-size: 32px;
   margin-bottom: 24px;
   line-height: 1px;
-  text-decoration: underline;
   font-style: italic;
+  line-height: 1;
+  color: #15AAAA;
 `;
 
 export const HomePageSectionWrap = styled.div`
-  width: 45%;
+  border-radius: 36px;
+  border: 4px solid #98c600;
+  margin: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  box-shadow: 0px 8px 12px rgba(152,198,0);
+  :hover {
+    transform: translateY(-10px);
+  }
+`;
+export const HomePageText = styled.div`
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
 `;
