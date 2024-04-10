@@ -53,7 +53,7 @@ const HomePage = () => {
             }}
           >
             <WelcomeBanner />
-            <div style={{ display: "flex", width: "75%" }}>
+            <div style={{ display: "flex" }}>
               <HomePageSectionWrap>
                 <HomePageTitleType>Our Mission</HomePageTitleType>
                 <HomePageText>
