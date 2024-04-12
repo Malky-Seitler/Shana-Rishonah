@@ -8,27 +8,13 @@ import {
   TopPart,
 } from "./StyledComponents";
 import { Icon } from "semantic-ui-react";
-import Header from "./Header.png";
 import { DesktopWrapper, MobileWrapper } from "./layout/StyledComponents";
 
 const ActivityCard = ({ activity }) => {
   const [image, setImage] = useState(null);
-  const getImage = async () => {
-    try {
-      const img = await import(
-        `./pictures/${activity.name.replace(/\s/g, "").toLowerCase()}.jpg`
-      );
-      if (img) {
-        setImage(img.default);
-      } else {
-        setImage(Header);
-      }
-    } catch (e) {
-      setImage(Header);
-    }
-  };
+
   useEffect(() => {
-    getImage();
+    console.log('here')
   }, []);
   return (
     <>

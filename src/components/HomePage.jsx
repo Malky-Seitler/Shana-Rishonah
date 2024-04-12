@@ -37,11 +37,10 @@ const HomePage = () => {
   }, [type]);
 
   return (
-    <div style={{ width: "100%" }}>
+    <div style={{ width: "100%", padding:36 }}>
       <DesktopWrapper>
         <div
           style={{
-            marginTop: 24,
             width: "100%",
           }}
         >
