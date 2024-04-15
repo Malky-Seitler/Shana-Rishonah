@@ -24,7 +24,7 @@ import { DesktopWrapper, MobileWrapper } from "./layout/StyledComponents";
 import Pagination from "./Pagination";
 
 const HomePage = () => {
-  const { fullActivityList, getListToUse } = useActivityContext();
+  const { fullActivityList,  } = useActivityContext();
 
   const [activityIndex, setActivityIndex] = useState(0);
   const { type } = useParams();
@@ -32,7 +32,7 @@ const HomePage = () => {
   const [showFeedbackModal, setShowFeedbackModal] = useState(false);
 
   useEffect(() => {
-    getListToUse(type);
+    // getListToUse(type);
     setActivityIndex(0);
   }, [type]);
 

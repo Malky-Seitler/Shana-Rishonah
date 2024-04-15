@@ -11,7 +11,6 @@ import { Icon } from "semantic-ui-react";
 import { DesktopWrapper, MobileWrapper } from "./layout/StyledComponents";
 
 const ActivityCard = ({ activity }) => {
-  const [image, setImage] = useState(null);
 
   useEffect(() => {
     console.log('here')
@@ -46,7 +45,7 @@ const ActivityCard = ({ activity }) => {
             </Flex>
           </TopPart>
           <TextWrap>{activity.description}</TextWrap>
-          <PictureWrap src={image} width={"45%"} height={"45%"}></PictureWrap>
+          <PictureWrap src={activity.img} width={"45%"} height={"45%"}></PictureWrap>
         </ActivityCardContainer>
       </DesktopWrapper>
       <MobileWrapper>
@@ -72,7 +71,7 @@ const ActivityCard = ({ activity }) => {
               </a>
             </Flex>
           </TopPart>
-          <PictureWrap src={image} width={"100%"} height={"25%"}></PictureWrap>
+          <PictureWrap src={activity.img} width={"100%"} height={"25%"}></PictureWrap>
           <TextWrap>{activity.description}</TextWrap>
         </ActivityCardContainer>
       </MobileWrapper>
