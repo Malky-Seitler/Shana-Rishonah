@@ -73,7 +73,7 @@ export const Activities = [
     categoryId: 2,
   },
   {
-    name: "Point Pleasant Boardwalk",
+    name: "Seaside Heights Boardwalk",
     address: "Point pleasant beach",
     website: "https://pointpleasantbeach.org/",
     description:
@@ -260,7 +260,7 @@ export const Activities = [
     categoryId: 0,
   },
   {
-    name: "Quick Chek",
+    name: "Quick Check",
     address: "901 Cedar Bridge Ave, Lakewood, NJ 08701",
     website: "https://quickchek.com/",
     description: "Grab a slurpee",
