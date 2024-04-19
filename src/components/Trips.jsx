@@ -176,7 +176,7 @@ export const Activities = [
     address: "101 Crawfords Corner Rd, Holmdel, NJ 07733",
     website: "https://bell.works/",
     description:
-      "A lobby type destination great for nights you want to get out and talk or play games in a different setting. There is a deck with couches and swings and ping pong tables inside",
+      "A lobby type destination great for nights you want to get out and talk or play games in a different setting. There is a stunning patio outside with chairs and swings, but the doors lock at 11 so beware! For a new experience try visiting during the day!",
     closes: 12,
     categoryId: 1,
   },
@@ -186,7 +186,7 @@ export const Activities = [
     address: "1700 Madison Ave, Lakewood, NJ 08701",
     website: "https://www.thepaintbrushnj.com/",
     description:
-      "A great place to chill and paint. They are open till 10 on Mondays and Wednesdays and 8 on Tuesdays.",
+      "A great place to chill and paint. They are open till 10 on Mondays and Wednesdays and 8 on Tuesdays. They can get crowded and you will probably meet someone you know there if you are from Lakewood",
     closes: 10,
     categoryId: 2,
   },
@@ -196,7 +196,7 @@ export const Activities = [
     website:
       "https://www.google.com/search?rlz=1C1ONGR_enUS1054US1054&q=couple+paint+party+at+home+ideas&tbm=isch&source=univ&fir=qapPFmLjJKKh_M%252C_Dt-E3qR9FwN5M%252C_%253BHPu2_7KVYnN74M%252CHXuXnOyr5kuBBM%252C_%253BU39B_ptfKjei6M%252CdTXhwyuiGpWkwM%252C_%253BO6Reh6-t82k45M%252CfAc9rEjuJV0tGM%252C_%253Bu0iUrg4fw9fjLM%252C8zRRkXWAqIZ-oM%252C_%253B0D7_JVlcdKAD5M%252CfAc9rEjuJV0tGM%252C_%253BXIlyO9bKhjp_QM%252CfAc9rEjuJV0tGM%252C_%253Bx6ns8gz4hxmhuM%252CHXuXnOyr5kuBBM%252C_%253BT3Sj8hGg_M0A6M%252C8zRRkXWAqIZ-oM%252C_%253BiUdhd0cCc5TdpM%252CEPT1pJbXfZgPHM%252C_&usg=AI4_-kTO22ehSHP7saI_tLY9TijmSjT19A&sa=X&ved=2ahUKEwiysa-Pzrz_AhWBMlkFHdh1BaIQjJkEegQIFxAC&biw=1366&bih=649&dpr=1",
     description:
-      "A great and fun way to spend some quality time together at home. You can get canvases and paints at any crafts store",
+      "A great and fun way to spend some quality time together at home. You can get canvases and paints at any crafts store. Then google for paint at home ideas. Make sure to display your masterpeices somewhere in your house when you are finished!",
     closes: 0,
     categoryId: 3,
   },
@@ -206,7 +206,7 @@ export const Activities = [
     website:
       "https://www.google.com/search?q=great+games+for+couples+to+play+at+home&rlz=1C1ONGR_enUS1054US1054&oq=great+games+for+couples+to+play+at+home&aqs=chrome..69i57j33i160l2j33i299.5315j0j7&sourceid=chrome&ie=UTF-8",
     description:
-      "Start a collection of fun and quick games you can play at home. Some good suggestions include bananagrams, jenga, boggle and ticket to ride",
+      "Start a collection of fun and quick games you can play at home. Some good suggestions include bananagrams, jenga, boggle and ticket to ride. Great for when you have a half hour to kill but aren't in the mood of going out.",
     closes: 0,
     categoryId: 3,
   },
@@ -214,7 +214,8 @@ export const Activities = [
     name: "Escapology Escape Rooms, Holmdell",
     address: "101 Crawfords Corner Rd, Holmdel, NJ 07733",
     website: "https://www.escapology.com/en/holmdel-nj",
-    description: "An upscale escape room located in Bellworks",
+    description:
+      "An upscale escape room located in Bellworks. Combine 2 trips in one!",
     closes: 10,
     categoryId: 1,
   },
@@ -222,7 +223,8 @@ export const Activities = [
     name: "Solve the Room Escape Rooms",
     address: "1555 NJ-37 #12, Toms River, NJ 08755",
     website: "https://www.solvetheroomnj.com/",
-    description: "A fun escape room located in Toms River and open until 11",
+    description:
+      "A fun escape room located in Toms River and open until 11. Check out their website to discover all their experiences",
     closes: 11,
     categoryId: 1,
   },
@@ -230,7 +232,8 @@ export const Activities = [
     name: "Island Beach State Park",
     address: "2401 Central Ave Seaside Park, NJ 08752",
     website: "http://www.islandbeachnj.org/",
-    description: "A state park located on a beach",
+    description:
+      "A state park located on a beach. Known to be especially pretty and a good walk",
     closes: 8,
     categoryId: 0,
   },
@@ -238,7 +241,7 @@ export const Activities = [
     name: "Brick Reservoir",
     address: "811 Herbertsville Rd, Brick Township, NJ 08724",
     website: "https://www.getoutsidenj.com/places/brick-reservoir/",
-    description: "A pleasant place for a walk bit over a mile",
+    description: "A pleasant place for a walk bit over a mile.",
     closes: 8,
     categoryId: 0,
   },
@@ -255,7 +258,8 @@ export const Activities = [
     name: "American Dream Mall",
     address: "1 American Dream Wy, East Rutherford, NJ 07073",
     website: "https://www.americandream.com/",
-    description: "There is tons to do here!",
+    description:
+      "American Dream offers a wide range of entertainment as well as Kosher Food making it an amazing destination for when you have a few hours. The attractions close around 8 so try to get there early. ",
     closes: 930,
     categoryId: 0,
   },
@@ -279,7 +283,7 @@ export const Activities = [
     name: "7-11",
     address: "200 River Ave, Lakewood, NJ 08701",
     website: "https://www.7-eleven.com/",
-    description: "Grab a slurpee use the app for deals and offers",
+    description: "Grab a slurpee - use the app for deals and offers",
     closes: null,
     categoryId: 2,
   },
