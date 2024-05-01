@@ -131,7 +131,7 @@ export const Activities = [
     address: "2105 W County Line Rd, Jackson Township, NJ 08527",
     website: "https://www.ritasice.com/location/ritas-of-jackson-nj/",
     description:
-      "A classic water ice and ice-cream store. This location does not offer in-store seating and closes at 10pm",
+      "A classic water ice and ice-cream store. This location does not offer in-store seating and closes at 10pm.",
     closes: 10,
     categoryId: 2,
   },
@@ -241,7 +241,8 @@ export const Activities = [
     name: "Brick Reservoir",
     address: "811 Herbertsville Rd, Brick Township, NJ 08724",
     website: "https://www.getoutsidenj.com/places/brick-reservoir/",
-    description: "A pleasant place for a walk bit over a mile.",
+    description:
+      "A pleasant, scenic place for a walk bit over a mile. Tends to be very popular on nicer days",
     closes: 8,
     categoryId: 0,
   },
@@ -259,7 +260,7 @@ export const Activities = [
     address: "1 American Dream Wy, East Rutherford, NJ 07073",
     website: "https://www.americandream.com/",
     description:
-      "American Dream offers a wide range of entertainment as well as Kosher Food making it an amazing destination for when you have a few hours. The attractions close around 8 so try to get there early. ",
+      "American Dream offers a wide range of entertainment as well as Kosher Food making it an amazing destination for when you have a few hours. The attractions close around 8 so try to get there early. Its also a great place to just walk and chill - no need to spend any money to have a great time!",
     closes: 930,
     categoryId: 0,
   },
@@ -267,7 +268,8 @@ export const Activities = [
     name: "Quick Check",
     address: "901 Cedar Bridge Ave, Lakewood, NJ 08701",
     website: "https://quickchek.com/",
-    description: "Grab a slurpee",
+    description:
+      "A great idea for a quick trip. Perfect for when you need to get out but don't have a lot of time!",
     closes: null,
     categoryId: 2,
   },
@@ -275,7 +277,8 @@ export const Activities = [
     name: "Wawa",
     address: "135 NJ-70, Lakewood, NJ 08701",
     website: "https://www.wawa.com/",
-    description: "Grab a slurpee",
+    description:
+      "A great idea for a quick trip. Perfect for when you need to get out but don't have a lot of time!",
     closes: null,
     categoryId: 2,
   },
@@ -328,7 +331,8 @@ export const Activities = [
     name: "Go to a Sports Game",
     address: null,
     website: "https://gametime.co/",
-    description: "Check online to see whos playing near you",
+    description:
+      "Check online to see whos playing near you. You can great prices right before the game - no need to book in advance! There is even kosher food at MetLife!",
     closes: null,
     categoryId: 1,
   },
