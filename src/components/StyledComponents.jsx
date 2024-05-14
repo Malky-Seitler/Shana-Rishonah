@@ -166,7 +166,7 @@ export const HomePageTitleType = styled.div`
   line-height: 1px;
   font-style: italic;
   line-height: 1;
-  color: #ffaed7;
+  color: #15aaaa;
 `;
 
 export const HomePageSectionWrap = styled.div`

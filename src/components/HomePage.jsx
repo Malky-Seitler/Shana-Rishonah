@@ -26,6 +26,7 @@ import Pagination from "./Pagination";
 //color pallate :
 // #ffaed7 pink
 // #bdf700 green
+// #15AAAA blue
 
 const HomePage = () => {
   const { fullActivityList } = useActivityContext();
@@ -82,7 +83,7 @@ const HomePage = () => {
                   in touch with us through our{" "}
                   <Link
                     style={{
-                      color: "#ffaed7",
+                      color: "#15AAAA",
                       marginTop: 2,
                       cursor: "pointer",
                     }}
