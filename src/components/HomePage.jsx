@@ -24,7 +24,7 @@ import { DesktopWrapper, MobileWrapper } from "./layout/StyledComponents";
 import Pagination from "./Pagination";
 
 const HomePage = () => {
-  const { fullActivityList,  } = useActivityContext();
+  const { fullActivityList } = useActivityContext();
 
   const [activityIndex, setActivityIndex] = useState(0);
   const { type } = useParams();
@@ -37,7 +37,7 @@ const HomePage = () => {
   }, [type]);
 
   return (
-    <div style={{ width: "100%", padding:36 }}>
+    <div style={{ width: "100%", padding: 36 }}>
       <DesktopWrapper>
         <div
           style={{
@@ -78,7 +78,7 @@ const HomePage = () => {
                   in touch with us through our{" "}
                   <Link
                     style={{
-                      color: "#15AAAA",
+                      color: "#ffaed7",
                       marginTop: 2,
                       cursor: "pointer",
                     }}

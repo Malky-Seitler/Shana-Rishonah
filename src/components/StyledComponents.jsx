@@ -166,7 +166,7 @@ export const HomePageTitleType = styled.div`
   line-height: 1px;
   font-style: italic;
   line-height: 1;
-  color: #15AAAA;
+  color: #ffaed7;
 `;
 
 export const HomePageSectionWrap = styled.div`
@@ -178,7 +178,7 @@ export const HomePageSectionWrap = styled.div`
   flex-direction: column;
   align-items: center;
   width: 450px;
-  box-shadow: 0px 8px 12px rgba(152,198,0);
+  box-shadow: 0px 8px 12px rgba(152, 198, 0);
   :hover {
     transform: translateY(-10px);
   }

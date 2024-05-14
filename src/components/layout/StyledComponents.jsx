@@ -32,10 +32,9 @@ export const NavLinkStyle = styled.div`
     text-decoration: underline;
   }
   text-decoration: ${(props) => (props.selected ? "underline" : "none")};
-
 `;
 export const ContactButton = styled.button`
-  background: #15AAAA;
+  background: #ffaed7;
   border-radius: 30px;
   padding: 13px; 48px;
   cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
