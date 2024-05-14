@@ -23,6 +23,10 @@ import Target from "./lottie/Target.json";
 import { DesktopWrapper, MobileWrapper } from "./layout/StyledComponents";
 import Pagination from "./Pagination";
 
+//color pallate :
+// #ffaed7 pink
+// #bdf700 green
+
 const HomePage = () => {
   const { fullActivityList } = useActivityContext();
 
