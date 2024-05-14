@@ -350,7 +350,8 @@ export const Activities = [
     name: "Have a cook-off or bake-off",
     address: null,
     website: "https://jacofallthings.com/date-night-cooking-challenge/",
-    description: "Some text for this activity",
+    description:
+      "Who's really the pro in the kitchen?? Have fun baking and cooking up a storm - and if everything tastes alright - you've got supper for tomorrow already prepared!",
     closes: null,
     categoryId: 3,
   },
@@ -359,7 +360,8 @@ export const Activities = [
     address: "421 River Ave, Point Pleasant Beach, NJ 08742",
     website:
       "https://www.yelp.com/biz/shore-riders-bike-rentals-point-pleasant-beach",
-    description: "Some text for this activity",
+    description:
+      "Rent a cute 2 person bike and get your daily workout in while pedeling down the boardwalk!",
     closes: 5,
     categoryId: 0,
   },
@@ -368,7 +370,8 @@ export const Activities = [
     address: null,
     website:
       "https://www.kosher.com/recipe/the-perfect-chocolate-chip-cookie-recipe-4133",
-    description: "Some text for this activity",
+    description:
+      "Different than a bake-off - this activity has you both rolling up your sleeves and rolling out some dough! This kosher.com recipe is an absolute winner!",
     closes: null,
     categoryId: 3,
   },
@@ -376,7 +379,8 @@ export const Activities = [
     name: "Barnes and Noble",
     address: "44 Brick Plaza, Brick Township, NJ 08723",
     website: "https://www.barnesandnoble.com/",
-    description: "Some text for this activity",
+    description:
+      "Browse one of the biggest bookstores and see what books you remember from your childhood and which are on your must-read list. And perhaps you'll find some new material as well!",
     closes: 9,
     categoryId: 2,
   },
@@ -385,7 +389,8 @@ export const Activities = [
     address: "",
     website:
       "https://myspicyvanilla.com/date-idea/take-photo-walk#:~:text=If%20you%20don't%20know,some%20stunning%20and%20interesting%20photos.",
-    description: "Some text for this activity",
+    description:
+      "Is regular walking too dull an activity for you? Take a photo-walk - a walk to take selfies! Pick a place and have fun taking some cute, pretty and zany pictures!",
     closes: null,
     categoryId: 3,
   },
@@ -393,7 +398,8 @@ export const Activities = [
     name: "Insectropolis",
     address: "1761 Lakewood Rd, Toms River, NJ 08755, USA ",
     website: "http://insectropolis.com/",
-    description: "Some text for this activity has weird hours",
+    description:
+      "Set within the architecture of a bug-themed city, our creative displays entertain guests as they learn about these fascinating creatures.",
     closes: 5,
     categoryId: 0,
   },
@@ -401,7 +407,8 @@ export const Activities = [
     name: "Make a music video",
     address: "",
     website: "https://invideo.io/blog/how-to-make-a-music-video/",
-    description: "Some text for this activity",
+    description:
+      "Pick a song, grab a tripod and get to work!! Don't forget to send out your new video to all your friends and family!",
     closes: null,
     categoryId: 3,
   },
@@ -410,7 +417,8 @@ export const Activities = [
     address: "",
     website:
       "https://blog.motifphotos.com/celebrate-your-selfie-10-ideas-for-selfies-that-reflect-the-real-you/",
-    description: "Some text for this activity",
+    description:
+      "Set up a photo booth at home - Dollar Tree can have some great props - and have fun taking pictures in poses you can't really try anywhere else :)",
     closes: null,
     categoryId: 3,
   },
@@ -418,7 +426,8 @@ export const Activities = [
     name: "Learn something new together",
     address: "",
     website: "https://www.ted.com/talks",
-    description: "Some text for this activity",
+    description:
+      "Watch a Ted Talk, read a book or google a how-to video and learn something new! It can be a skill, a new thought - anything you never knew before!",
     closes: null,
     categoryId: 3,
   },
@@ -427,7 +436,8 @@ export const Activities = [
     address: "",
     website:
       "https://www.thesprucecrafts.com/basic-candle-making-instructions-516753",
-    description: "Some text for this activity",
+    description:
+      "Follow the instructions in the link above for this simple, yet fun activity! And you get something out of it too!",
     closes: null,
     categoryId: 3,
   },
@@ -435,7 +445,8 @@ export const Activities = [
     name: "Six Flags Great Adventure",
     address: "1 Six Flags Boulevard, Jackson, NJ 08527",
     website: "https://www.sixflags.com/greatadventure",
-    description: "Some text for this activity",
+    description:
+      "Check out this famous attraction! The amusement park is huge with something that can appeal to everyone. From huge rollar coasters to the boardwalk arcades you're sure to have a great time! Just be sure to check for hours since the park is only open seasonally. ",
     closes: 6,
     categoryId: 0,
   },
@@ -443,7 +454,8 @@ export const Activities = [
     name: "Six Flags Safari",
     address: "1 Six Flags Boulevard, Jackson, NJ 08527",
     website: "https://www.sixflags.com/wildsafariadventure",
-    description: "Some text for this activity",
+    description:
+      "A great idea for a rainy Sunday afternoon when you just need to get out. The safari is open seasonally so check in for hours before heading out on your expidition!",
     closes: 4,
     categoryId: 2,
   },
@@ -451,7 +463,8 @@ export const Activities = [
     name: "Read a book together",
     address: "",
     website: "https://www.goodreads.com/",
-    description: "Some text for this activity",
+    description:
+      "Choose a novel you both would like to read and jump in! Read over each others shoulders or take turns reading out loud!",
     closes: null,
     categoryId: 3,
   },
@@ -460,7 +473,8 @@ export const Activities = [
     address: "",
     website:
       "https://www.galioninquirer.com/2020/02/24/make-an-effort-to-write-more-letters-to-family-friends/",
-    description: "Some text for this activity",
+    description:
+      "Write a letter to that older relative of yours that you haven't spoken to recently. You're sure to brighten their day when they recieve communication from their family! Writing to younger siblings or friends can also be fun - and a great surprise for them!",
     closes: null,
     categoryId: 3,
   },
@@ -468,7 +482,8 @@ export const Activities = [
     name: "Visit an animal shelter",
     address: "615 Freemont Ave, Jackson, NJ 08527",
     website: "https://www.ochd.org/animal-shelters-adoptions/",
-    description: "Some text for this activity",
+    description:
+      "Want to spend time with some furry friends but can't get a pet? Try finding a local animal shelter where you can volunteer some help - and get some playtime in as well!",
     closes: 430,
     categoryId: 0,
   },
@@ -476,7 +491,8 @@ export const Activities = [
     name: "Ocean County Library",
     address: "301 Lexington Ave, Lakewood, NJ 08701",
     website: "https://theoceancountylibrary.org/",
-    description: "Some text for this activity",
+    description:
+      "Visit the library and browse (great opportunity to find something new to learn!). Check online for the schedule - many libraries offer activities and events",
     closes: 9,
     categoryId: 2,
   },
@@ -484,7 +500,8 @@ export const Activities = [
     name: "Huddy Park",
     address: "39 E Water St, Toms River, NJ 08753",
     website: "https://downtowntomsriver.com/venue/huddy-park-toms-river-nj/",
-    description: "Some text for this activity",
+    description:
+      "A small but scenic walk, Huddy Park is located in Toms River near the library. It's a great choice for when you want to get out a bit further than usual. Best part? It's open 24/7 making it a great place for a midnight (or evening) stroll.",
     closes: 1,
     categoryId: 2,
   },
@@ -492,7 +509,8 @@ export const Activities = [
     name: "Jenkensins Aquarium",
     address: "300 Ocean Ave N, Point Pleasant Beach, NJ 08742",
     website: "https://jenkinsons.com/aquarium/",
-    description: "Some text for this activity",
+    description:
+      "Located off the boardwalk, Jenkensins Aquarium is a lovely place to visit. They have many exhibits and experiences to offer. You can even book a behind the scenes tour or a meet the animals experience! Check their website for the schedule of upcoming events.",
     closes: 5,
     categoryId: 0,
   },
@@ -500,7 +518,8 @@ export const Activities = [
     name: "RPM Raceway",
     address: "99 Caven Point Rd, Jersey City, NJ 07305",
     website: "https://www.rpmraceway.com/jersey-city-nj",
-    description: "Some text for this activity",
+    description:
+      "More than just a raceway, RPM offers a wide range of activites from VR to arcades and even luxery bowling! Of course don't forget to check out their their mega track with state of the art karts to race with!",
     closes: 10,
     categoryId: 2,
   },
@@ -509,7 +528,7 @@ export const Activities = [
     address: "1103 U.S. ROUTE 130 SOUTH CINNAMINSON, NJ 08077",
     website: "https://www.k1speed.com/cinnaminson-location.html",
     description:
-      "Some text for this activity differen hours for weekend till 12",
+      "A large race track that offers the opportunity for an awesome race! Experience the 12 lap race in this large indoor race course.",
     closes: 10,
     categoryId: 2,
   },
@@ -518,7 +537,8 @@ export const Activities = [
     address: "1137 Roe Ave, Point Pleasant, NJ 08742",
     website:
       "https://www.levyelectric.com/electric-scooter-rentals/point-pleasant",
-    description: "Some text for this activity",
+    description:
+      "This is an app based scooter rental so keep in mind you will need a smart device to rent! Simply walk up to the scooters, use the app to unlock one, and have a blast exploring the boardwalk!",
     closes: 10,
     categoryId: 2,
   },
@@ -526,7 +546,8 @@ export const Activities = [
     name: "Eagle Rock Reservation and City Lookout",
     address: "Eagle Rock Ave &, Prospect Ave, West Orange, NJ 07052",
     website: "https://essexcountyparks.org/parks/eagle-rock-reservation",
-    description: "Some text for this activity",
+    description:
+      "A quiet, romantic trip for when you have some more time but are not in the mood of a big exciting trip. Enjoy gorgeous views of the city while exploring this 9/11 memorial. The views are nice at night as well!",
     closes: 12,
     categoryId: 1,
   },
@@ -534,15 +555,17 @@ export const Activities = [
     name: "Glassworks Studio",
     address: "151 South Street Morristown, NJ 07960",
     website: "https://www.umakeglass.com/",
-    description: "Some text for this activity",
+    description:
+      "Similar to Make-It-Glass in lakewood, this art studio offers a wide array of crafts you can make using small pieces of glass. They are open until 9 on Thursdays making it a great choice if you want a nice drive and activity.",
     closes: 5,
     categoryId: 0,
   },
   {
-    name: "Spring Lake Beach",
+    name: "Spring Lake Beach and Lake",
     address: "Spring Lake Beach, Spring Lake, NJ 07762",
     website: "https://www.springlake.org/",
-    description: "Some text for this activity",
+    description:
+      "About a half hour from Lakewood, this stunning lake offers a pretty walk as well as a beach down the block. It can be crowded but offers a great change from the typical Lakewood walkways.",
     closes: 12,
     categoryId: 2,
   },
@@ -559,7 +582,8 @@ export const Activities = [
     name: "OasisVRX",
     address: "101 Crawfords Corner Rd, Holmdel, NJ 07733",
     website: "https://oasisvrx.com/",
-    description: "Some text for this activity",
+    description:
+      "An upscale VR experience located in Bellworks. Groups play together, though in seperate cubicles. Closes relatively late (10pm) so it's a great activity for when you are in the mood for a visit to Bellworks",
     closes: 10,
     categoryId: 2,
   },
