@@ -5,7 +5,7 @@ export const ActivityCardContainer = styled.div`
   border: 1px solid black;
   padding: 24px;
   width: 550px;
-  height: 305px;
+  height: 350px;
   position: relative;
   @media (max-width: 425px) {
     width: 298px;
@@ -43,7 +43,7 @@ export const TextWrap = styled.div`
   width: 50%;
   margin-top: 16px;
   padding-right: 16px;
-  padding-left: 16px;
+  // padding-left: 16px ;
   @media (max-width: 425px) {
     width: 100%;
   }

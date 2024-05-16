@@ -41,7 +41,7 @@ export const ContactButton = styled.button`
   color: white;
   border: none;
   :hover {
-    background: #6ACDCD;
+    background: #ff77bc;
   };
 `;
 export const TopWrapperMobile = styled.div`

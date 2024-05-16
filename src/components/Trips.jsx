@@ -574,7 +574,8 @@ export const Activities = [
     address:
       "John F. Kennedy International Airport, JFK Access Road One, Idlewild Dr, NY 11430",
     website: "https://www.twahotel.com/",
-    description: "Some text for this activity",
+    description:
+      "An airport themed hotel featuring a variety of seating and strolling areas replicating airport gates and lounges.",
     closes: 12,
     categoryId: 1,
   },
@@ -591,7 +592,8 @@ export const Activities = [
     name: "VRtual Nexgen Gaming Arcade",
     address: "950 Hooper Ave Unit 3 Toms River, NJ 08753",
     website: "https://oasisvrx.com/",
-    description: "Some text for this activity",
+    description:
+      "Experience the wonder of virtual reality just a few minutes out of Lakewood. Guests that come together can communicate over headphones but you will be in seperate cubicles. Book online to ensure availability.",
     closes: 10,
     categoryId: 2,
   },
@@ -599,7 +601,8 @@ export const Activities = [
     name: "Side Pocket Billiards",
     address: "4308 US-9, Howell Township, NJ 07731",
     website: "https://sidepocketnj.com/",
-    description: "Some text for this activity",
+    description:
+      "A great place to chill when you need to get out but don't want to spend too much. They have lot's of pool tables available and it doesn't get too crowded unless it's an off-shabbos or Bein Hazmanim. They are closed for leauges twice a week so call to confirm they are open before heading out.",
     closes: 1,
     categoryId: 2,
   },
@@ -607,7 +610,8 @@ export const Activities = [
     name: "Iplay America",
     address: "110 Schanck Rd, Freehold, NJ 07728",
     website: "https://www.iplayamerica.com/",
-    description: "Some text for this activity",
+    description:
+      "iPlay America is almost 4 acres of indoor entertainment that truly offers something for everyone. iPlay America hosts indoor rides, exciting attractions and over 250 arcade games so you're sure to find something you will enjoy. Their hours differ based on the day of the week so be sure to check before going!",
     closes: 9,
     categoryId: 0,
   },
@@ -615,7 +619,8 @@ export const Activities = [
     name: "East Windsor Bowl & Recreation Center",
     address: "529 US-130, East Windsor, NJ 08520",
     website: "http://www.eastwindsorbowl.com/",
-    description: "Some text for this activity",
+    description:
+      "A great option for when you want to drive a bit before enjoying a great round of bowling. You can reserve a lane online but they accept walk-ins as well.",
     closes: 11,
     categoryId: 1,
   },
