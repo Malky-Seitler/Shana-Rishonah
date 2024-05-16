@@ -174,7 +174,7 @@ export const Activities = [
   {
     name: "Bellworks",
     address: "101 Crawfords Corner Rd, Holmdel, NJ 07733",
-    website: "https://bell.works/",
+    websijte: "https://bell.works/",
     description:
       "A lobby type destination great for nights you want to get out and talk or play games in a different setting. There is a stunning patio outside with chairs and swings, but the doors lock at 11 so beware! For a new experience try visiting during the day!",
     closes: 12,
@@ -347,11 +347,11 @@ export const Activities = [
     categoryId: 3,
   },
   {
-    name: "Have a cook-off or bake-off",
+    name: "Have a bake-off",
     address: null,
     website: "https://jacofallthings.com/date-night-cooking-challenge/",
     description:
-      "Who's really the pro in the kitchen?? Have fun baking and cooking up a storm - and if everything tastes alright - you've got supper for tomorrow already prepared!",
+      "Who's really the pro in the kitchen?? Have fun baking up a storm - and if everything tastes alright - you've got some yummy treats to enjoy! Bonus - do this before shabbos for some yummy shabbos treats!",
     closes: null,
     categoryId: 3,
   },
