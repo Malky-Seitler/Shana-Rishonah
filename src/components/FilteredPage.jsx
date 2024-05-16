@@ -12,6 +12,8 @@ import { useActivityContext } from "../ActivityContext";
 import { Container } from "reactstrap";
 import { Categories, Activities } from "./Trips";
 import Header from "./Header.png";
+import { SearchWrapper } from "./layout/StyledComponents";
+import { Input } from "semantic-ui-react";
 
 const FilteredPage = () => {
   const getImage = async (activity) => {
@@ -19,7 +21,7 @@ const FilteredPage = () => {
       const img = await import(
         `./pictures/${activity.name.replace(/\s/g, "").toLowerCase()}.jpg`
       );
-      
+
       if (img) {
         return img.default;
       } else {
@@ -47,11 +49,14 @@ const FilteredPage = () => {
 
   const [filteredList, setFilteredList] = useState();
   const { type } = useParams();
+  const { getSearchedList, showSearch } = useActivityContext();
 
   useEffect(() => {
-    getListToUse(type).then((data) => {
-      setFilteredList(data);
-    });
+    if (type) {
+      getListToUse(type).then((data) => {
+        setFilteredList(data);
+      });
+    }
   }, [type]);
 
   if (filteredList?.length === 0) {
@@ -60,6 +65,16 @@ const FilteredPage = () => {
 
   return (
     <Container style={{ paddingRight: 24, paddingLeft: 24 }}>
+      {showSearch && (
+        <SearchWrapper
+          onChange={async (e) => {
+            const data = await getSearchedList(e.target.value);
+            setFilteredList(data);
+          }}
+        >
+          <Input icon="search" placeholder="Search..." />
+        </SearchWrapper>
+      )}
       <div>
         <ContentWrap>
           {filteredList?.map((a) => {

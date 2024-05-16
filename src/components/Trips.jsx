@@ -332,7 +332,7 @@ export const Activities = [
     address: null,
     website: "https://gametime.co/",
     description:
-      "Check online to see whos playing near you. You can great prices right before the game - no need to book in advance! There is even kosher food at MetLife!",
+      "Check online to see whos playing near you. No need to purchase tickets in advance (unless you're heading to a football or playoff game) - the best priced tickets can be purchased at the gate! There is even kosher food at MetLife and some other stadiums!",
     closes: null,
     categoryId: 1,
   },

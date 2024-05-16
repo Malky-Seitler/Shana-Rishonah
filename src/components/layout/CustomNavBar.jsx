@@ -21,14 +21,9 @@ import { useActivityContext } from "../../ActivityContext";
 const CustomNavBar = () => {
   const [active, setActive] = useState("");
   const [showSideNav, setShowSideNav] = useState(false);
-  const [showSearch, setShowSearch] = useState(false);
-  const { getSearchedList } = useActivityContext();
+  const { setShowSearch, showSearch } = useActivityContext();
 
-  const searchTrips = (searchValue) => {
-    getSearchedList(searchValue);
-  };
-
-  const navigate  = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <header>
@@ -75,11 +70,7 @@ const CustomNavBar = () => {
             <NavLinkStyle
               onClick={() => {
                 setActive("search");
-                navigate('/')
-                if (showSearch) {
-                  searchTrips(null);
-                  setActive("");
-                }
+                navigate("/search-results");
                 setShowSearch(!showSearch);
               }}
               selected={active === "search"}
@@ -90,11 +81,6 @@ const CustomNavBar = () => {
               <ContactButton>Contact</ContactButton>
             </Link>
           </NavbarFlex>
-          {showSearch && (
-            <SearchWrapper onChange={(e) => searchTrips(e.target.value)}>
-              <Input icon="search" placeholder="Search..." />
-            </SearchWrapper>
-          )}
         </NavbarWrap>
       </DesktopWrapper>
       <MobileWrapper>

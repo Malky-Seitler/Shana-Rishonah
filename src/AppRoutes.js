@@ -17,17 +17,13 @@ const AppRoutes = [
     element: <FilteredPage />,
   },
   {
+    path: "search-results",
+    element: <FilteredPage />,
+  },
+  {
     path: "/contact",
     element: <ContactPage />,
   },
-  // {
-  //   path: '/counter',
-  //   element: <Counter />
-  // },
-  // {
-  //   path: '/fetch-data',
-  //   element: <FetchData />
-  // }
 ];
 
 export default AppRoutes;

@@ -4,7 +4,6 @@ import { Activities, Categories } from "./components/Trips";
 const ActivityContext = createContext();
 
 const ActivityContextComponent = ({ children }) => {
-
   const getSearchedList = (searchValue) => {
     if (searchValue === "" || !searchValue) {
       return Activities;
@@ -15,10 +14,14 @@ const ActivityContextComponent = ({ children }) => {
     }
   };
 
+  const [showSearch, setShowSearch] = useState(false);
+
   return (
     <ActivityContext.Provider
       value={{
         getSearchedList,
+        showSearch,
+        setShowSearch,
       }}
     >
       {children}
