@@ -21,7 +21,8 @@ import { useActivityContext } from "../../ActivityContext";
 const CustomNavBar = () => {
   const [active, setActive] = useState("");
   const [showSideNav, setShowSideNav] = useState(false);
-  const { setShowSearch, showSearch } = useActivityContext();
+  const { setShowSearch, showSearch, getSearchedList, setFilteredList } =
+    useActivityContext();
 
   const navigate = useNavigate();
 
@@ -77,10 +78,21 @@ const CustomNavBar = () => {
             >
               Search
             </NavLinkStyle>
+
             <Link to="/contact">
               <ContactButton>Contact</ContactButton>
             </Link>
           </NavbarFlex>
+          {showSearch && (
+            <SearchWrapper
+              onChange={async (e) => {
+                const data = await getSearchedList(e.target.value);
+                setFilteredList(data);
+              }}
+            >
+              <Input icon="search" placeholder="Search..." />
+            </SearchWrapper>
+          )}
         </NavbarWrap>
       </DesktopWrapper>
       <MobileWrapper>
