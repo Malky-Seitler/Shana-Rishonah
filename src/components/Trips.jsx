@@ -68,7 +68,7 @@ export const Activities = [
     address: "300 Ocean Ave N, Point Pleasant Beach, NJ 08742",
     website: "https://jenkinsons.com/",
     description:
-      "Jenkinsons offers a lively but not overwhelmingly crowded boardwalk experience, striking the perfect balance for a fun outing. You'll discover a variety of carnival-style booths and arcades to enjoy. They also have several amusement type rides and two mini-golf locations.  Multiple locations offer delicious Kosher ice cream, adding a sweet touch to your visit. And for an extra dose of excitement, make sure to catch their spectacular Thursday night fireworks show, held weekly from Labor Day to Memorial Day. The boardwalk tends to quiet down after 10pm",
+      "Jenkinson's is a quieter boardwalk with several arcades and games, a few amusement rides, and some shops. There are one or two locations that offer Kosher ice-cream. They also have fireworks every Thursday night from Memorial Day to Labor Day. The boardwalk tends to quiet down after 10pm",
     closes: 12,
     categoryId: 2,
   },
