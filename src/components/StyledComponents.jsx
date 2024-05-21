@@ -182,6 +182,9 @@ export const HomePageSectionWrap = styled.div`
   :hover {
     transform: translateY(-10px);
   }
+  @media (max-width: 425px) {
+    width: 350px;
+  }
 `;
 export const HomePageText = styled.div`
   font-size: 18px;

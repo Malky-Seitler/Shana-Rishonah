@@ -40,7 +40,7 @@ export const Activities = [
     address: "1013 US-1, Edison, NJ 08817",
     website: "https://topgolf.com/us/edison/",
     description:
-      "Top Golf offers the perfect setting for a memorable date night experience. Designed with a cozy ambiance reminiscent of a lounge, it features comfortable couches at numerous bays and offers drinks for purchase as well. Given this location's immense popularity, we highly recommend booking your visit in advance to secure your spot, as availability tends to fill up quickly Bonus - on Tuesday nights play is half off!",
+      "Top Golf offers the perfect setting for a memorable date night experience. Designed with a cozy ambiance reminiscent of a lounge, it features comfortable couches at numerous bays and offers drinks for purchase as well. Given this location's immense popularity, we highly recommend booking your visit in advance to secure your spot, as availability tends to fill up quickly. Bonus - on Tuesday nights play is half off!",
     closes: 1,
     categoryId: 1,
   },
@@ -332,7 +332,7 @@ export const Activities = [
     address: null,
     website: "https://gametime.co/",
     description:
-      "Check online to see whos playing near you. No need to purchase tickets in advance (unless you're heading to a football or playoff game) - the best priced tickets can be purchased at the gate! There is even kosher food at MetLife and some other stadiums!",
+      "Check online to see whos playing near you. No need to purchase tickets in advance (unless you're heading to a football or playoff game) - you can get the best prices when you are pulling up to the gate! Use apps like Stubhub or tickpic to order when you get there. There is even kosher food at the MetLife, Yankee, and Devil's stadiums.",
     closes: null,
     categoryId: 1,
   },
