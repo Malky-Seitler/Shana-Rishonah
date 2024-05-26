@@ -6,7 +6,7 @@ import {
   MessageWrap,
   TextAreaWrap,
 } from "./StyledComponents";
-import { Form, Input, TextArea } from "semantic-ui-react";
+import { Form, Input, Loader, TextArea } from "semantic-ui-react";
 import { ContactButton, DesktopWrapper } from "./layout/StyledComponents";
 import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
@@ -16,33 +16,57 @@ const ContactPage = () => {
   const [message, setMessage] = useState(null);
   const [userEmail, setUserEmail] = useState(null);
   const [showSuccess, setShowSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
 
   const onEmailSend = async () => {
+    setLoading(true);
     emailjs.init("crryC68HqvblxVf5t");
     const params = {
       message,
-      userEmail,
+      from_name: userEmail,
     };
-    await emailjs.send(`default_service`, "template_wavevhv", params);
+    await emailjs.send(`default_service`, "template_to_use", params);
     setMessage(null);
     setUserEmail(null);
+    setLoading(false);
     setShowSuccess(true);
   };
+
   return (
     <Container style={{ paddingRight: 24, paddingLeft: 24 }}>
       <ContactPageWrap>
         {showSuccess ? (
-          <>
-            <h1>
-              Thank you for taking the time to contact us.
-              <br />
-              We value your feedback! <br /> You can expect to hear back from
-              one of our representitives shortly!
-            </h1>
-            <ContactButton onClick={() => navigate("/")}>Go Home</ContactButton>
-          </>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
+            }}
+          >
+            <div
+              style={{
+                textAlign: "center",
+                flexWrap: "wrap",
+              }}
+            >
+              <div style={{ fontSize: 32 }}>
+                Thank you for taking the time to contact us.
+                <div style={{ marginTop: 32, fontSize: 28 }}>
+                  Your feedback is greatly appriciated!
+                </div>
+                <div style={{ marginTop: 32, fontSize: 18 }}>
+                  One of our representitives will contact you shortly.
+                </div>
+              </div>
+            </div>
+            <div style={{ marginTop: 24 }}>
+              <ContactButton onClick={() => navigate("/")}>
+                Go Home
+              </ContactButton>
+            </div>
+          </div>
         ) : (
           <>
             <TextAreaWrap>
@@ -64,16 +88,20 @@ const ContactPage = () => {
               </Form>
             </TextAreaWrap>
             <ContactButtonWrap>
-              <ContactButton
-                disabled={
-                  !message ||
-                  !userEmail?.includes("@") ||
-                  !userEmail?.includes(".")
-                }
-                // onClick={() => onEmailSend()}
-              >
-                Submit Message
-              </ContactButton>
+              {loading ? (
+                <Loader active />
+              ) : (
+                <ContactButton
+                  disabled={
+                    !message ||
+                    !userEmail?.includes("@") ||
+                    !userEmail?.includes(".")
+                  }
+                  onClick={() => onEmailSend()}
+                >
+                  Submit Message
+                </ContactButton>
+              )}
             </ContactButtonWrap>
           </>
         )}
