@@ -32,7 +32,7 @@ const FilteredPage = () => {
     return;
   }
   if (loading) {
-    return <Loader active />;
+    return <Loader size="large" active />;
   }
 
   return (
