@@ -6,6 +6,7 @@ import LightAd from "./ads/lightsad.png";
 import { useActivityContext } from "../ActivityContext";
 import { Container } from "reactstrap";
 import { Loader } from "semantic-ui-react";
+import AdCard from "./AdCard";
 
 const FilteredPage = () => {
   const { type } = useParams();
@@ -33,14 +34,17 @@ const FilteredPage = () => {
   if (loading) {
     return <Loader active />;
   }
+
   return (
     <div>
-      <div>
-        <img src={LightAd} />
-      </div>
-      <Container style={{ paddingRight: 24, paddingLeft: 24 }}>
+      <Container>
         <div>
+          {/* <div>
+            <img src={LightAd} style={{ width: "100%", height: "100px" }} />
+          </div> */}
           <ContentWrap>
+            <AdCard activity={{ img: LightAd }} />
+
             {filteredList?.map((a) => {
               return <ActivityCard activity={a} />;
             })}

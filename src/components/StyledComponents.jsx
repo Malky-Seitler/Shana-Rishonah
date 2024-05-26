@@ -12,6 +12,18 @@ export const ActivityCardContainer = styled.div`
     height: fit-content;
   }
 `;
+export const AdCardContainer = styled.div`
+  border-radius: 17px;
+  border: 1px solid black;
+  padding: 24px;
+  width: 1100px;
+  height: 150px;
+  position: relative;
+  @media (max-width: 425px) {
+    width: 298px;
+    height: fit-content;
+  }
+`;
 export const TopPart = styled.div`
   display: flex;
   justify-content: space-between;
@@ -53,6 +65,7 @@ export const ContentWrap = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 124px;
+  justify-content: center;
   padding-bottom: 124px;
   @media (max-width: 426px) {
     gap: 50px;
@@ -183,7 +196,7 @@ export const HomePageSectionWrap = styled.div`
     transform: translateY(-10px);
   }
   @media (max-width: 425px) {
-    width: 350px;
+    width: 250px;
   }
 `;
 export const HomePageText = styled.div`

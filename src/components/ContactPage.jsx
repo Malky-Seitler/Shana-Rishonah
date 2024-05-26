@@ -20,7 +20,7 @@ const ContactPage = () => {
   const navigate = useNavigate();
 
   const onEmailSend = async () => {
-    emailjs.init("X5vQhKQ9eLHN3Myc6");
+    emailjs.init("crryC68HqvblxVf5t");
     const params = {
       message,
       userEmail,
