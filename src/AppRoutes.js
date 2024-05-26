@@ -11,7 +11,7 @@ const AppRoutes = [
     path: "/",
     element: <HomePage />,
   },
-
+  { path: "/trips", element: <FilteredPage /> },
   {
     path: "trips/:type",
     element: <FilteredPage />,
