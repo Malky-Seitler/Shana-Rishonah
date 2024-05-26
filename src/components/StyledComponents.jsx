@@ -16,11 +16,23 @@ export const AdCardContainer = styled.div`
   border-radius: 17px;
   border: 1px solid black;
   padding: 24px;
-  width: 1100px;
+  width: 800px;
   height: 150px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
   @media (max-width: 425px) {
     width: 298px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+export const AdItem = styled.div`
+  @media (max-width: 425px) {
+    width: 198px;
+    height: 50px;
     height: fit-content;
   }
 `;
