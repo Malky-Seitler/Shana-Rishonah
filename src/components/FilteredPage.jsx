@@ -28,11 +28,11 @@ const FilteredPage = () => {
     }
   }, [type]);
 
-  if (filteredList?.length === 0) {
-    return;
-  }
   if (loading) {
     return <Loader size="large" active />;
+  }
+  if (filteredList?.length === 0) {
+    return;
   }
 
   return (
