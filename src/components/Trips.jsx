@@ -624,6 +624,25 @@ export const Activities = [
     closes: 11,
     categoryId: 1,
   },
+  {
+    name: "Cattus Island State Park",
+    address: "1170 Cattus Island Blvd, Toms River, NJ 08753",
+    website:
+      "https://www.oceancountyparks.org/frmRegContentPrks?ID=0751673c-9513-4ecc-8f3e-3e65b0f2ec45",
+    description:
+      "Take a leisurely walk along the main trail to the beach, or walk a trail and enjoy many lovely vistas of Barnegat Bay. Visit the newly renovated Cooper Environmental Center and enjoy a wide array of exhibits. The park also contains a beautiful Butterfly Garden where you can view native plants and pollinators.",
+    closes: 8,
+    categoryId: 2,
+  },
+  {
+    name: "Happy House",
+    address: "2885 US 9, Howell, NJ",
+    website: "https://www.youtube.com/watch?v=Bgw3MVEY4ik",
+    description:
+      "A brand new art center located in Howell with fun for the whole family! Offering pottery, painting, tye-dye shirts, and candle making. For ages 3 and up. They are open from 3pm to 10pm.",
+    closes: 10,
+    categoryId: 1,
+  },
 ];
 
 export const Categories = [
