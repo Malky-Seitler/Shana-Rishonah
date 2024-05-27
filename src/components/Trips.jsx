@@ -418,7 +418,7 @@ export const Activities = [
     website:
       "https://blog.motifphotos.com/celebrate-your-selfie-10-ideas-for-selfies-that-reflect-the-real-you/",
     description:
-      "Set up a photo booth at home - Dollar Tree can have some great props - and have fun taking pictures in poses you can't really try anywhere else :)",
+      "Set up a photo booth at home - Dollar Tree can have some great props - and have fun!",
     closes: null,
     categoryId: 3,
   },
