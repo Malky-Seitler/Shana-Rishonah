@@ -11,6 +11,7 @@ import {
 } from "./StyledComponents";
 import { Icon } from "semantic-ui-react";
 import { DesktopWrapper, MobileWrapper } from "./layout/StyledComponents";
+import ChanieAd from "./ads/csnaps.png";
 
 const AdCard = ({ activity }) => {
   return (
@@ -40,11 +41,12 @@ const AdCard = ({ activity }) => {
             <div>For all your in-house occasions!</div>
             <div>Call/Text: 732-573-5248</div>
           </div>
-          {/* <PictureWrap
-            src={activity.img}
+          <img
+            src={ChanieAd}
             width={"25%"}
-            height={"45%"}
-          ></PictureWrap> */}
+            style={{ zoom: "200%" }}
+            height={"100%"}
+          ></img>
         </AdCardContainer>
       </DesktopWrapper>
       <MobileWrapper>
@@ -71,6 +73,12 @@ const AdCard = ({ activity }) => {
             <div>For all your in-house occasions!</div>
             <div>Call/Text: 732-573-5248</div>
           </AdItem>
+          <img
+            src={ChanieAd}
+            width={"100%"}
+            style={{ zoom: "200%" }}
+            height={"100%"}
+          ></img>
         </AdCardContainer>
       </MobileWrapper>
     </>

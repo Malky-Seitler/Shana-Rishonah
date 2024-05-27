@@ -16,7 +16,7 @@ export const AdCardContainer = styled.div`
   border-radius: 17px;
   border: 1px solid black;
   padding: 24px;
-  width: 800px;
+  width: 1100px;
   height: 150px;
   position: relative;
   display: flex;
