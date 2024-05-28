@@ -336,7 +336,7 @@ export const Activities = [
     name: "Cook-Off",
     address: null,
     website:
-      "https://www.lovepanky.com/love-couch/romantic-love/ideas-to-make-cooking-with-your-partner-more-fun",
+      "https://blog.hitchswitch.com/2019/08/28/fun-recipes-to-cook-with-your-significant-other/",
     description:
       "Have fun and get a yummy meal out of it too!! Cook together or have a cook-off and cook for each other!",
     closes: null,
