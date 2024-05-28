@@ -16,12 +16,22 @@ export const NavbarFlex = styled.div`
   align-items: center;
 `;
 export const DesktopWrapper = styled.div`
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+export const DesktopNavBarWrapper = styled.div`
+  @media (max-width: 1344px) {
     display: none;
   }
 `;
 export const MobileWrapper = styled.div`
-  @media (min-width: 426px) {
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;
+export const NavMobileWrapper = styled.div`
+  @media (min-width: 1345px) {
     display: none;
   }
 `;

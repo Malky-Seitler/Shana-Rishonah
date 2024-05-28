@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { Navbar, NavItem, NavLink } from "reactstrap";
 import {
   ContactButton,
+  DesktopNavBarWrapper,
   DesktopWrapper,
   MenuItem,
   MobileMenu,
@@ -10,6 +11,7 @@ import {
   NavbarFlex,
   NavbarWrap,
   NavLinkStyle,
+  NavMobileWrapper,
   SearchWrapper,
   TopWrapperMobile,
 } from "./StyledComponents";
@@ -28,7 +30,7 @@ const CustomNavBar = () => {
 
   return (
     <header>
-      <DesktopWrapper>
+      <DesktopNavBarWrapper>
         <NavbarWrap>
           <NavbarFlex>
             <Link to="/trips/day-trips">
@@ -55,6 +57,14 @@ const CustomNavBar = () => {
                 Quick Trips
               </NavLinkStyle>
             </Link>
+            <Link to="/trips/parks-and-beaches">
+              <NavLinkStyle
+                onClick={() => setActive("parks")}
+                selected={active === "parks"}
+              >
+                Parks & Beaches
+              </NavLinkStyle>
+            </Link>
             <Link to="/">
               <div onClick={() => setActive("")}>
                 <img src={Logo} width={"280px"} height={"95px"} />
@@ -66,6 +76,14 @@ const CustomNavBar = () => {
                 selected={active === "home"}
               >
                 At Home
+              </NavLinkStyle>
+            </Link>
+            <Link to="/trips/restaurants">
+              <NavLinkStyle
+                onClick={() => setActive("food")}
+                selected={active === "food"}
+              >
+                Restaurants
               </NavLinkStyle>
             </Link>
             <NavLinkStyle
@@ -94,8 +112,8 @@ const CustomNavBar = () => {
             </SearchWrapper>
           )}
         </NavbarWrap>
-      </DesktopWrapper>
-      <MobileWrapper>
+      </DesktopNavBarWrapper>
+      <NavMobileWrapper>
         <TopWrapperMobile>
           <Link to="/">
             <div onClick={() => setActive("")}>
@@ -127,11 +145,22 @@ const CustomNavBar = () => {
                   Quick Trips
                 </MenuItem>
               </Link>
+              <Link to="/trips/parks-and-beaches">
+                <MenuItem onClick={() => setShowSideNav(false)}>
+                  Parks & Beaches
+                </MenuItem>
+              </Link>
               <Link to="/trips/at-home">
                 <MenuItem onClick={() => setShowSideNav(false)}>
                   At Home
                 </MenuItem>
               </Link>
+              <Link to="/trips/restaurants">
+                <MenuItem onClick={() => setShowSideNav(false)}>
+                  Restaurants
+                </MenuItem>
+              </Link>
+
               {/* <Link to="/search">
                 <MenuItem
                   onClick={() => {
@@ -157,7 +186,7 @@ const CustomNavBar = () => {
             </MobileMenu>
           </TopWrapperMobile>
         )}
-      </MobileWrapper>
+      </NavMobileWrapper>
     </header>
   );
 };

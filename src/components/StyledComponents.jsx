@@ -11,6 +11,14 @@ export const ActivityCardContainer = styled.div`
     width: 298px;
     height: fit-content;
   }
+  @media (max-width: 768px) {
+    width: 498px;
+    height: fit-content;
+  }
+  @media (max-width: 1344px) {
+    width: 550px;
+    height: fit-content;
+  }
 `;
 export const AdCardContainer = styled.div`
   border-radius: 17px;
@@ -23,6 +31,13 @@ export const AdCardContainer = styled.div`
   justify-content: space-between;
   @media (max-width: 425px) {
     width: 298px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width: 1344px) {
+    width: 498px;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -52,7 +67,7 @@ export const Flex = styled.div`
 export const PictureWrap = styled.img`
   border-radius: 17px;
   margin-top: 24px;
-  @media (min-width: 426px) {
+  @media (min-width: 769px) {
     position: absolute;
     left: 49.47%;
     right: 3.63%;
@@ -67,8 +82,7 @@ export const TextWrap = styled.div`
   width: 50%;
   margin-top: 16px;
   padding-right: 16px;
-  // padding-left: 16px ;
-  @media (max-width: 425px) {
+  @media (max-width: 769px) {
     width: 100%;
   }
 `;
