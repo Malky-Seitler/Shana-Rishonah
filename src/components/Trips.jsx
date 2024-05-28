@@ -845,6 +845,37 @@ export const Activities = [
     categoryId: 5,
     locationId: 1,
   },
+  {
+    name: "Seared",
+    address: "8 America Ave, Lakewood, NJ 08701",
+    closes: 1030,
+    website: "https://searednj.com/",
+    description:
+      "Seared is one of the most upscale restaurants Lakewood has to offer. Their menu offers a variety of options that you can't find anywhere else. The customer service is great and every guest is treated like royalty.",
+    categoryId: 5,
+    locationId: 1,
+  },
+  {
+    name: "Tapas",
+    address: "1580 US-9, Toms River, NJ 08755",
+    closes: 10,
+    website:
+      "https://food.google.com/chooseprovider?restaurantId=/g/11y3rx5k3d&g2lbs=AOHF13kqD8IS8AQMbqSxOhTLR_dXYJ5oWz6BJdFhF8-W9IbdZ9tkQAFnXDQzwlTiHCV0XIvA650i30rKIroGqdAsI6kVeL7Nkg%3D%3D&hl=en-US&gl=us&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=search&gei=AkVVZrPcMPajptQP4O6kgAU&ei=AkVVZrPcMPajptQP4O6kgAU&fo_s=OA&opi=89978449&foub=mcpp&sa=X&ved=2ahUKEwiz5Zfiqa-GAxX2kYkEHWA3CVAQjYwDKAB6BAgmEAc",
+    description:
+      "A unique experience offering an easy, light menu consisting mainly of appitizers. They are located in Toms River making it a great choice for when you want to get out, but don't want to drive as far as their Deal location.",
+    categoryId: 5,
+    locationId: 1,
+  },
+  {
+    name: "LBK Grill",
+    address: "110 Ocean Ave N, Long Branch, NJ 07740",
+    closes: 10,
+    website: "http://lbkgrill.com/",
+    description:
+      "A fast food shop located in Pier Village (also known as Deal Beach), LBK is a perfect spot for a picnic supper and evening beach trip. They are opened seasonally so be sure to check online before driving out!",
+    categoryId: 5,
+    locationId: 1,
+  },
 ];
 
 export const Locations = [{ name: "Lakewood & Surrounding Areas", id: 0 }];
