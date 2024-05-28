@@ -38,6 +38,7 @@ export const NavMobileWrapper = styled.div`
 export const NavLinkStyle = styled.div`
   cursor: pointer;
   color: black;
+  font-size: 18px;
   :hover {
     text-decoration: underline;
   }
