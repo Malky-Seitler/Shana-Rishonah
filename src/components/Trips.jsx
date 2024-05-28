@@ -761,7 +761,7 @@ export const Activities = [
     closes: 11,
     website: "http://lamppostbistro.com/",
     description:
-      "Located deep in Toms River, Lamppost Bistro and Bar is an upscale fleishigs restaurant perfect for every occasion. The prices are more reasonable than some of their other counterparts. It also tends to be to the quieter side. Looking for a night out but not a full dinner? Enjoy a drink and relax in their upscale lounge.",
+      "Located deep in Toms River, Lamppost Bistro and Bar is an upscale fleishigs restaurant perfect for every occasion. It tends to be to the quieter side. Looking for a night out but not a full dinner? Enjoy a drink and relax in their upscale lounge.",
     categoryId: 5,
     locationId: 1,
   },
