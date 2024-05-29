@@ -13,11 +13,11 @@ export const ActivityCardContainer = styled.div`
   }
 
   @media (min-width: 426px) and (max-width: 768px) {
-    width: 498px;
+    width: 380px;
     height: fit-content;
   }
 
-  @media (min-width: 769px) and (max-width: 1344px) {
+  @media (min-width: 1285px) and (max-width: 1344px) {
     width: 550px;
     height: fit-content;
   }
@@ -39,7 +39,15 @@ export const AdCardContainer = styled.div`
     align-items: center;
   }
 
-  @media (min-width: 426px) and (max-width: 1344px) {
+  @media (min-width: 426px) and (max-width: 1284px) {
+    width: 380px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: 1285px) and (max-width: 1344px) {
     width: 498px;
     height: fit-content;
     display: flex;
