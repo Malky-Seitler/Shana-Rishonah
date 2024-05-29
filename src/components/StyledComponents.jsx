@@ -210,35 +210,8 @@ export const Circle = styled.div`
   align-items: center;
 `;
 
-export const HomePageTitleType = styled.div`
-  font-size: 32px;
-  margin-bottom: 24px;
-  line-height: 1px;
-  font-style: italic;
-  line-height: 1;
-  color: #15aaaa;
-`;
-
-export const HomePageSectionWrap = styled.div`
-  border-radius: 36px;
-  border: 4px solid #98c600;
-  margin: 16px;
-  padding: 16px;
+export const FlexColumnCenter = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 450px;
-  box-shadow: 0px 8px 12px rgba(152, 198, 0);
-  :hover {
-    transform: translateY(-10px);
-  }
-  @media (max-width: 425px) {
-    width: 250px;
-  }
-`;
-export const HomePageText = styled.div`
-  font-size: 18px;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
 `;

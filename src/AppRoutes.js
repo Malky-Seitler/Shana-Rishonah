@@ -1,6 +1,6 @@
 import ContactPage from "./components/ContactPage";
 import FilteredPage from "./components/FilteredPage";
-import HomePage from "./components/HomePage";
+import HomePage from "./components/HomePageComponents/HomePage";
 
 const AppRoutes = [
   {

@@ -1,22 +1,23 @@
 import React from "react";
 import Lottie from "lottie-react";
 import HomePageAnimation from "../lottie/HomePageAnimation.json";
+import { FlexColumnCenter } from "../StyledComponents";
+import {
+  HomePageSubtitleText,
+  HomePageWelcomeText,
+} from "./HomePageStyledComponents";
 
 const WelcomeBanner = () => {
   return (
-    <div
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
-    >
+    <FlexColumnCenter>
       <div style={{ width: "25%" }}>
         <Lottie animationData={HomePageAnimation} loop={true} />
       </div>
-      <div style={{ fontSize: 48, marginBottom: 36 }}>
-        Welcome to ShanaRishonah.com
-      </div>
-      <div style={{ fontSize: 24, marginBottom: 36, fontStyle: "italic", color: 'darkgray' }}>
+      <HomePageWelcomeText>Welcome to ShanaRishonah.com</HomePageWelcomeText>
+      <HomePageSubtitleText>
         Your ultimate destination for everything Shana Rishonah!
-      </div>
-    </div>
+      </HomePageSubtitleText>
+    </FlexColumnCenter>
   );
 };
 export default WelcomeBanner;
