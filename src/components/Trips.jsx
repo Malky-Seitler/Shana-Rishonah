@@ -876,6 +876,17 @@ export const Activities = [
     categoryId: 5,
     locationId: 1,
   },
+  {
+    name: "Raritan Bay Waterfront Park",
+    address: "201 John T O'Leary Blvd, South Amboy, NJ 08879",
+    closes: 8,
+    website:
+      "http://www.middlesexcountynj.gov/About/ParksRecreation/Pages/PR/Raritan-Bay-Park.aspx",
+    description:
+      "Although this lovely park and small beach is about 45 minutes away, visitors say it is well worth the drive! They have a lovely playground and a path by the bay so you can walk along the water. It makes for a nice change when you want to get out and go walking somewhere new! ",
+    categoryId: 4,
+    locationId: 1,
+  },
 ];
 
 export const Locations = [{ name: "Lakewood & Surrounding Areas", id: 0 }];
