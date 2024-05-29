@@ -575,7 +575,7 @@ export const Activities = [
     address: "99 Caven Point Rd, Jersey City, NJ 07305",
     website: "https://www.rpmraceway.com/jersey-city-nj",
     description:
-      "More than just a raceway, RPM offers a wide range of activites from VR to arcades and even luxery bowling! Of course don't forget to check out their their mega track with state of the art karts to race with!",
+      "More than just a raceway, RPM offers a wide range of activites from VR to arcades and even luxury bowling! Of course don't forget to check out their their mega track with state of the art karts to race with!",
     closes: 10,
     categoryId: 2,
     locationId: 1,
