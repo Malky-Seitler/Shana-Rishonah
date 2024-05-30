@@ -887,6 +887,59 @@ export const Activities = [
     categoryId: 4,
     locationId: 1,
   },
+  {
+    name: "Urban Pops Long Branch",
+    address: "104 Brighton Ave Long Branch, New Jersey 07740",
+    closes: 7,
+    website: "https://urbanpopsny.com/",
+    description:
+      "An adorable shop where you can browse the largest array of urban pops you've ever seen! The shop is located right near Deal Beach so it's a great experience to add to your day out in Deal! The shop is open seasonally so check online for hours.",
+    categoryId: 0,
+    locationId: 1,
+  },
+  {
+    name: "Joseph & David",
+    address: "21 S Hope Chapel Rd Unit 111, Jackson Township, NJ 08527",
+    closes: 8,
+    website: "http://josephanddavid.com/",
+    description:
+      "Joseph & David is primarily a juice store offering up fresh smoothies and juices while keeping everything healthy and natural! Their menu includes many healthy options including soups, sandwhiches, smoothie bowls and lots of other tasty treats! They are located in Howell and in Jackson.",
+    categoryId: 0,
+    locationId: 1,
+  },
+  {
+    name: "Lakewood CoinOp Car Wash",
+    address: "201 Ocean Ave, Lakewood, NJ 08701",
+    closes: 3,
+    website: "http://lakewood-coin-op.edan.io/",
+    description:
+      "Open 24 hours, this self-service car wash is an interesting and fun activity! Perfect for getting out late at night and doing something constructive!",
+    categoryId: 2,
+    locationId: 1,
+  },
+  {
+    name: "Castle Park",
+    address: "1511 N Bay Ave, Toms River, NJ 08753",
+    closes: 8,
+    website:
+      "https://www.tripadvisor.com/Attraction_Review-g46870-d10229113-Reviews-Castle_Park_II-Toms_River_New_Jersey.html",
+    description:
+      "Castle Park features a large play structure, a climbing rock, swings and picnic tables. It's a great place for a picnic or a family get together!",
+    categoryId: 4,
+    locationId: 1,
+  },
+
+  {
+    name: "Round Valley Recreation Area",
+    address: "1220 Stanton Lebanon Rd, Lebanon, NJ 08833",
+    closes: 8,
+    website:
+      "https://www.nj.gov/dep/parksandforests/parks/roundvalleyrecreationarea.html",
+    description:
+      "This sprawling park is quite a drive away but makes for a great Chol Hamoed or Sunday trip! There is a large resevoir with a small beach, walking paths and playgrounds. Pack a picnic lunch and make it a fun day out!",
+    categoryId: 4,
+    locationId: 1,
+  },
 ];
 
 export const Locations = [{ name: "Lakewood & Surrounding Areas", id: 0 }];
