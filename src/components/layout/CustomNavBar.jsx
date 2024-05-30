@@ -22,7 +22,35 @@ import { useActivityContext } from "../../ActivityContext";
 
 const CustomNavBar = () => {
   const [active, setActive] = useState("");
+  const mainMenu = [
+    {
+      title: "Trips",
+      id: 1,
+      children: [
+        { title: "Day Trips", link: "/trips/day-trips", active: "day" },
+        { title: "Date Night", link: "/trips/date-night", active: "date" },
+        { title: "Quick Trips", link: "/trips/quick-trips", active: "quick" },
+        {
+          title: "Parks & Beaches",
+          link: "/trips/parks-and-beaches",
+          active: "parks",
+        },
+        { title: "logo" },
+        {
+          title: "At Home",
+          link: "/trips/at-home",
+          active: "home",
+        },
+        {
+          title: "Restaurants",
+          link: "/trips/restaurants",
+          active: "food",
+        },
+      ],
+    },
+  ];
   const [showSideNav, setShowSideNav] = useState(false);
+  const [menuToDisplay, setMenuToDisplay] = useState(1);
   const { setShowSearch, showSearch, getSearchedList, setFilteredList } =
     useActivityContext();
 
@@ -33,59 +61,32 @@ const CustomNavBar = () => {
       <DesktopNavBarWrapper>
         <NavbarWrap>
           <NavbarFlex>
-            <Link to="/trips/day-trips">
-              <NavLinkStyle
-                onClick={() => setActive("day")}
-                selected={active === "day"}
-              >
-                Day Trips
-              </NavLinkStyle>
-            </Link>
-            <Link to="/trips/date-night">
-              <NavLinkStyle
-                onClick={() => setActive("date")}
-                selected={active === "date"}
-              >
-                Date Night
-              </NavLinkStyle>
-            </Link>
-            <Link to="/trips/quick-trips">
-              <NavLinkStyle
-                onClick={() => setActive("quick")}
-                selected={active === "quick"}
-              >
-                Quick Trips
-              </NavLinkStyle>
-            </Link>
-            <Link to="/trips/parks-and-beaches">
-              <NavLinkStyle
-                onClick={() => setActive("parks")}
-                selected={active === "parks"}
-              >
-                Parks & Beaches
-              </NavLinkStyle>
-            </Link>
-            <Link to="/">
-              <div onClick={() => setActive("")}>
-                <img src={Logo} width={"280px"} height={"95px"} />
-              </div>
-            </Link>
-            <Link to="/trips/at-home">
-              <NavLinkStyle
-                onClick={() => setActive("home")}
-                selected={active === "home"}
-              >
-                At Home
-              </NavLinkStyle>
-            </Link>
-            <Link to="/trips/restaurants">
-              <NavLinkStyle
-                onClick={() => setActive("food")}
-                selected={active === "food"}
-              >
-                Restaurants
-              </NavLinkStyle>
-            </Link>
+            {!menuToDisplay
+              ? mainMenu
+              : mainMenu
+                  .find((m) => m.id === menuToDisplay)
+                  .children.map((mc) => {
+                    if (mc.title === "logo") {
+                      return (
+                        <Link to="/">
+                          <div onClick={() => setActive("")}>
+                            <img src={Logo} width={"280px"} height={"95px"} />
+                          </div>
+                        </Link>
+                      );
+                    }
+                    return (
+                      <Link to={mc.link}>
+                        <NavLinkStyle
+                          onClick={() => setActive(mc.active)}
+                          selected={active === mc.active}
+                        >
+                          {mc.title}
+                        </NavLinkStyle>
+                      </Link>
+                    );
+                  })}
+
             <NavLinkStyle
               onClick={() => {
                 setActive("search");
