@@ -12,6 +12,7 @@ export const Resources = [
     number: "888-565-3628",
     website: "https://tahareinu.com/hotline/",
     hours: "8:00am - 4:00pm",
+  },
   {
     name: "ATime Hug (support for pregnancy loss)",
     number: "718-686-8912 ext. 113",
