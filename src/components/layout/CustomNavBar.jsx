@@ -213,12 +213,42 @@ const CustomNavBar = () => {
             <MobileMenu>
               <MenuItem></MenuItem>
               {!menuToDisplay
-                ? mainMenu
+                ? mainMenu.map((m) => {
+                    if (m.title === "logo") {
+                      return;
+                    } else if (m.link) {
+                      return (
+                        <Link to={m.link}>
+                          <MenuItem onClick={() => setShowSideNav(false)}>
+                            {m.title}
+                          </MenuItem>
+                        </Link>
+                      );
+                    }
+                    return (
+                      <MenuItem onClick={() => setMenuToDisplay(m.id)}>
+                        {m.title}
+                      </MenuItem>
+                    );
+                  })
                 : mainMenu
                     .find((m) => m.id === menuToDisplay)
                     .children.map((mc) => {
                       if (mc.title === "logo") {
                         return;
+                      } else if (mc.title === "Home") {
+                        return (
+                          <Link to="/">
+                            <MenuItem
+                              onClick={() => {
+                                setActive("");
+                                setMenuToDisplay(null);
+                              }}
+                            >
+                              <Icon name="arrow left" /> Home
+                            </MenuItem>
+                          </Link>
+                        );
                       }
                       return (
                         <Link to={mc.link}>
