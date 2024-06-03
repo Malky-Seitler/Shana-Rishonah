@@ -27,6 +27,7 @@ const CustomNavBar = () => {
       title: "Trips",
       id: 1,
       children: [
+        { title: "Home", link: "/", active: "" },
         { title: "Day Trips", link: "/trips/day-trips", active: "day" },
         { title: "Date Night", link: "/trips/date-night", active: "date" },
         { title: "Quick Trips", link: "/trips/quick-trips", active: "quick" },
@@ -48,9 +49,40 @@ const CustomNavBar = () => {
         },
       ],
     },
+    { title: "Resources", id: 2, link: "/resources", active: "resources" },
+    {
+      title: "Dinner",
+      id: 3,
+      children: [
+        { title: "Home", link: "/", active: "" },
+        {
+          title: "Menu Planning",
+          link: "/dinner/menu-planning",
+          active: "menu",
+        },
+        {
+          title: "Tips & Tricks",
+          link: "/dinner/tips-and-tricks",
+          active: "dinnerTricks",
+        },
+        { title: "logo" },
+        {
+          title: "Cookbooks",
+          link: "/dinner/cookbooks",
+          active: "cookbooks",
+        },
+      ],
+    },
+    { title: "logo" },
+    {
+      title: "Helpful Guides",
+      id: 4,
+      link: "/helpful-guides",
+      active: "guides",
+    },
   ];
   const [showSideNav, setShowSideNav] = useState(false);
-  const [menuToDisplay, setMenuToDisplay] = useState(1);
+  const [menuToDisplay, setMenuToDisplay] = useState(null);
   const { setShowSearch, showSearch, getSearchedList, setFilteredList } =
     useActivityContext();
 
@@ -62,16 +94,65 @@ const CustomNavBar = () => {
         <NavbarWrap>
           <NavbarFlex>
             {!menuToDisplay
-              ? mainMenu
+              ? mainMenu.map((m) => {
+                  if (m.title === "logo") {
+                    return (
+                      <Link to="/">
+                        <div
+                          onClick={() => {
+                            setActive("");
+                            setMenuToDisplay(null);
+                          }}
+                        >
+                          <img src={Logo} width={"280px"} height={"95px"} />
+                        </div>
+                      </Link>
+                    );
+                  } else if (m.link) {
+                    return (
+                      <Link to={m.link}>
+                        <NavLinkStyle
+                          onClick={() => setActive(m.active)}
+                          selected={active === m.active}
+                        >
+                          {m.title}
+                        </NavLinkStyle>
+                      </Link>
+                    );
+                  }
+                  return (
+                    <NavLinkStyle onClick={() => setMenuToDisplay(m.id)}>
+                      {m.title}
+                    </NavLinkStyle>
+                  );
+                })
               : mainMenu
                   .find((m) => m.id === menuToDisplay)
                   .children.map((mc) => {
                     if (mc.title === "logo") {
                       return (
                         <Link to="/">
-                          <div onClick={() => setActive("")}>
+                          <div
+                            onClick={() => {
+                              setActive("");
+                              setMenuToDisplay(null);
+                            }}
+                          >
                             <img src={Logo} width={"280px"} height={"95px"} />
                           </div>
+                        </Link>
+                      );
+                    } else if (mc.title === "Home") {
+                      return (
+                        <Link to="/">
+                          <NavLinkStyle
+                            onClick={() => {
+                              setActive("");
+                              setMenuToDisplay(null);
+                            }}
+                          >
+                            <Icon name="arrow left" /> Home
+                          </NavLinkStyle>
                         </Link>
                       );
                     }
@@ -131,36 +212,22 @@ const CustomNavBar = () => {
           <TopWrapperMobile>
             <MobileMenu>
               <MenuItem></MenuItem>
-              <Link to="/trips/day-trips">
-                <MenuItem onClick={() => setShowSideNav(false)}>
-                  Day Trips
-                </MenuItem>
-              </Link>
-              <Link to="/trips/date-night">
-                <MenuItem onClick={() => setShowSideNav(false)}>
-                  Date Nights
-                </MenuItem>
-              </Link>
-              <Link to="/trips/quick-trips">
-                <MenuItem onClick={() => setShowSideNav(false)}>
-                  Quick Trips
-                </MenuItem>
-              </Link>
-              <Link to="/trips/parks-and-beaches">
-                <MenuItem onClick={() => setShowSideNav(false)}>
-                  Parks & Beaches
-                </MenuItem>
-              </Link>
-              <Link to="/trips/at-home">
-                <MenuItem onClick={() => setShowSideNav(false)}>
-                  At Home
-                </MenuItem>
-              </Link>
-              <Link to="/trips/restaurants">
-                <MenuItem onClick={() => setShowSideNav(false)}>
-                  Restaurants
-                </MenuItem>
-              </Link>
+              {!menuToDisplay
+                ? mainMenu
+                : mainMenu
+                    .find((m) => m.id === menuToDisplay)
+                    .children.map((mc) => {
+                      if (mc.title === "logo") {
+                        return;
+                      }
+                      return (
+                        <Link to={mc.link}>
+                          <MenuItem onClick={() => setShowSideNav(false)}>
+                            {mc.title}
+                          </MenuItem>
+                        </Link>
+                      );
+                    })}
 
               {/* <Link to="/search">
                 <MenuItem
