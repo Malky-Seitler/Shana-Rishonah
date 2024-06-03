@@ -5,9 +5,9 @@ import {
   InputWrap,
   MessageWrap,
   TextAreaWrap,
-} from "./StyledComponents";
+} from "../Trips/StyledComponents";
 import { Form, Input, Loader, TextArea } from "semantic-ui-react";
-import { ContactButton, DesktopWrapper } from "./layout/StyledComponents";
+import { ContactButton, DesktopWrapper } from "../../layout/StyledComponents";
 import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
 import { Container } from "reactstrap";

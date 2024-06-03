@@ -1,8 +1,11 @@
 import React from "react";
-import { FeedbackButton, FlexColumnCenter } from "../StyledComponents";
+import {
+  FeedbackButton,
+  FlexColumnCenter,
+} from "../Pages/Trips/StyledComponents";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import FeedbackModal from "../FeedbackModal";
+import FeedbackModal from "../Pages/Contact/FeedbackModal";
 import WelcomeBanner from "./WelcomeBanner";
 import {
   HomePageCardWrapper,

@@ -1,6 +1,6 @@
 import React, { useState, createContext, useContext, useEffect } from "react";
-import { Activities, Categories } from "./components/Trips";
-import Header from "./components/Header.png";
+import { Activities, Categories } from "./components/Pages/Trips/Trips";
+import Header from "./components/Pages/Trips/Header.png";
 
 const ActivityContext = createContext();
 

@@ -1,5 +1,5 @@
-import ContactPage from "./components/ContactPage";
-import FilteredPage from "./components/FilteredPage";
+import ContactPage from "./components/Pages/Contact/ContactPage";
+import FilteredPage from "./components/Pages/Trips/FilteredPage";
 import HomePage from "./components/HomePageComponents/HomePage";
 
 const AppRoutes = [

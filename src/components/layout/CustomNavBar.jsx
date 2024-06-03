@@ -16,7 +16,6 @@ import {
   TopWrapperMobile,
 } from "./StyledComponents";
 import Logo from "./../pictures/Logo.png";
-import { Flex } from "../StyledComponents";
 import { Icon, Input } from "semantic-ui-react";
 import { useActivityContext } from "../../ActivityContext";
 

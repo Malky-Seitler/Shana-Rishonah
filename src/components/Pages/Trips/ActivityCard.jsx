@@ -8,7 +8,7 @@ import {
   TopPart,
 } from "./StyledComponents";
 import { Icon } from "semantic-ui-react";
-import { DesktopWrapper, MobileWrapper } from "./layout/StyledComponents";
+import { DesktopWrapper, MobileWrapper } from "../../layout/StyledComponents";
 
 const ActivityCard = ({ activity }) => {
   return (

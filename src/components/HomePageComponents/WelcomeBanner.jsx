@@ -1,7 +1,7 @@
 import React from "react";
 import Lottie from "lottie-react";
 import HomePageAnimation from "../lottie/HomePageAnimation.json";
-import { FlexColumnCenter } from "../StyledComponents";
+import { FlexColumnCenter } from "../Pages/Trips/StyledComponents";
 import {
   HomePageSubtitleText,
   HomePageWelcomeText,
