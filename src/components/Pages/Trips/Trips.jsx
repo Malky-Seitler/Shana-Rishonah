@@ -940,6 +940,56 @@ export const Activities = [
     categoryId: 4,
     locationId: 1,
   },
+  {
+    name: "YESTERcades",
+    address: "80 Broad St, Red Bank, NJ 07701",
+    closes: 12,
+    website: "http://yestercades.com/",
+    description:
+      "Yestercades is situated in the cute and relaxing town of Red Bank. It's a small arcade place that has arcades, pool, air hockey and wii games. You pay by the hour making it a great cheaper date-night option",
+    categoryId: 1,
+    locationId: 1,
+  },
+  {
+    name: "Silverball Retro Arcade",
+    address: "1000 Ocean Ave N, Asbury Park, NJ 07712",
+    closes: 9,
+    website: "https://www.silverballmuseum.com/asbury-park",
+    description:
+      "A cute museum-like arcade located near Deal where you can explore games from your parents (or grandparents!) days. Have fun playing manual bowling or lots of different versions of pinball!",
+    categoryId: 1,
+    locationId: 1,
+  },
+  {
+    name: "Asbury Park Pedal Boats",
+    address: "Lake Ave, Asbury Park, NJ 07712",
+    closes: 8,
+    website: "http://www.asburyparkpedalboats.com/",
+    description:
+      "A great activity for a long summer Sunday afternoon! Pedal around the calm, serene lake and enjoy the scenic views. There are several kinds of boats to choose from and you can rent them for as short as a half hour.",
+    categoryId: 0,
+    locationId: 1,
+  },
+  {
+    name: "NORTHLANDZ",
+    address: "495 US-202, Flemington, NJ 08822",
+    closes: 6,
+    website: "https://northlandz.com/",
+    description:
+      "Northlandz is the World's Largest Miniature Wonderland. You'll find a huge variety of detailed miniature art, from replicas of real-world landmarks to fantastical structures straight out of your dreams! Spanning acres, this jaw-dropping display features hundreds of structures, bridges, and tunnels, as well as countless complex details that will leave you marveling at the artistry on display.",
+    categoryId: 0,
+    locationId: 1,
+  },
+  {
+    name: "Teva Restaurant",
+    address: "Third floor of DSN Beach Club, 123 Ocean Ave N, Deal, NJ 07723",
+    closes: 930,
+    website: "https://www.tevarestaurant.com/",
+    description:
+      "An upscale dairy restaurant located in the DSW Beach Club. They offer a wide array of pasta and fish as well as many other exotic dishes. The restaurant is only open seasonally to the public so be sure to go during the winter",
+    categoryId: 5,
+    locationId: 1,
+  },
 ];
 
 export const Locations = [{ name: "Lakewood & Surrounding Areas", id: 0 }];
