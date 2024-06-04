@@ -7,13 +7,15 @@ import { GuideCardContainer } from "./StyledComponents";
 import GuideCard from "./GuideCard";
 
 const HelpfulGuides = () => {
+  const guides = Guides;
+
   return (
     <div>
       <Container>
         <div>
           <ContentWrap>
             <AdCard />
-            {Guides.map((r) => (
+            {guides.map((r) => (
               <GuideCard guide={r} />
             ))}
           </ContentWrap>
