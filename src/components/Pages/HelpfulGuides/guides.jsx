@@ -9,6 +9,7 @@ const ShevaBrachosGuide = [
   "Do your first shopping - (Get your discount in NPGS!)",
   "Get Car Insurance",
   "Get Renter's Insurance",
+  "Write thank you cards",
 ];
 
 const ShabbosPackinglist = [

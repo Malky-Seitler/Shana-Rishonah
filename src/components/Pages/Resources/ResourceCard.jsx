@@ -20,7 +20,7 @@ const ResourceCard = ({ resource }) => {
         </TopPart>
         <Flex style={{ marginTop: 16, gap: 4 }}>
           <Icon name="globe" size="large" />
-          <a href={resource.website}>
+          <a href={resource.website} target="_blank">
             <TextWrap>{resource.website}</TextWrap>
           </a>
         </Flex>

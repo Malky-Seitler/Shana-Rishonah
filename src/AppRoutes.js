@@ -3,6 +3,7 @@ import FilteredPage from "./components/Pages/Trips/FilteredPage";
 import HomePage from "./components/HomePageComponents/HomePage";
 import ResourcesPage from "./components/Pages/Resources";
 import HelpfulGuides from "./components/Pages/HelpfulGuides";
+import CookbooksPage from "./components/Pages/Dinner/Cookbooks";
 
 const AppRoutes = [
   {
@@ -28,6 +29,7 @@ const AppRoutes = [
   },
   { path: "/resources", element: <ResourcesPage /> },
   { path: "/helpful-guides", element: <HelpfulGuides /> },
+  { path: "/dinner/cookbooks", element: <CookbooksPage /> },
 ];
 
 export default AppRoutes;
