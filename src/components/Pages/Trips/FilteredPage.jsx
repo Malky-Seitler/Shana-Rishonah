@@ -3,10 +3,10 @@ import ActivityCard from "./ActivityCard";
 import { ContentWrap } from "./StyledComponents";
 import { useParams } from "react-router-dom";
 import LightAd from "../../ads/lightsad.png";
-import { useActivityContext } from "../../../ActivityContext";
 import { Container } from "reactstrap";
 import { Loader } from "semantic-ui-react";
 import AdCard from "../../AdCard";
+import { useActivityContext } from "./ActivityContext";
 
 const FilteredPage = () => {
   const { type } = useParams();

@@ -5,7 +5,7 @@ import AppRoutes from "./AppRoutes";
 import { Layout } from "./components/layout/Layout";
 import "bootstrap/dist/css/bootstrap.css";
 import "semantic-ui-css/semantic.min.css";
-import { ActivityContextComponent } from "./ActivityContext";
+import { ActivityContextComponent } from "./components/Pages/Trips/ActivityContext";
 
 export default class App extends Component {
   static displayName = App.name;
@@ -24,4 +24,4 @@ export default class App extends Component {
       </ActivityContextComponent>
     );
   }
-} 
+}
