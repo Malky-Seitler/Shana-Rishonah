@@ -1,9 +1,5 @@
 import React from "react";
 import { Guides } from "./guides";
-import { Container } from "reactstrap";
-import { ContentWrap } from "../Trips/StyledComponents";
-import AdCard from "../../AdCard";
-import { GuideCardContainer } from "./StyledComponents";
 import GuideCard from "./GuideCard";
 import ParentPage from "../../layout/ParentPage";
 

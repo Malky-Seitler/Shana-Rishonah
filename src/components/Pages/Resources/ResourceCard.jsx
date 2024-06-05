@@ -15,7 +15,7 @@ const ResourceCard = ({ resource }) => {
         <TopPart>
           <DontFlexMobile>
             <TitleStyle>{resource.name}</TitleStyle>
-            <PictureWrap src={resource.img} width={"25%"} height={"25%"} />
+            <PictureWrap src={resource.img} />
           </DontFlexMobile>
         </TopPart>
         <Flex style={{ marginTop: 16, gap: 4 }}>

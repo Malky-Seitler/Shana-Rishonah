@@ -1,18 +1,7 @@
 import React from "react";
-import { DesktopWrapper } from "../../layout/StyledComponents";
-import {
-  Flex,
-  FlexColumnCenter,
-  TitleStyle,
-  TopPart,
-} from "../Trips/StyledComponents";
-import { Checkbox, Icon } from "semantic-ui-react";
-import {
-  GuideCardContainer,
-  PictureWrap,
-  ResourceCardContainer,
-  TextWrap,
-} from "./StyledComponents";
+import { Flex, TitleStyle, TopPart } from "../Trips/StyledComponents";
+import { Checkbox } from "semantic-ui-react";
+import { GuideCardContainer, TextWrap } from "./StyledComponents";
 
 const GuideCard = ({ guide }) => {
   return (

@@ -44,6 +44,8 @@ export const PictureWrap = styled.img`
   height: 45%;
   @media (min-width: 769px) {
     position: absolute;
+    width: 25%;
+    height: 25%;
     left: 71.47%;
     right: 3.63%;
     top: 0%;
