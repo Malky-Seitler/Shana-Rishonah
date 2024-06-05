@@ -78,3 +78,15 @@ export const SearchWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
 `;
+export const ContentWrap = styled.div`
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 124px;
+  justify-content: center;
+  padding-bottom: 124px;
+  @media (max-width: 426px) {
+    gap: 50px;
+    justify-content: center;
+  }
+`;

@@ -4,22 +4,16 @@ import { ContentWrap } from "../../Trips/StyledComponents";
 import AdCard from "../../../AdCard";
 import { CookbooksList } from "./cookbooks";
 import CookbookCard from "./CookbookCard";
+import ParentPage from "../../../layout/ParentPage";
 
 const CookbooksPage = () => {
   const cookbooks = CookbooksList;
   return (
-    <div>
-      <Container>
-        <div>
-          <ContentWrap>
-            <AdCard />
-            {cookbooks.map((c) => (
-              <CookbookCard cookbook={c} />
-            ))}
-          </ContentWrap>
-        </div>
-      </Container>
-    </div>
+    <ParentPage>
+      {cookbooks.map((c) => (
+        <CookbookCard cookbook={c} />
+      ))}
+    </ParentPage>
   );
 };
 export default CookbooksPage;

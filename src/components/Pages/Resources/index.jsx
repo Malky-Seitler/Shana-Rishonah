@@ -6,6 +6,7 @@ import AdCard from "../../AdCard";
 import Header from "../Trips/Header.png";
 import ResourceCard from "./ResourceCard";
 import { Loader } from "semantic-ui-react";
+import ParentPage from "../../layout/ParentPage";
 
 const ResourcesPage = () => {
   const [resourcesList, setResourcesList] = useState([]);
@@ -41,18 +42,11 @@ const ResourcesPage = () => {
     return <Loader size="large" active />;
   }
   return (
-    <div>
-      <Container>
-        <div>
-          <ContentWrap>
-            <AdCard />
-            {resourcesList.map((r) => (
-              <ResourceCard resource={r} />
-            ))}
-          </ContentWrap>
-        </div>
-      </Container>
-    </div>
+    <ParentPage>
+      {resourcesList.map((r) => (
+        <ResourceCard resource={r} />
+      ))}
+    </ParentPage>
   );
 };
 export default ResourcesPage;

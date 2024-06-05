@@ -78,6 +78,8 @@ export const Flex = styled.div`
 export const PictureWrap = styled.img`
   border-radius: 17px;
   margin-top: 24px;
+  height: 100%;
+  width: 100%;
   @media (min-width: 769px) {
     position: absolute;
     left: 49.47%;
@@ -85,6 +87,8 @@ export const PictureWrap = styled.img`
     top: 35.01%;
     bottom: 6.2%;
     margin-top: 0px;
+    width: 45%;
+    height: 45;
   }
 `;
 export const TextWrap = styled.div`
@@ -97,18 +101,7 @@ export const TextWrap = styled.div`
     width: 100%;
   }
 `;
-export const ContentWrap = styled.div`
-  margin-top: 36px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 124px;
-  justify-content: center;
-  padding-bottom: 124px;
-  @media (max-width: 426px) {
-    gap: 50px;
-    justify-content: center;
-  }
-`;
+
 export const ActionButton = styled.button`
   background: ${(props) => (props.disabled ? "#97c500 " : "#bdf700")};
   border-radius: 30px;
