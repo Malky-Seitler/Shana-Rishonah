@@ -1,8 +1,8 @@
 import React from "react";
-import { DesktopWrapper } from "../../layout/StyledComponents";
 import { Flex, TitleStyle, TopPart } from "../Trips/StyledComponents";
 import { Icon } from "semantic-ui-react";
 import {
+  DontFlexMobile,
   PictureWrap,
   ResourceCardContainer,
   TextWrap,
@@ -13,10 +13,10 @@ const ResourceCard = ({ resource }) => {
     <>
       <ResourceCardContainer>
         <TopPart>
-          <Flex>
+          <DontFlexMobile>
             <TitleStyle>{resource.name}</TitleStyle>
             <PictureWrap src={resource.img} width={"25%"} height={"25%"} />
-          </Flex>
+          </DontFlexMobile>
         </TopPart>
         <Flex style={{ marginTop: 16, gap: 4 }}>
           <Icon name="globe" size="large" />

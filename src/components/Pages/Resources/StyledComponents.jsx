@@ -31,9 +31,17 @@ export const ResourceCardContainer = styled.div`
     height: fit-content;
   }
 `;
+export const DontFlexMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  @media (min-width: 769px) {
+    display: flex;
+  }
+`;
 export const PictureWrap = styled.img`
-  border-radius: 17px;
-  margin-top: 24px;
+  width: 45%;
+  height: 45%;
   @media (min-width: 769px) {
     position: absolute;
     left: 71.47%;
