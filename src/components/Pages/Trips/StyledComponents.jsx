@@ -88,7 +88,7 @@ export const PictureWrap = styled.img`
     bottom: 6.2%;
     margin-top: 0px;
     width: 45%;
-    height: 45;
+    height: 45%;
   }
 `;
 export const TextWrap = styled.div`

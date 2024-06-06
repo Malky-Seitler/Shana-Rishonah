@@ -1,6 +1,13 @@
 import React from "react";
-import { CookbookCardContainer, PictureWrap } from "./StyledComponents";
+import {
+  ButtonWrap,
+  CardContentWrap,
+  CookbookCardContainer,
+  PictureWrap,
+  TextWrap,
+} from "./StyledComponents";
 import { Flex, TitleStyle, TopPart } from "../../Trips/StyledComponents";
+import { Button, Icon } from "semantic-ui-react";
 
 const CookbookCard = ({ cookbook }) => {
   return (
@@ -12,24 +19,21 @@ const CookbookCard = ({ cookbook }) => {
           </Flex>
         </TopPart>
         <Flex style={{ marginTop: 16, gap: 4 }}>
-          <PictureWrap
-            src={cookbook.img}
-            width={"45%"}
-            height={"45%"}
-          ></PictureWrap>
-          {/* <Icon name="globe" size="large" />
-          <a href={resource.website} target="_blank">
-            <TextWrap>{resource.website}</TextWrap>
-          </a>
+          <PictureWrap src={cookbook.img}></PictureWrap>
         </Flex>
-        <Flex style={{ marginTop: 16, gap: 4 }}>
-          <Icon name="phone" size="large" />
-          <TextWrap>{resource.number}</TextWrap>
-        </Flex>
-        <Flex style={{ marginTop: 16, gap: 4 }}>
-          <Icon name="clock" size="large" />
-          <TextWrap>{resource.hours ?? "N/A"}</TextWrap>*/}
-        </Flex>
+        <CardContentWrap>
+          <>
+            <Flex style={{ gap: 4 }}>
+              <Icon name="user" size="large" />
+              <TextWrap>By: {cookbook.author}</TextWrap>
+            </Flex>
+            <a href={cookbook.link} target="_blank">
+              <Button style={{ width: "250px" }}>
+                <Icon name="cart" /> Buy Now
+              </Button>
+            </a>
+          </>
+        </CardContentWrap>
       </CookbookCardContainer>
     </>
   );
