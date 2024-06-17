@@ -24,7 +24,7 @@ const FilteredPage = () => {
     }
   }, [type]);
 
-  if (loading) {
+  if (loading && type !== "search-results") {
     return <Loader size="large" active />;
   }
   if (filteredList?.length === 0) {
