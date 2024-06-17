@@ -41,7 +41,7 @@ const MenuPlanning = () => {
         }}
       >
         <FoodListWrapper>
-          <SubTitleText>Dairy Mains</SubTitleText>
+          <SubTitleText>Dairy/Parve Mains</SubTitleText>
           {dairyMains.map((d) => (
             <div>{d}</div>
           ))}
