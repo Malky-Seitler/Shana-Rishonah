@@ -85,7 +85,7 @@ export const ContentWrap = styled.div`
   gap: 124px;
   justify-content: center;
   padding-bottom: 124px;
-  @media (max-width: 426px) {
+  @media (max-width: 768px) {
     gap: 50px;
     justify-content: center;
   }
