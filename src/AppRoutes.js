@@ -4,6 +4,8 @@ import HomePage from "./components/HomePageComponents/HomePage";
 import ResourcesPage from "./components/Pages/Resources";
 import HelpfulGuides from "./components/Pages/HelpfulGuides";
 import CookbooksPage from "./components/Pages/Dinner/Cookbooks";
+import MenuPlanning from "./components/Pages/Dinner/MenuPlanning";
+import TipsAndTricks from "./components/Pages/Dinner/Tips";
 
 const AppRoutes = [
   {
@@ -30,6 +32,8 @@ const AppRoutes = [
   { path: "/resources", element: <ResourcesPage /> },
   { path: "/helpful-guides", element: <HelpfulGuides /> },
   { path: "/dinner/cookbooks", element: <CookbooksPage /> },
+  { path: "/dinner/menu-planning", element: <MenuPlanning /> },
+  { path: "/dinner/tips-and-tricks", element: <TipsAndTricks /> },
 ];
 
 export default AppRoutes;

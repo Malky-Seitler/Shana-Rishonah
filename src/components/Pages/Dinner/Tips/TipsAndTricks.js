@@ -1,0 +1,15 @@
+export const Tips = [
+  "If you make a monthly meal plan, write a shopping list for each week on the back to simplify shopping even more",
+  "Check with your husband after making the menu plan so you can make sure he likes everything on the menu. Or, if you choose to skip menu planning, try to plan the night before so you can check with him then",
+  "If you choose not to menu plan (or even if you do and are not so on top of groceries) check the night before to make sure you have all the ingredients you'll need",
+  "Keep a small whiteboard somewhere in your kitchen. As you run out of items, write it down and refer back before going shopping",
+  "Need a quick one-pot supper? Make a soup with barley and meat/chicken. Instant dinner! (Tread with caution - for some men this does not constitute as supper so check before!)",
+  "Turn your typical sides into a salad to change things up. For example toss orzo with sauteed onions and peppers or quinoa with roasted sweet potatos",
+  "Not every recipe that calls for 3 pots actually needs all of them. Many times you can just use one for everything",
+  "Try keeping your freezer stocked with basics like french fries and your favorite frozen vegetable. That way you'll always have something to serve",
+  "When you buy large packs of chicken, meat or cheese seperate it into individual bags before putting it in the freezer. That way you can defrost just what you need",
+  "Some people enjoy preparing as much as they can for the week on Sunday - prebreading chicken, cooking pasta etc.",
+  "Leftovers from the night before can usually be turned into some sort of side for the next day",
+  "Crockpot suppers are amazing. Throw everything in the crockpot in the morning and come home to a delicious smelling house",
+  "If you have time the night before, you can dice onions or vegetables that you'll need and leave them in the fridge for a smoother prep the next day",
+];

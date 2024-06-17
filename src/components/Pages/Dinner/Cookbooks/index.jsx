@@ -29,6 +29,9 @@ const CookbooksPage = () => {
       {cookbooksList.map((c) => (
         <CookbookCard cookbook={c} />
       ))}
+      <span style={{ fontStyle: "italic", fontSize: 9 }}>
+        As an Associate by Amazon I may earn from qualifying purchases.
+      </span>
     </ParentPage>
   );
 };
