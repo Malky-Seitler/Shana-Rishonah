@@ -4,24 +4,28 @@ export const mainMenu = [
     id: 1,
     children: [
       { title: "Home", link: "/", active: "" },
-      { title: "Day Trips", link: "/trips/day-trips", active: "day" },
-      { title: "Date Night", link: "/trips/date-night", active: "date" },
-      { title: "Quick Trips", link: "/trips/quick-trips", active: "quick" },
+      { title: "Day Trips", link: "/trips/day-trips", active: "day-trips" },
+      { title: "Date Night", link: "/trips/date-night", active: "date-night" },
+      {
+        title: "Quick Trips",
+        link: "/trips/quick-trips",
+        active: "quick-trips",
+      },
       {
         title: "Parks & Beaches",
         link: "/trips/parks-and-beaches",
-        active: "parks",
+        active: "parks-and-beaches",
       },
       { title: "logo" },
       {
         title: "At Home",
         link: "/trips/at-home",
-        active: "home",
+        active: "at-home",
       },
       {
         title: "Restaurants",
         link: "/trips/restaurants",
-        active: "food",
+        active: "restaurants",
       },
     ],
   },
@@ -34,12 +38,12 @@ export const mainMenu = [
       {
         title: "Menu Planning",
         link: "/dinner/menu-planning",
-        active: "menu",
+        active: "menu-planning",
       },
       {
         title: "Tips & Tricks",
         link: "/dinner/tips-and-tricks",
-        active: "dinnerTricks",
+        active: "tips-and-tricks",
       },
       { title: "logo" },
       {
@@ -54,6 +58,6 @@ export const mainMenu = [
     title: "Helpful Guides",
     id: 4,
     link: "/helpful-guides",
-    active: "guides",
+    active: "helpful-guides ",
   },
 ];

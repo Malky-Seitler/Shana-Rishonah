@@ -14,9 +14,25 @@ import { useActivityContext } from "../Pages/Trips/ActivityContext";
 import { mainMenu } from "./MainMenu";
 
 const DesktopMenu = () => {
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState(
+    window.location.pathname.substring(
+      window.location.pathname.lastIndexOf("/") + 1
+    ) ?? ""
+  );
+  const containsTwoNonAdjacentSlashes = (str) => /\/[^\/]*\//.test(str);
 
-  const [menuToDisplay, setMenuToDisplay] = useState(null);
+  const [menuToDisplay, setMenuToDisplay] = useState(
+    containsTwoNonAdjacentSlashes(window.location.pathname)
+      ? mainMenu.find(
+          (m) =>
+            m.title?.toLowerCase() ===
+            window.location.pathname.substring(
+              1,
+              window.location.pathname.lastIndexOf("/")
+            )
+        )?.id
+      : null
+  );
   const { setShowSearch, showSearch, getSearchedList, setFilteredList } =
     useActivityContext();
 
@@ -30,7 +46,7 @@ const DesktopMenu = () => {
             setMenuToDisplay(null);
           }}
         >
-          <img src={Logo} width={"280px"} height={"95px"} />
+          <img src={Logo} width={"280px"} height={"95px"} alt="logo" />
         </div>
       </Link>
     );
@@ -100,11 +116,11 @@ const DesktopMenu = () => {
 
           <NavLinkStyle
             onClick={() => {
-              setActive("search");
+              setActive("search-results");
               navigate("/search-results");
               setShowSearch(!showSearch);
             }}
-            selected={active === "search"}
+            selected={active === "search-results"}
           >
             Search
           </NavLinkStyle>

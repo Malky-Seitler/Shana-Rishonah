@@ -12,7 +12,20 @@ import { mainMenu } from "./MainMenu";
 
 const MobileMenuComponent = () => {
   const [showSideNav, setShowSideNav] = useState(false);
-  const [menuToDisplay, setMenuToDisplay] = useState(null);
+  const containsTwoNonAdjacentSlashes = (str) => /\/[^\/]*\//.test(str);
+
+  const [menuToDisplay, setMenuToDisplay] = useState(
+    containsTwoNonAdjacentSlashes(window.location.pathname)
+      ? mainMenu.find(
+          (m) =>
+            m.title?.toLowerCase() ===
+            window.location.pathname.substring(
+              1,
+              window.location.pathname.lastIndexOf("/")
+            )
+        )?.id
+      : null
+  );
 
   const handleDisplayLinkMobile = (m) => {
     return (
