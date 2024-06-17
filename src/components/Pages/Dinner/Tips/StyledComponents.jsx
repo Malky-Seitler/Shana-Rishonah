@@ -6,6 +6,7 @@ export const TipsCardWrap = styled.div`
   padding: 24px;
   width: 350px;
   height: 150px;
+  margin-bottom: -104px;
   position: relative;
   @media (max-width: 425px) {
     width: 298px;

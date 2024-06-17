@@ -8,7 +8,7 @@ const ParentPage = ({ children }) => {
     <div>
       <Container>
         <div>
-          <ContentWrap style={{ gap: 34 }}>
+          <ContentWrap>
             <AdCard />
             {children}
           </ContentWrap>
