@@ -8,6 +8,7 @@ import {
 } from "./StyledComponents";
 import { Flex, TitleStyle, TopPart } from "../../Trips/StyledComponents";
 import { Button, Icon } from "semantic-ui-react";
+import { ContactButton } from "../../../layout/StyledComponents";
 
 const CookbookCard = ({ cookbook }) => {
   return (
@@ -27,8 +28,14 @@ const CookbookCard = ({ cookbook }) => {
               <Icon name="user" size="large" />
               <TextWrap>By: {cookbook.author}</TextWrap>
             </Flex>
-            <a href={cookbook.link} target="_blank">
-              <Button style={{ width: "250px" }}>
+            <a href={cookbook.link} target="_blank" rel="noreferrer">
+              <Button
+                style={{
+                  border: "1px solid #15AAAA",
+                  color: "#15AAAA",
+                  backgroundColor: "transparent",
+                }}
+              >
                 <Icon name="cart" /> Buy Now
               </Button>
             </a>

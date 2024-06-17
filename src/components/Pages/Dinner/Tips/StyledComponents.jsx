@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const TipsCardWrap = styled.div`
   border-radius: 17px;
-  border: 1px solid #bdf700;
+  border: 2px solid #bdf700;
   padding: 24px;
   width: 350px;
   height: 150px;

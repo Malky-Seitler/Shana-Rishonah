@@ -11,7 +11,7 @@ export const TextWrap = styled.div`
 `;
 export const CookbookCardContainer = styled.div`
   border-radius: 17px;
-  border: 1px solid black;
+  border: 2px solid #bdf700;
   padding: 24px;
   width: 550px;
   height: 200px;

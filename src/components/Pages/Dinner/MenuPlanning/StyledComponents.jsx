@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const WhyMenuPlanWrapper = styled.div`
   border-radius: 17px;
-  border: 1px solid #bdf700;
+  border: 2px solid #bdf700;
   padding: 24px;
   width: 1100px;
   margin-top: -36px;
@@ -41,7 +41,7 @@ export const SubTitleText = styled.span`
 `;
 export const FoodListWrapper = styled.div`
   border-radius: 17px;
-  border: 1px solid #bdf700;
+  border: 2px solid #bdf700;
   padding: 24px;
   width: 300px;
   margin-bottom: 12px;
@@ -64,7 +64,7 @@ export const FoodListWrapper = styled.div`
 `;
 export const SampleMenuCardWrapper = styled.div`
   border-radius: 17px;
-  border: 1px solid #bdf700;
+  border: 2px solid #bdf700;
   padding: 24px;
   width: 350px;
   height: fit-content;
