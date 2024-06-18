@@ -38,6 +38,7 @@ export const NavMobileWrapper = styled.div`
 export const NavLinkStyle = styled.div`
   cursor: pointer;
   color: black;
+  position: relative;
   font-size: 18px;
   :hover {
     text-decoration: underline;
@@ -88,5 +89,26 @@ export const ContentWrap = styled.div`
   @media (max-width: 768px) {
     gap: 50px;
     justify-content: center;
+  }
+`;
+
+export const DropdownWrap = styled.div`
+  width: 150px;
+  z-index: 10000;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  
+`;
+export const DropdownItemWrap = styled.div`
+  height: auto;
+  border-bottom: 1px solid #e0e0e0;
+  width: 150px;
+  padding: 10px;
+  font-size: 14px;
+  color: black;
+    cursor: pointer;
+  :hover {
+    background-color: #f5f5f5;
   }
 `;
