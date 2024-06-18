@@ -30,6 +30,7 @@ const ShabbosPackinglist = [
   "Socks/Tights",
   "Pjs",
   "Slip/Static guard",
+  "Medications",
   "Pads",
   "B. Cloths",
 ];
