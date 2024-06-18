@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { Container } from "reactstrap";
-import { NavMenu } from "./NavMenu";
 import CustomNavBar from "./CustomNavBar";
 
 export class Layout extends Component {

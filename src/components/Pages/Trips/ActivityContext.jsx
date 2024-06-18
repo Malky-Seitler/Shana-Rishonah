@@ -1,27 +1,10 @@
 import React, { useState, createContext, useContext, useEffect } from "react";
-import { Activities, Categories } from "./components/Trips";
-import Header from "./components/Header.png";
+import { Activities, Categories } from "./Trips";
+import { cleanNameForPicture, getImage } from "../../../utils/helpers";
 
 const ActivityContext = createContext();
 
 const ActivityContextComponent = ({ children }) => {
-  const getImage = async (activity) => {
-    try {
-      const img = await import(
-        `./components/pictures/${activity.name
-          .replace(/\s/g, "")
-          .toLowerCase()}.jpg`
-      );
-
-      if (img) {
-        return img.default;
-      } else {
-        return Header;
-      }
-    } catch (e) {
-      return Header;
-    }
-  };
   const getSearchedList = async (searchValue) => {
     if (searchValue === "" || !searchValue) {
       return getListToUse();
@@ -30,7 +13,7 @@ const ActivityContextComponent = ({ children }) => {
         a.name.toLowerCase().includes(searchValue?.toLowerCase())
       );
       for (const trip of filtered) {
-        trip.img = await getImage(trip);
+        trip.img = await getImage(`${cleanNameForPicture(trip.name)}`);
       }
       return filtered;
     }
@@ -47,7 +30,7 @@ const ActivityContextComponent = ({ children }) => {
       returnList = Activities;
     }
     for (const trip of returnList) {
-      trip.img = await getImage(trip);
+      trip.img = await getImage(`${cleanNameForPicture(trip.name)}`);
     }
     return returnList;
   };

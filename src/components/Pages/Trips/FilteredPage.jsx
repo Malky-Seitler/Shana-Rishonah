@@ -1,18 +1,14 @@
 import React, { useEffect, useState } from "react";
 import ActivityCard from "./ActivityCard";
-import { ContentWrap } from "./StyledComponents";
 import { useParams } from "react-router-dom";
-import LightAd from "./ads/lightsad.png";
-import { useActivityContext } from "../ActivityContext";
-import { Container } from "reactstrap";
 import { Loader } from "semantic-ui-react";
-import AdCard from "./AdCard";
+import { useActivityContext } from "./ActivityContext";
+import ParentPage from "../../layout/ParentPage";
 
 const FilteredPage = () => {
   const { type } = useParams();
   const [loading, setLoading] = useState(true);
-  const { getListToUse, showSearch, filteredList, setFilteredList } =
-    useActivityContext();
+  const { getListToUse, filteredList, setFilteredList } = useActivityContext();
 
   const getList = async () => {
     setLoading(true);
@@ -36,22 +32,11 @@ const FilteredPage = () => {
   }
 
   return (
-    <div>
-      <Container>
-        <div>
-          {/* <div>
-            <img src={LightAd} style={{ width: "100%", height: "100px" }} />
-          </div> */}
-          <ContentWrap>
-            <AdCard activity={{ img: LightAd }} />
-
-            {filteredList?.map((a) => {
-              return <ActivityCard activity={a} />;
-            })}
-          </ContentWrap>
-        </div>
-      </Container>
-    </div>
+    <ParentPage>
+      {filteredList?.map((a) => {
+        return <ActivityCard activity={a} />;
+      })}
+    </ParentPage>
   );
 };
 export default FilteredPage;

@@ -1,6 +1,11 @@
-import ContactPage from "./components/ContactPage";
-import FilteredPage from "./components/FilteredPage";
+import ContactPage from "./components/Pages/Contact/ContactPage";
+import FilteredPage from "./components/Pages/Trips/FilteredPage";
 import HomePage from "./components/HomePageComponents/HomePage";
+import ResourcesPage from "./components/Pages/Resources";
+import HelpfulGuides from "./components/Pages/HelpfulGuides";
+import CookbooksPage from "./components/Pages/Dinner/Cookbooks";
+import MenuPlanning from "./components/Pages/Dinner/MenuPlanning";
+import TipsAndTricks from "./components/Pages/Dinner/Tips";
 
 const AppRoutes = [
   {
@@ -24,6 +29,11 @@ const AppRoutes = [
     path: "/contact",
     element: <ContactPage />,
   },
+  { path: "/resources", element: <ResourcesPage /> },
+  { path: "/helpful-guides", element: <HelpfulGuides /> },
+  { path: "/dinner/cookbooks", element: <CookbooksPage /> },
+  { path: "/dinner/menu-planning", element: <MenuPlanning /> },
+  { path: "/dinner/tips-and-tricks", element: <TipsAndTricks /> },
 ];
 
 export default AppRoutes;

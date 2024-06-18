@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
   ActivityCardContainer,
   Flex,
@@ -8,15 +8,15 @@ import {
   TopPart,
 } from "./StyledComponents";
 import { Icon } from "semantic-ui-react";
-import { DesktopWrapper, MobileWrapper } from "./layout/StyledComponents";
+import { DesktopWrapper, MobileWrapper } from "../../layout/StyledComponents";
 
 const ActivityCard = ({ activity }) => {
   return (
     <>
-      <DesktopWrapper>
-        <ActivityCardContainer>
-          <TopPart>
-            <TitleStyle>{activity.name}</TitleStyle>
+      <ActivityCardContainer>
+        <TopPart>
+          <TitleStyle>{activity.name}</TitleStyle>
+          <DesktopWrapper>
             <Flex style={{ justifyContent: "flex-end" }}>
               <Flex style={{ marginRight: 24 }}>
                 <Icon name="globe" size="large" />
@@ -39,19 +39,8 @@ const ActivityCard = ({ activity }) => {
                 </a>
               </Flex>
             </Flex>
-          </TopPart>
-          <TextWrap>{activity.description}</TextWrap>
-          <PictureWrap
-            src={activity.img}
-            width={"45%"}
-            height={"45%"}
-          ></PictureWrap>
-        </ActivityCardContainer>
-      </DesktopWrapper>
-      <MobileWrapper>
-        <ActivityCardContainer>
-          <TopPart>
-            <TitleStyle>{activity.name}</TitleStyle>
+          </DesktopWrapper>
+          <MobileWrapper style={{ display: "flex" }}>
             <Flex style={{ justifyContent: "flex-end" }}>
               <a
                 style={{ color: "black", textDecoration: "" }}
@@ -70,15 +59,11 @@ const ActivityCard = ({ activity }) => {
                 <Icon name="map marker alternate" size="large" />
               </a>
             </Flex>
-          </TopPart>
-          <PictureWrap
-            src={activity.img}
-            width={"100%"}
-            height={"25%"}
-          ></PictureWrap>
-          <TextWrap>{activity.description}</TextWrap>
-        </ActivityCardContainer>
-      </MobileWrapper>
+          </MobileWrapper>
+        </TopPart>
+        <TextWrap>{activity.description}</TextWrap>
+        <PictureWrap src={activity.img}></PictureWrap>
+      </ActivityCardContainer>
     </>
   );
 };

@@ -8,13 +8,14 @@ export const HomePageSectionWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 450px;
+  width: 33%;
   box-shadow: 0px 8px 12px rgba(152, 198, 0);
   :hover {
     transform: translateY(-10px);
   }
-  @media (max-width: 425px) {
-    width: 250px;
+
+  @media (max-width: 769px) {
+    width: 80%;
   }
 `;
 export const HomePageText = styled.div`

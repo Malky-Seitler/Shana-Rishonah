@@ -980,6 +980,16 @@ export const Activities = [
     categoryId: 0,
     locationId: 1,
   },
+  {
+    name: "Teva Restaurant",
+    address: "Third floor of DSN Beach Club, 123 Ocean Ave N, Deal, NJ 07723",
+    closes: 930,
+    website: "https://www.tevarestaurant.com/",
+    description:
+      "An upscale dairy restaurant located in the DSW Beach Club. They offer a wide array of pasta and fish as well as many other exotic dishes. The restaurant is only open seasonally to the public so be sure to go during the winter",
+    categoryId: 5,
+    locationId: 1,
+  },
 ];
 
 export const Locations = [{ name: "Lakewood & Surrounding Areas", id: 0 }];

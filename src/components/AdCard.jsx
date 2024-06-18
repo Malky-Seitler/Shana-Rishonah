@@ -8,7 +8,7 @@ import {
   TextWrap,
   TitleStyle,
   TopPart,
-} from "./StyledComponents";
+} from "./Pages/Trips/StyledComponents";
 import { Icon } from "semantic-ui-react";
 import { DesktopWrapper, MobileWrapper } from "./layout/StyledComponents";
 import ChanieAd from "./ads/csnaps.png";
