@@ -903,7 +903,7 @@ export const Activities = [
     closes: 8,
     website: "http://josephanddavid.com/",
     description:
-      "Joseph & David is primarily a juice store offering up fresh smoothies and juices while keeping everything healthy and natural! Their menu includes many healthy options including soups, sandwhiches, smoothie bowls and lots of other tasty treats! They are located in Howell and in Jackson.",
+      "Joseph & David is primarily a juice store offering up fresh smoothies and juices while keeping everything healthy and natural! Their menu includes many healthy options including soups, sandwiches, smoothie bowls and lots of other tasty treats! They are located in Howell and in Jackson.",
     categoryId: 0,
     locationId: 1,
   },

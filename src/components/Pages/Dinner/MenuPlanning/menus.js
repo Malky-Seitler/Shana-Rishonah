@@ -57,14 +57,14 @@ export const MeatMains = [
   "Beef Chuck",
   "Minute Steak",
   "Pepper Steak",
-  "Sandwhich Steak",
+  "Sandwich Steak",
   "Sloppy Joes",
   "Meat Pizza",
   "Meatballs",
   "Hamburgers",
   "Hot Dogs",
   "Pastrami BBQ Stir Fry",
-  "Deli Sandwhiches",
+  "Deli Sandwiches",
   "Deli Paninis",
 ];
 export const DairyMains = [

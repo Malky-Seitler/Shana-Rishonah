@@ -5,7 +5,7 @@ export const SampleMenuTwoCard = () => {
   return (
     <SampleMenuCardWrapper>
       <SubTitleText>Sample Menu Plan Two</SubTitleText>
-      <div> Sunday: Chicken Sandwhiches</div>
+      <div> Sunday: Chicken Sandwiches</div>
       <div> Monday: Pasta </div>
       <div> Tuesday: Deli/Meat </div>
       <div> Wednesday: Chicken cutlets/Chicken on the bone </div>
@@ -17,7 +17,7 @@ export const SampleMenuCard = () => {
   return (
     <SampleMenuCardWrapper>
       <SubTitleText>Sample Menu Plan One</SubTitleText>
-      <div>Sunday: Chicken Sandwhiches</div>
+      <div>Sunday: Chicken Sandwiches</div>
       <div>Monday: Ground Beef</div>
       <div>Tuesday: Chicken Cutlets</div>
       <div>Wednesday: Deli/Hot dogs/Chicken on the bone</div>
@@ -56,7 +56,7 @@ export const SampleWeekTwoMenu = () => {
       <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
         <div>
           {" "}
-          Sunday: Chicken Sandwhiches from Table for Two served on rolls with
+          Sunday: Chicken Sandwiches from Table for Two served on rolls with
           coleslaw and pickles
         </div>
         <div> Monday: Lasanga with buttered broccoli</div>
