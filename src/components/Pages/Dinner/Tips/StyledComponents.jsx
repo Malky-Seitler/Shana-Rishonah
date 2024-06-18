@@ -10,16 +10,19 @@ export const TipsCardWrap = styled.div`
   position: relative;
   @media (max-width: 425px) {
     width: 298px;
+    margin-bottom: 24px;
     height: fit-content;
   }
 
   @media (min-width: 426px) and (max-width: 1284px) {
     width: 380px;
     height: fit-content;
+    margin-bottom: 24px;
   }
 
   @media (min-width: 1285px) and (max-width: 1344px) {
     width: 498px;
     height: fit-content;
+    margin-bottom: 24px;
   }
 `;
