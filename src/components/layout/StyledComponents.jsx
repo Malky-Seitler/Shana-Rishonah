@@ -26,7 +26,7 @@ export const DesktopNavBarWrapper = styled.div`
   }
 `;
 export const MobileWrapper = styled.div`
-  @media (min-width: 769px) {
+  @media (min-width: 426px) {
     display: none;
   }
 `;
