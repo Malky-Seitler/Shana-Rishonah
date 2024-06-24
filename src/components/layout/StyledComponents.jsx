@@ -26,7 +26,7 @@ export const DesktopNavBarWrapper = styled.div`
   }
 `;
 export const MobileWrapper = styled.div`
-  @media (min-width: 426px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
@@ -112,3 +112,5 @@ export const DropdownItemWrap = styled.div`
     background-color: #f5f5f5;
   }
 `;
+//not sorting or grouping aprrovers or restriscted
+//create a hash of users by approvers

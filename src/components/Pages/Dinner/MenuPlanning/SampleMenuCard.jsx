@@ -59,7 +59,7 @@ export const SampleWeekTwoMenu = () => {
           Sunday: Chicken Sandwiches from Table for Two served on rolls with
           coleslaw and pickles
         </div>
-        <div> Monday: Lasanga with buttered broccoli</div>
+        <div> Monday: lasagna with buttered broccoli</div>
         <div> Tuesday: Ground Beef Pizza with lettuce salad </div>
         <div> Wednesday: Chinese Chicken Lo Mein from Table for Two </div>
         <div> Thursday: Pizza and fries with onion soup and green beans</div>

@@ -525,7 +525,7 @@ export const Activities = [
     website:
       "https://www.galioninquirer.com/2020/02/24/make-an-effort-to-write-more-letters-to-family-friends/",
     description:
-      "Write a letter to that older relative of yours that you haven't spoken to recently. You're sure to brighten their day when they recieve communication from their family! Writing to younger siblings or friends can also be fun - and a great surprise for them!",
+      "Write a letter to that older relative of yours that you haven't spoken to recently. You're sure to brighten their day when they receive communication from their family! Writing to younger siblings or friends can also be fun - and a great surprise for them!",
     closes: null,
     categoryId: 3,
     locationId: 1,
