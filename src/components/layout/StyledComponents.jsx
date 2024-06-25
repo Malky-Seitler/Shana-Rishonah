@@ -25,11 +25,6 @@ export const DesktopNavBarWrapper = styled.div`
     display: none;
   }
 `;
-export const MobileWrapper = styled.div`
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
 export const NavMobileWrapper = styled.div`
   @media (min-width: 1345px) {
     display: none;

@@ -1,14 +1,15 @@
 import React from "react";
 import {
   ActivityCardContainer,
+  DesktopGap,
   Flex,
+  MobileHide,
   PictureWrap,
   TextWrap,
   TitleStyle,
   TopPart,
 } from "./StyledComponents";
 import { Icon } from "semantic-ui-react";
-import { DesktopWrapper, MobileWrapper } from "../../layout/StyledComponents";
 
 const ActivityCard = ({ activity }) => {
   return (
@@ -16,50 +17,31 @@ const ActivityCard = ({ activity }) => {
       <ActivityCardContainer>
         <TopPart>
           <TitleStyle>{activity.name}</TitleStyle>
-          <DesktopWrapper>
-            <Flex style={{ justifyContent: "flex-end" }}>
-              <Flex style={{ marginRight: 24 }}>
-                <Icon name="globe" size="large" />
-                <a
-                  style={{ color: "black", textDecoration: "underline" }}
-                  target="_blank"
-                  href={activity.website}
-                >
-                  Website
-                </a>
-              </Flex>
-              <Flex>
-                <Icon name="map marker alternate" size="large" />
-                <a
-                  style={{ color: "black", textDecoration: "underline" }}
-                  target="_blank"
-                  href={`http://maps.google.com/?q=${activity.address}`}
-                >
-                  Directions
-                </a>
-              </Flex>
-            </Flex>
-          </DesktopWrapper>
-          <MobileWrapper style={{ display: "flex" }}>
-            <Flex style={{ justifyContent: "flex-end" }}>
+          <DesktopGap style={{ justifyContent: "flex-end" }}>
+            <Flex >
               <a
-                style={{ color: "black", textDecoration: "" }}
+                style={{ color: "black", display: 'flex', alignItems: 'center' }}
                 target="_blank"
                 href={activity.website}
-              >
-                <Icon name="globe" size="large" />
+                rel="noreferrer"
+              >  <Icon name="globe" size="large" />
+                <MobileHide>     <span style={{ textDecoration: "underline" }}>   Website</span></MobileHide>
               </a>
             </Flex>
             <Flex>
               <a
-                style={{ color: "black", textDecoration: "" }}
+                style={{ color: "black", display: 'flex', alignItems: 'center' }}
                 target="_blank"
                 href={`http://maps.google.com/?q=${activity.address}`}
+                rel="noreferrer"
               >
                 <Icon name="map marker alternate" size="large" />
+
+                <MobileHide>     <span style={{ textDecoration: "underline" }}>   Directions</span></MobileHide>
               </a>
             </Flex>
-          </MobileWrapper>
+          </DesktopGap>
+
         </TopPart>
         <TextWrap>{activity.description}</TextWrap>
         <PictureWrap src={activity.img}></PictureWrap>

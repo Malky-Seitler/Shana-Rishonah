@@ -31,12 +31,13 @@ export const AdCardContainer = styled.div`
   position: relative;
   display: flex;
   justify-content: space-between;
-  @media (max-width: 425px) {
+  @media (max-width: 769px) {
     width: 298px;
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   @media (min-width: 426px) and (max-width: 1284px) {
@@ -72,6 +73,18 @@ export const TitleStyle = styled.div`
   font-size: 24px;
   font-family: arial;
 `;
+export const MobileHide = styled.div`
+  @media(max-width: 769px){
+  display: none;
+  }
+`;
+export const DesktopGap = styled.div`
+display: flex;
+gap: 24px;
+@media(max-width: 769px){
+gap: 2px;
+}
+`
 export const Flex = styled.div`
   display: flex;
 `;
@@ -89,6 +102,14 @@ export const PictureWrap = styled.img`
     margin-top: 0px;
     width: 45%;
     height: 45%;
+  }
+`;
+export const AdPictureWrap = styled.img`
+  border-radius: 17px;
+  height: 100%;
+  width: 25%;
+  @media (max-width: 769px) {
+  width: 100%;
   }
 `;
 export const TextWrap = styled.div`
