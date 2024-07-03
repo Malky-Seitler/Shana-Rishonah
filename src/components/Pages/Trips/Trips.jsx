@@ -1,5 +1,14 @@
 export const Activities = [
   {
+    name: 'Battleview Orchards',
+    address: '91 Wemrock Rd, Freehold, NJ 07728',
+    website: 'http://www.battlevieworchards.com/',
+    description: 'This quaint farm has a little store as well as a large orchard where you can pick seasonal fruits. Different fruits are available throughout the year and there are times where there is nothing to pick so be sure to check the website before going!',
+    closes: 6,
+    categoryId: 0,
+    locationId: 1
+  },
+  {
     name: "Shore Lanes",
     address: "701 NJ-35, Neptune City, NJ 07753",
     website: "https://www.shorelanesnj.com/",
