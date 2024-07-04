@@ -10,9 +10,6 @@ export const HomePageSectionWrap = styled.div`
   align-items: center;
   width: 33%;
   box-shadow: 0px 8px 12px rgba(152, 198, 0);
-  :hover {
-    transform: translateY(-10px);
-  }
 
   @media (max-width: 769px) {
     width: 80%;
