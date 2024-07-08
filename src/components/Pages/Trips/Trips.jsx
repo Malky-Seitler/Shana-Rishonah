@@ -4,7 +4,7 @@ export const Activities = [
     address: '20 Melrose Terrace, Long Branch, NJ 07740',
     website: 'https://pierpins.com/',
     closes: 10,
-    description: 'A great spot for a date night, Pier Pins is a premier entertainment lounge located in Pier Villiage. They offer bowling, arcades, andd VR suites. They are generally open until 10 but stay open until 12am on Sundays.',
+    description: 'A great spot for a date night, Pier Pins is a premier entertainment lounge located in Pier Villiage. They offer bowling, arcades, and VR suites. They are generally open until 10 but stay open until 12am on Sundays.',
     categoryId: 1,
     locationId: 1
   },
