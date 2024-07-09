@@ -1,5 +1,14 @@
 export const Activities = [
   {
+    name: 'Pepe Kitchen',
+    address: ' 15 Morris Ave unit 110, Long Branch, NJ 07740',
+    website: 'https://pepekosher.com/',
+    closes: 10,
+    description: 'An italian dairy pizza shop located in Pier Villige. A great way to go out for dinner together without spending too much and still feeling that date-night vibe!',
+    categoryId: 5,
+    locationId: 1
+  },
+  {
     name: 'Pier Pins',
     address: '20 Melrose Terrace, Long Branch, NJ 07740',
     website: 'https://pierpins.com/',
