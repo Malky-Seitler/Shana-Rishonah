@@ -1,7 +1,16 @@
 export const Activities = [
   {
+    name: "Governors Island & Ferry",
+    address: '10 South StNew York, NY 10004',
+    website: 'https://www.govisland.com/plan-your-visit/ferry',
+    closes: 10,
+    description: 'Take the ferry from Manhattan to this tranquil island only a 5 minute ride away! Rent bikes or walk and enjoy the large lawns, gardens, forts and museums this island has to offer. Enjoy spectacular views of the city and water as well as the Statue of Liberty! You can take the Staten Island Ferry to Manhattan - the landings are steps away from each other.',
+    categoryId: 0,
+    locationId: 1
+  },
+  {
     name: 'Pepe Kitchen',
-    address: ' 15 Morris Ave unit 110, Long Branch, NJ 07740',
+    address: '15 Morris Ave unit 110, Long Branch, NJ 07740',
     website: 'https://pepekosher.com/',
     closes: 10,
     description: 'An italian dairy pizza shop located in Pier Villige. A great way to go out for dinner together without spending too much and still feeling that date-night vibe!',
