@@ -2,6 +2,11 @@ import React from "react";
 
 export const Resources = [
   {
+    name: "Mikvah.org",
+    number: 'N/A',
+    website: 'https://www.mikvah.org/directory',
+  },
+  {
     name: "Ani Ledodi Helpline",
     number: "646-746-4343",
     hours: "Monday and Wednesday 8:30-10:00pm. Tuesday and Thursday 9:30-11am",

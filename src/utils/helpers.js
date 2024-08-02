@@ -13,5 +13,5 @@ export const getImage = async (imgUrl) => {
   }
 };
 export const cleanNameForPicture = (name) => {
-  return name.replace(/\s/g, "").toLowerCase();
+  return name.replace(/[\s.]/g, "").toLowerCase();
 };
