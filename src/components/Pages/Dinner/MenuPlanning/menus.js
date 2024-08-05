@@ -89,4 +89,7 @@ export const DairyMains = [
   "Blintzes",
   "Knishes",
   "Falafel",
+  "Grilled Cheese",
+  "Parve Cholent",
+  "Waffles"
 ];
