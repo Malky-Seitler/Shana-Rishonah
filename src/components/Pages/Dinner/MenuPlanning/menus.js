@@ -91,5 +91,11 @@ export const DairyMains = [
   "Falafel",
   "Grilled Cheese",
   "Parve Cholent",
-  "Waffles"
+  "Waffles",
+  "Loaded Potatoes",
+  "Cheese Kugal",
+  "Ravioli",
+  "Cheese Latkes",
+  "Tuna/Tuna Steak",
+  "Eggplant Parmesan"
 ];
