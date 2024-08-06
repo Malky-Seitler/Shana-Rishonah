@@ -1,5 +1,23 @@
 export const Activities = [
   {
+    name: 'Cape May Zoo',
+    address: '707 Route 9 N., Cape May Court House, NJ 08210',
+    website: 'capemaycountynj.gov/1008/parkzoo',
+    closes: 4,
+    categoryId: 0,
+    locationId: 1,
+    description: 'A great trip for a full day away, Cape May Zoo is a beatiful zoo with lots of animals. There stunning grounds lend themselves to a perfect relaxing day away.'
+  },
+  {
+    name: 'US Mint Philadelphia Facility',
+    address: '151 N. Independence Mall E., Philadelphia, PA 19106',
+    website: ' usmint.gov/about/mint-tours-facilities/Philadelphia/tour-information',
+    closes: 430,
+    categoryId: 0,
+    locationId: 1,
+    description: 'Take a self-guided tour of this minting facility. See how they produce coins and medal dies. This facility is located in Philadelphia'
+  },
+  {
     name: "Governors Island & Ferry",
     address: '10 South StNew York, NY 10004',
     website: 'https://www.govisland.com/plan-your-visit/ferry',
