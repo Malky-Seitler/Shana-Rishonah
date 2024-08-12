@@ -12,9 +12,11 @@ const ResourcesPage = () => {
   const getResourcesList = async () => {
     const returnlist = [];
     for (const resource of Resources) {
-      resource.img = await getImage(
-        `resources/${cleanNameForPicture(resource.name)}`
-      );
+      if (!resource.description) {
+        resource.img = await getImage(
+          `resources/${cleanNameForPicture(resource.name)}`
+        );
+      }
       returnlist.push(resource);
     }
     setResourcesList(returnlist);
