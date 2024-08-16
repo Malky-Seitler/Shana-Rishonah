@@ -8,7 +8,7 @@ export const Resources = [
   },
   {
     name: "Mikvah.org",
-    number: 'N/A',
+    number: '1-833-4-MIKVAH',
     website: 'https://www.mikvah.org/directory',
   },
   {
