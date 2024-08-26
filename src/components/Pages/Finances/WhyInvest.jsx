@@ -11,11 +11,12 @@ const WhyInvest = () => {
             </TopPart>
             <div style={{ marginTop: 24 }}>
                 <p style={{ fontSize: 12 }}>Written by: Shoshana Klugmann</p>
-                <p> As a young couple, making smart financial decisions can set you up for long-term success and stability. One often overlooked opportunity is investing in real estate, specifically buying an investment home. This strategic move can bring numerous benefits, from generating passive income to building wealth and securing your future. Here are some advandages of buying an investment home.</p>
+                <p> As a young couple, making smart financial decisions can set you up for long-term success and stability. One often overlooked opportunity is investing in real estate, specifically buying an investment home. This strategic move can bring numerous benefits, from generating passive income to building wealth and securing your future. Here are some advantages of buying an investment home.</p>
 
                 <h4>1. Passive Income</h4>
                 <p>Renting out an investment property can provide a steady stream of passive income, helping to offset mortgage payments and living expenses.
                 </p>
+
 
                 <h4>2. Wealth Building</h4>
                 <p>Real estate values tend to appreciate over time, making owning an investment property a potentially lucrative long-term investment.</p>
