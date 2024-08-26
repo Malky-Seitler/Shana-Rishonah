@@ -48,7 +48,7 @@ const WhyInvest = () => {
                 <h4>Financing</h4>
                 <p>Explore mortgage options and consider working with a financial advisor. </p>
                 <p> In conclusion, buying an investment home can be a savvy move for young couples, offering a range of financial benefits and skills. Make sure that you have a mortgage broker/banker that will have your interest in mind and will provide you with good rates and low closing costs  By carefully considering your decision and planning for the responsibilities that come with ownership, you can set yourselves up for long-term financial success. </p>
-                <p style={{ fontStyle: 'italic' }}>Looking for an investment home? Shoshana is a real estate broker and can be reached at shoshanak@crnj.com</p>
+                <p style={{ fontStyle: 'italic' }}>Looking for an investment home? Shoshana is a real estate broker at Crossroads Realty and can be reached at shoshanak@crnj.com</p>
 
             </div>
         </GuideCardContainer>

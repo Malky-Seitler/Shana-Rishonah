@@ -47,7 +47,7 @@ const Article = () => {
                 </ul>
 
                 <p>It goes without saying that much of this is likely unfamiliar territory for many young couples. So remember to always speak to a financial professional with any and all questions you may have!</p>
-                <p style={{ fontStyle: 'italic' }}>Chaim Schmerhold can be reached at chaim.schmerhold@nm.com</p>
+                <p style={{ fontStyle: 'italic' }}>Chaim Schmerhold is a financial advisor at Northwestern Mutual. He can be reached at chaim.schmerhold@nm.com</p>
             </div>
 
 
