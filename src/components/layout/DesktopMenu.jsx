@@ -22,7 +22,6 @@ const DesktopMenu = () => {
   const [active, setActive] = useState(activePath ?? "");
 
   const [menuToDisplay, setMenuToDisplay] = useState(null);
-  console.log(mainMenu)
   const { setShowSearch, showSearch, getSearchedList, setFilteredList } =
     useActivityContext();
 
@@ -95,7 +94,7 @@ const DesktopMenu = () => {
           })
           }
 
-          <NavLinkStyle
+          {/* <NavLinkStyle
             onClick={() => {
               setActive("search-results");
               navigate("/search-results");
@@ -104,7 +103,7 @@ const DesktopMenu = () => {
             selected={active === "search-results"}
           >
             Search
-          </NavLinkStyle>
+          </NavLinkStyle> */}
 
           <Link to="/contact">
             <ContactButton>Contact</ContactButton>

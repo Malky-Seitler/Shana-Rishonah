@@ -60,4 +60,5 @@ export const mainMenu = [
     link: "/helpful-guides",
     active: "helpful-guides",
   },
+  { title: "Finances", id: 5, link: "/finances", active: "finances" },
 ];

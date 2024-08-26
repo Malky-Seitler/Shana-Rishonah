@@ -1,5 +1,14 @@
 export const Activities = [
   {
+    name: 'IKEA',
+    address: '1000 Ikea Dr, Elizabeth, NJ 07201',
+    website: 'https://www.ikea.com/us/en/stores/elizabeth/?utm_source=google&utm_medium=organic&utm_campaign=map&utm_content=elizabeth',
+    closes: 9,
+    categoryId: 1,
+    locationId: 1,
+    description: 'A great place for an early date night! This is a great place to wander and enjoy the many set-up living areas they have created. And who knows - you may even find something you love to bring back home with you! The store is massive so bring along a good pair of shoes and get ready for lots of walking!'
+  },
+  {
     name: 'Cape May Zoo',
     address: '707 Route 9 N., Cape May Court House, NJ 08210',
     website: 'capemaycountynj.gov/1008/parkzoo',
