@@ -1,22 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
-  ActivityCardContainer,
   AdCardContainer,
-  AdItem,
   AdPictureWrap,
-  Flex,
-  PictureWrap,
-  TextWrap,
   TitleStyle,
-  TopPart,
 } from "./Pages/Trips/StyledComponents";
-import { DesktopWrapper } from "./layout/StyledComponents";
-import ChanieAd from "./ads/csnaps.png";
+import JBrush from "./ads/jbrush.png";
+import buyCars from "./ads/buycars.png";
+import { Icon } from "semantic-ui-react";
 
 const AdCard = ({ activity }) => {
   return (
     <>
-      {/* <DesktopWrapper> */}
       <AdCardContainer>
         <div>
           <TitleStyle>Ads</TitleStyle>
@@ -26,57 +20,18 @@ const AdCard = ({ activity }) => {
             To advertise on our site contact shanarishonahwebsite@gmail.com
           </div>
         </div>
-        <div
-          style={{
-            border: "1px solid purple",
-            padding: 24,
-            width: "fit-content",
-            backgroundColor: "purple",
-            borderRadius: 10,
-            color: "white",
-            textAlign: "center",
-          }}
-        >
-          <div>Affordable lighting rentals</div>
-          <div>For all your in-house occasions!</div>
-          <div>Call/Text: 732-573-5248</div>
-        </div>
-        <AdPictureWrap
-          src={ChanieAd}
-        ></AdPictureWrap>
-      </AdCardContainer>
-      {/* </DesktopWrapper> */}
-      {/* <AdCardContainer>
-          <div>
-            <TitleStyle>Ads</TitleStyle>
-            <div
-              style={{ marginTop: 12, fontStyle: "italic", color: "GrayText" }}
-            >
-              To advertise on our site contact shanarishonahwebsite@gmail.com
-            </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <div style={{ width: '40%', border: '1px solid black', display: 'flex', flexDirection: 'column', alignItems: 'center', borderRadius: 8, padding: 8, height: 'fit-content' }}>
+            <AdPictureWrap src={buyCars}></AdPictureWrap>
+            <div style={{ fontSize: '24px', marginTop: 14, color: 'green' }}>  <a href="https://chat.whatsapp.com/KFuoG28Q0gh5f0RCgDzbJV" style={{ color: 'green' }} >  <Icon size="large" name='whatsapp' /> Buy & Sell Cars chat</a></div>
+
           </div>
-          <AdItem
-            style={{
-              border: "1px solid purple",
-              backgroundColor: "purple",
-              borderRadius: 10,
-              color: "white",
-              marginTop: 21,
-              textAlign: "center",
-            }}
-          >
-            <div>Affordable lighting rentals</div>
-            <div>For all your in-house occasions!</div>
-            <div>Call/Text: 732-573-5248</div>
-          </AdItem>
-          <img
-            src={ChanieAd}
-            width={"100%"}
-            style={{ zoom: "200%" }}
-            height={"100%"}
-          ></img>
-        </AdCardContainer>
-      </MobileWrapper> */}
+
+          <AdPictureWrap
+            src={JBrush}
+          ></AdPictureWrap>
+        </div>
+      </AdCardContainer>
     </>
   );
 };

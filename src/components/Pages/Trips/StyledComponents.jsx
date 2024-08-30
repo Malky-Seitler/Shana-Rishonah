@@ -27,9 +27,8 @@ export const AdCardContainer = styled.div`
   border: 1px solid black;
   padding: 24px;
   width: 1100px;
-  height: 150px;
+  height: fit-content;
   position: relative;
-  display: flex;
   justify-content: space-between;
   @media (max-width: 769px) {
     width: 298px;
@@ -107,7 +106,7 @@ export const PictureWrap = styled.img`
 export const AdPictureWrap = styled.img`
   border-radius: 17px;
   height: 100%;
-  width: 25%;
+  width: 50%;
   @media (max-width: 769px) {
   width: 100%;
   }
