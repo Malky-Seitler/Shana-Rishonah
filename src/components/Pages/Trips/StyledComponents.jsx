@@ -30,6 +30,41 @@ export const AdCardContainer = styled.div`
   height: fit-content;
   position: relative;
   justify-content: space-between;
+  
+  @media (max-width: 769px) {
+    width: 298px;
+    height: fit-content;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (min-width: 426px) and (max-width: 1284px) {
+    width: 380px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: 1285px) and (max-width: 1344px) {
+    width: 498px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+export const AdContentCardContainer = styled.div`
+  padding: 24px;
+  height: fit-content;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+
+  
   @media (max-width: 769px) {
     width: 298px;
     height: fit-content;

@@ -1,6 +1,7 @@
 import React from "react";
 import {
   AdCardContainer,
+  AdContentCardContainer,
   AdPictureWrap,
   TitleStyle,
 } from "./Pages/Trips/StyledComponents";
@@ -20,8 +21,8 @@ const AdCard = ({ activity }) => {
             To advertise on our site contact shanarishonahwebsite@gmail.com
           </div>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <div style={{ width: '40%', border: '1px solid black', display: 'flex', flexDirection: 'column', alignItems: 'center', borderRadius: 8, padding: 8, height: 'fit-content' }}>
+        <AdContentCardContainer>
+          <div style={{ width: '40%', border: '1px solid black', display: 'flex', flexDirection: 'column', alignItems: 'center', borderRadius: 8, padding: 8, height: 'fit-content', marginBottom: 24 }}>
             <AdPictureWrap src={buyCars}></AdPictureWrap>
             <div style={{ fontSize: '24px', marginTop: 14, color: 'green' }}>  <a href="https://chat.whatsapp.com/KFuoG28Q0gh5f0RCgDzbJV" style={{ color: 'green' }} >  <Icon size="large" name='whatsapp' /> Buy & Sell Cars chat</a></div>
 
@@ -30,7 +31,7 @@ const AdCard = ({ activity }) => {
           <AdPictureWrap
             src={JBrush}
           ></AdPictureWrap>
-        </div>
+        </AdContentCardContainer>
       </AdCardContainer>
     </>
   );
