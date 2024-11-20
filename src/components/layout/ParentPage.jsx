@@ -9,7 +9,7 @@ const ParentPage = ({ children }) => {
       <Container>
         <div>
           <ContentWrap>
-            <AdCard />
+            {/* <AdCard /> */}
             {children}
           </ContentWrap>
         </div>

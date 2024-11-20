@@ -119,6 +119,14 @@ gap: 24px;
 gap: 2px;
 }
 `
+export const DesktopFlex = styled.div`
+flex-direction: column;
+gap: 24px;
+@media(min-width: 769px){
+display: flex;
+flex-direction: row;
+}
+`
 export const Flex = styled.div`
   display: flex;
 `;
