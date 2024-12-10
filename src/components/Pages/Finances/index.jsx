@@ -5,6 +5,7 @@ import Article from "./Article";
 import Mortgages from "./Mortgages";
 import WhyInvest from "./WhyInvest";
 import { ContentWrap } from "./StyledComponents";
+import FrumFinance from "./Frum.Finance";
 
 const Finances = () => {
     return (
@@ -12,9 +13,10 @@ const Finances = () => {
             <Container>
                 <div>
                     <ContentWrap >
+                        <FrumFinance />
                         <Article />
-                        <WhyInvest />
-                        <Mortgages />
+                        {/* <WhyInvest /> */}
+                        {/* <Mortgages /> */}
                     </ContentWrap>
                 </div>
             </Container></div>
